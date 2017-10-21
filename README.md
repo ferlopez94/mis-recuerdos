@@ -29,7 +29,9 @@ git checkout -b branch-name
 ### Add components
 Open the project with Xcode and create a new folder under "MisRecuerdos" folder with the name of the feature you're working on.
 
-Inside your new folder create all of the related resources for your new feature. If you need to create a new resource that is used globally, put it inside the correct folder or create a new one if necessary.
+Inside your new folder create all of the related resources for your new feature, this includes a new storyboard file to put your UI.
+
+If you need to create a new resource that is used globally, put it inside the correct folder or create a new one if necessary.
 
 Remember to update frequently the origin repo.
 
