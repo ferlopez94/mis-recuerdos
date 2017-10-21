@@ -9,7 +9,11 @@ These instructions will help you to to get a copy of the project up and running 
 You need to have Xcode 8.3.3 installed on your local machine.
 
 ### Installing
-Download the entire folder to your computer and then open your terminal and navigate to its location.
+Navigate to the location in which you want to store the project and clone it.
+
+```
+git clone https://github.com/ferlopez94/mis-recuerdos.git
+```
 
 Then open this project with Xcode.
 
