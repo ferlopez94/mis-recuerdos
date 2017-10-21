@@ -15,7 +15,7 @@ Navigate to the location in which you want to store the project and clone it.
 git clone https://github.com/ferlopez94/mis-recuerdos.git
 ```
 
-Then open this project with Xcode.
+Then inside "MisRecuerdos" folder inside the root folder "mis-recuerdos", open the Xcode project.
 
 ## Modify project
 
