@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignupViewController: UIViewController, UITextViewDelegate {
+class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
 
     // MARK: - IBOutlets
     
@@ -27,6 +27,8 @@ class SignupViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nameTextField.delegate = self
+        lastNameTextField.delegate = self
         commentsTextView.delegate = self
         commentsTextView.text = commentsPlaceholder
         commentsTextView.textColor = UIColor.lightGray
@@ -50,6 +52,18 @@ class SignupViewController: UIViewController, UITextViewDelegate {
         let datePickerView = UIDatePicker()
         datePickerView.datePickerMode = .date
         sender.inputView = datePickerView
+    }
+    
+    
+    // MARK: - TextField delegate methods
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     
@@ -97,17 +111,8 @@ class SignupViewController: UIViewController, UITextViewDelegate {
         }
     }
     
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func hideKeyboard() {
+        view.endEditing(true)
     }
-    */
-
+        
 }
