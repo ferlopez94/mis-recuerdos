@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD4ADD4E1F9D00880071C6F1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4ADD4D1F9D00880071C6F1 /* Login.storyboard */; };
+		AD4ADD501F9D04EB0071C6F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4ADD4F1F9D04EB0071C6F1 /* LoginViewController.swift */; };
 		AD9750041F9AFC2400E81BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9750031F9AFC2400E81BB6 /* AppDelegate.swift */; };
 		AD9750061F9AFC2500E81BB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9750051F9AFC2500E81BB6 /* ViewController.swift */; };
 		AD9750091F9AFC2B00E81BB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9750071F9AFC2B00E81BB6 /* Main.storyboard */; };
 		AD97500B1F9AFC2E00E81BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD97500A1F9AFC2E00E81BB6 /* Assets.xcassets */; };
 		AD97500E1F9AFC2F00E81BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD97500C1F9AFC2F00E81BB6 /* LaunchScreen.storyboard */; };
+		AD9750171F9C5C2300E81BB6 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9750161F9C5C2200E81BB6 /* Signup.storyboard */; };
+		AD9750191F9C739D00E81BB6 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9750181F9C739D00E81BB6 /* SignupViewController.swift */; };
+		AD97501C1F9C782C00E81BB6 /* Century Gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD97501B1F9C782C00E81BB6 /* Century Gothic.ttf */; };
+		AD97501E1F9C783800E81BB6 /* Century Gothic Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD97501D1F9C783800E81BB6 /* Century Gothic Bold.ttf */; };
+		AD9750211F9C7ADE00E81BB6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9750201F9C7ADE00E81BB6 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD4ADD4D1F9D00880071C6F1 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		AD4ADD4F1F9D04EB0071C6F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AD9750001F9AFC2300E81BB6 /* MisRecuerdos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisRecuerdos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9750031F9AFC2400E81BB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD9750051F9AFC2500E81BB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,11 @@
 		AD97500A1F9AFC2E00E81BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD97500D1F9AFC2F00E81BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD97500F1F9AFC3100E81BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD9750161F9C5C2200E81BB6 /* Signup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		AD9750181F9C739D00E81BB6 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		AD97501B1F9C782C00E81BB6 /* Century Gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Century Gothic.ttf"; sourceTree = "<group>"; };
+		AD97501D1F9C783800E81BB6 /* Century Gothic Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Century Gothic Bold.ttf"; sourceTree = "<group>"; };
+		AD9750201F9C7ADE00E81BB6 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD4ADD4C1F9D00630071C6F1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AD4ADD4D1F9D00880071C6F1 /* Login.storyboard */,
+				AD4ADD4F1F9D04EB0071C6F1 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		AD974FF71F9AFC2000E81BB6 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +77,10 @@
 		AD9750021F9AFC2300E81BB6 /* MisRecuerdos */ = {
 			isa = PBXGroup;
 			children = (
+				AD97501F1F9C7AC900E81BB6 /* Custom Views */,
+				AD97501A1F9C77CB00E81BB6 /* Resources */,
+				AD9750151F9C5BCB00E81BB6 /* Signup */,
+				AD4ADD4C1F9D00630071C6F1 /* Login */,
 				AD9750031F9AFC2400E81BB6 /* AppDelegate.swift */,
 				AD9750051F9AFC2500E81BB6 /* ViewController.swift */,
 				AD9750071F9AFC2B00E81BB6 /* Main.storyboard */,
@@ -62,6 +89,32 @@
 				AD97500F1F9AFC3100E81BB6 /* Info.plist */,
 			);
 			path = MisRecuerdos;
+			sourceTree = "<group>";
+		};
+		AD9750151F9C5BCB00E81BB6 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				AD9750161F9C5C2200E81BB6 /* Signup.storyboard */,
+				AD9750181F9C739D00E81BB6 /* SignupViewController.swift */,
+			);
+			name = Signup;
+			sourceTree = "<group>";
+		};
+		AD97501A1F9C77CB00E81BB6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD97501B1F9C782C00E81BB6 /* Century Gothic.ttf */,
+				AD97501D1F9C783800E81BB6 /* Century Gothic Bold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AD97501F1F9C7AC900E81BB6 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD9750201F9C7ADE00E81BB6 /* RoundedButton.swift */,
+			);
+			name = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +179,10 @@
 			files = (
 				AD97500E1F9AFC2F00E81BB6 /* LaunchScreen.storyboard in Resources */,
 				AD97500B1F9AFC2E00E81BB6 /* Assets.xcassets in Resources */,
+				AD4ADD4E1F9D00880071C6F1 /* Login.storyboard in Resources */,
+				AD97501C1F9C782C00E81BB6 /* Century Gothic.ttf in Resources */,
+				AD9750171F9C5C2300E81BB6 /* Signup.storyboard in Resources */,
+				AD97501E1F9C783800E81BB6 /* Century Gothic Bold.ttf in Resources */,
 				AD9750091F9AFC2B00E81BB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9750191F9C739D00E81BB6 /* SignupViewController.swift in Sources */,
 				AD9750061F9AFC2500E81BB6 /* ViewController.swift in Sources */,
 				AD9750041F9AFC2400E81BB6 /* AppDelegate.swift in Sources */,
+				AD4ADD501F9D04EB0071C6F1 /* LoginViewController.swift in Sources */,
+				AD9750211F9C7ADE00E81BB6 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +364,7 @@
 				AD9750141F9AFC3100E81BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

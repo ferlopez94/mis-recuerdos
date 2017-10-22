@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0B1-fe-ZqI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Century Gothic Bold.ttf">
+            <string>CenturyGothic-Bold</string>
+        </array>
+        <array key="Century Gothic.ttf">
+            <string>CenturyGothic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="rhh-HE-RC2">
+            <objects>
+                <viewController id="0B1-fe-ZqI" customClass="LoginViewController" customModule="MisRecuerdos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dk0-k1-Rhe"/>
+                        <viewControllerLayoutGuide type="bottom" id="lmm-g9-Sza"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n8P-CH-G4K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Qqz-9W-6Pn" userLabel="Main Content">
+                                <rect key="frame" x="32" y="60" width="311" height="567"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="F88-pe-UeH" userLabel="Top Content">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="477"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis recuerdos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEy-Jb-weN">
+                                                <rect key="frame" x="0.0" y="0.0" width="311" height="34.5"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="GQ3-XR-Iin">
+                                                <rect key="frame" x="80.5" y="54.5" width="150" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="GQ3-XR-Iin" secondAttribute="height" multiplier="15:13" id="CxE-Yr-dGa"/>
+                                                    <constraint firstAttribute="width" constant="150" id="SEd-sY-0Oi"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona tu cuenta:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OUc-My-5kd">
+                                                <rect key="frame" x="0.0" y="204.5" width="311" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ise-sy-Bj7">
+                                                <rect key="frame" x="0.0" y="247" width="311" height="230"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="0aE-19-M0x">
+                                                        <rect key="frame" x="0.0" y="28" width="311" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0aE-19-M0x" id="K6O-RV-ro9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="311" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableViewCellContentView>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="gEy-Jb-weN" secondAttribute="trailing" id="7ZR-Cl-v6B"/>
+                                            <constraint firstAttribute="trailing" secondItem="ise-sy-Bj7" secondAttribute="trailing" id="JHL-3k-Mdv"/>
+                                            <constraint firstAttribute="trailing" secondItem="OUc-My-5kd" secondAttribute="trailing" id="N4G-DQ-XpV"/>
+                                            <constraint firstItem="OUc-My-5kd" firstAttribute="leading" secondItem="F88-pe-UeH" secondAttribute="leading" id="U4O-PU-Tgf"/>
+                                            <constraint firstItem="gEy-Jb-weN" firstAttribute="leading" secondItem="F88-pe-UeH" secondAttribute="leading" id="ctK-Mj-0aJ"/>
+                                            <constraint firstItem="ise-sy-Bj7" firstAttribute="leading" secondItem="F88-pe-UeH" secondAttribute="leading" id="gNJ-Ye-hWE"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPw-6H-wTD" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
+                                        <rect key="frame" x="78" y="527" width="155.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="HMW-Vt-fic"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                        <state key="normal" title="Crear cuenta"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                <color key="value" red="0.25882352939999997" green="0.72549019609999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
+                                                <color key="value" red="0.25882352939999997" green="0.72549019609999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                <color key="value" red="0.25882352939999997" green="0.72549019609999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
+                                                <color key="value" red="0.25882352939999997" green="0.72549019609999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
+                                                <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="y62-z4-5MJ" kind="presentation" id="O0V-pe-E0b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fPw-6H-wTD" firstAttribute="width" secondItem="Qqz-9W-6Pn" secondAttribute="width" multiplier="0.5" id="d3b-HX-VNX"/>
+                                    <constraint firstAttribute="trailing" secondItem="F88-pe-UeH" secondAttribute="trailing" id="jwD-28-CO1"/>
+                                    <constraint firstItem="F88-pe-UeH" firstAttribute="leading" secondItem="Qqz-9W-6Pn" secondAttribute="leading" id="ueL-i7-HCz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qqz-9W-6Pn" firstAttribute="leading" secondItem="n8P-CH-G4K" secondAttribute="leadingMargin" constant="16" id="2mh-Vv-D2J"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Qqz-9W-6Pn" secondAttribute="bottom" constant="40" id="AuQ-Ua-yrI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qqz-9W-6Pn" secondAttribute="trailing" constant="16" id="Zkk-hd-a6j"/>
+                            <constraint firstItem="Qqz-9W-6Pn" firstAttribute="top" secondItem="dk0-k1-Rhe" secondAttribute="bottom" constant="40" id="tIN-nC-C7G"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n0x-yx-3kX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.2" y="-28.335832083958024"/>
+        </scene>
+        <!--Signup-->
+        <scene sceneID="Amz-mH-H4q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Signup" id="y62-z4-5MJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2A7-zI-Ob4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="-29"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="150" height="132"/>
+    </resources>
+</document>
