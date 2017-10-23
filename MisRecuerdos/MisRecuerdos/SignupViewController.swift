@@ -58,7 +58,7 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         var alertController: UIAlertController
         
         guard photoImage != nil else {
-            message = "Debe de seleccionar una foto de perfil."
+            message = "Debes de seleccionar una foto de perfil."
             alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             present(alertController, animated: true, completion: nil)
@@ -67,7 +67,7 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
             
         guard nameTextField.text != "",
             let name = nameTextField.text else {
-            message = "Debe de introducir un nombre."
+            message = "Debes de introducir tu nombre."
             alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             present(alertController, animated: true, completion: nil)
@@ -76,8 +76,14 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         
         guard lastNameTextField.text != "",
             let lastName = lastNameTextField.text else {
+                message = "Debes de introducir tus apellidos."
+                alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                present(alertController, animated: true, completion: nil)
                 return
         }
+        
+        // Create account
     }
     
     @IBAction func textFieldEditingDidBegin(_ sender: UITextField) {

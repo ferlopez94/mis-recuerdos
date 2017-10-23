@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0B1-fe-ZqI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -25,43 +29,43 @@
                         <viewControllerLayoutGuide type="bottom" id="lmm-g9-Sza"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="n8P-CH-G4K">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Qqz-9W-6Pn" userLabel="Main Content">
-                                <rect key="frame" x="36" y="60" width="528" height="500"/>
+                                <rect key="frame" x="32" y="60" width="311" height="567"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="F88-pe-UeH" userLabel="Top Content">
-                                        <rect key="frame" x="0.0" y="0.0" width="528" height="410"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="477"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis recuerdos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEy-Jb-weN">
-                                                <rect key="frame" x="0.0" y="0.0" width="528" height="33"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="311" height="34.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="GQ3-XR-Iin">
-                                                <rect key="frame" x="189" y="53" width="150" height="130"/>
+                                                <rect key="frame" x="80.5" y="54.5" width="150" height="130"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="GQ3-XR-Iin" secondAttribute="height" multiplier="15:13" id="CxE-Yr-dGa"/>
                                                     <constraint firstAttribute="width" constant="150" id="SEd-sY-0Oi"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona tu cuenta:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OUc-My-5kd">
-                                                <rect key="frame" x="0.0" y="203" width="528" height="21"/>
+                                                <rect key="frame" x="0.0" y="204.5" width="311" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ise-sy-Bj7">
-                                                <rect key="frame" x="0.0" y="244" width="528" height="166"/>
+                                                <rect key="frame" x="0.0" y="247" width="311" height="230"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="0aE-19-M0x">
-                                                        <rect key="frame" x="0.0" y="28" width="528" height="44"/>
+                                                        <rect key="frame" x="0.0" y="28" width="311" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0aE-19-M0x" id="K6O-RV-ro9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="528" height="43.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="311" height="43.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
@@ -78,7 +82,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPw-6H-wTD" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                        <rect key="frame" x="132" y="460" width="264" height="40"/>
+                                        <rect key="frame" x="78" y="527" width="155.5" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="HMW-Vt-fic"/>
                                         </constraints>
