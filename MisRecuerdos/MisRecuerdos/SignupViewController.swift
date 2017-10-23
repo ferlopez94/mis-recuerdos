@@ -25,6 +25,7 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     var photoImage: UIImage? = nil
     var moveScrollView = false
     let commentsPlaceholder = "Comentarios acerca de ti..."
+    let segueToMenuIdentifier = "segueToMenu"
     
     
     // MARK: - View Controller life cycle
@@ -104,7 +105,7 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         
         let user = User(name: name, lastName: lastName, dateOfBirth: dateOfBirth, comments: comments, photo: photoImage!)
         if User.saveToFile(user) {
-            print("¡Cuenta creada!")
+            performSegue(withIdentifier: segueToMenuIdentifier, sender: nil)
         } else {
             message = "No se puede crear una cuenta nueva en este momento."
             alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
