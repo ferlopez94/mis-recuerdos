@@ -20,6 +20,7 @@
 		AD97501E1F9C783800E81BB6 /* Century Gothic Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD97501D1F9C783800E81BB6 /* Century Gothic Bold.ttf */; };
 		AD9750211F9C7ADE00E81BB6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9750201F9C7ADE00E81BB6 /* RoundedButton.swift */; };
 		ADA5E3821F9D4AED00714837 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3811F9D4AED00714837 /* User.swift */; };
+		ADA5E3851F9D90D000714837 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3841F9D90CF00714837 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		AD97501D1F9C783800E81BB6 /* Century Gothic Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Century Gothic Bold.ttf"; sourceTree = "<group>"; };
 		AD9750201F9C7ADE00E81BB6 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		ADA5E3811F9D4AED00714837 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ADA5E3841F9D90CF00714837 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		AD9750021F9AFC2300E81BB6 /* MisRecuerdos */ = {
 			isa = PBXGroup;
 			children = (
+				ADA5E3841F9D90CF00714837 /* Constants.swift */,
 				AD97501F1F9C7AC900E81BB6 /* Custom Views */,
 				AD97501A1F9C77CB00E81BB6 /* Resources */,
 				ADA5E3801F9D4ABD00714837 /* Model */,
@@ -209,6 +212,7 @@
 				AD9750061F9AFC2500E81BB6 /* ViewController.swift in Sources */,
 				ADA5E3821F9D4AED00714837 /* User.swift in Sources */,
 				AD9750041F9AFC2400E81BB6 /* AppDelegate.swift in Sources */,
+				ADA5E3851F9D90D000714837 /* Constants.swift in Sources */,
 				AD4ADD501F9D04EB0071C6F1 /* LoginViewController.swift in Sources */,
 				AD9750211F9C7ADE00E81BB6 /* RoundedButton.swift in Sources */,
 			);

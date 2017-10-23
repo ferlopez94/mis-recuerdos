@@ -66,7 +66,7 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         }
             
         guard nameTextField.text != "",
-            let name = nameTextField.text else {
+            let name = nameTextField.text?.trimmingCharacters(in: .whitespaces) else {
             message = "Debes de introducir tu nombre."
             alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
@@ -75,7 +75,7 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         }
         
         guard lastNameTextField.text != "",
-            let lastName = lastNameTextField.text else {
+            let lastName = lastNameTextField.text?.trimmingCharacters(in: .whitespaces) else {
                 message = "Debes de introducir tus apellidos."
                 alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
                 alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
@@ -83,13 +83,54 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
                 return
         }
         
-        // Create account
+        guard dobTextField.text != "",
+            let dateOfBirth = dobTextField.text else {
+                message = "Debes de introducir tu fecha de nacimiento."
+                alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                present(alertController, animated: true, completion: nil)
+                return
+        }
+
+        let comments = commentsTextView.text == commentsPlaceholder ? "" : commentsTextView.text!
+        
+        print(name)
+        print(lastName)
+        print(comments)
+        print(dateOfBirth)
+        
+        let user = User(name: name, lastName: lastName, dateOfBirth: dateOfBirth, comments: comments, photo: photoImage!)
+        if User.saveToFile(user) {
+            print("¡Cuenta creada!")
+        } else {
+            message = "No se puede crear una cuenta nueva en este momento."
+            alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            present(alertController, animated: true, completion: nil)
+        }
     }
     
     @IBAction func textFieldEditingDidBegin(_ sender: UITextField) {
+        let dataFormatter = DateFormatter()
+        dataFormatter.dateFormat = "yyyy/MM/dd"
+        
+        let minimumDate = dataFormatter.date(from: "1900/01/01")!
+        let maximumDate = dataFormatter.date(from: "2015/01/01")!
+        
         let datePickerView = UIDatePicker()
         datePickerView.datePickerMode = .date
+        datePickerView.minimumDate = minimumDate
+        datePickerView.date = minimumDate
+        datePickerView.maximumDate = maximumDate
         sender.inputView = datePickerView
+        datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
+    }
+    
+    func datePickerValueChanged(sender: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        dobTextField.text = dateFormatter.string(from: sender.date)
     }
     
     
