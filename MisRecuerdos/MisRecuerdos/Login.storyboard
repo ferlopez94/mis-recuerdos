@@ -77,7 +77,7 @@
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eNF-ds-Rbz">
-                                                                    <rect key="frame" x="18" y="10" width="884" height="40"/>
+                                                                    <rect key="frame" x="18" y="10" width="275" height="40"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2EY-kw-D0f">
                                                                             <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -87,7 +87,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uAn-cB-FiH">
-                                                                            <rect key="frame" x="50" y="9" width="834" height="22.5"/>
+                                                                            <rect key="frame" x="50" y="9" width="225" height="22.5"/>
                                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -100,11 +100,9 @@
                                                                 </stackView>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="eNF-ds-Rbz" firstAttribute="centerY" secondItem="K6O-RV-ro9" secondAttribute="centerY" id="796-ca-26d"/>
-                                                                <constraint firstItem="eNF-ds-Rbz" firstAttribute="leading" secondItem="K6O-RV-ro9" secondAttribute="leadingMargin" constant="10" id="BbD-0A-vJf"/>
-                                                                <constraint firstItem="eNF-ds-Rbz" firstAttribute="top" secondItem="K6O-RV-ro9" secondAttribute="top" constant="10" id="L2U-Nq-rBj"/>
-                                                                <constraint firstAttribute="trailingMargin" secondItem="eNF-ds-Rbz" secondAttribute="trailing" constant="10" id="l1Q-Eq-lmu"/>
-                                                                <constraint firstAttribute="bottom" secondItem="eNF-ds-Rbz" secondAttribute="bottom" constant="10" id="zqF-lj-oWM"/>
+                                                                <constraint firstItem="eNF-ds-Rbz" firstAttribute="leading" secondItem="K6O-RV-ro9" secondAttribute="leadingMargin" constant="10" id="I4Q-fI-YPn"/>
+                                                                <constraint firstAttribute="trailingMargin" secondItem="eNF-ds-Rbz" secondAttribute="trailing" constant="10" id="NmX-3L-YZq"/>
+                                                                <constraint firstItem="eNF-ds-Rbz" firstAttribute="centerY" secondItem="K6O-RV-ro9" secondAttribute="centerY" id="YKA-Rr-S74"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
                                                         <connections>
