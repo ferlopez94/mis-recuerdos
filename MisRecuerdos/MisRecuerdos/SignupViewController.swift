@@ -8,11 +8,12 @@
 
 import UIKit
 
-class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
+class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     // MARK: - IBOutlets
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var dobTextField: UITextField!
@@ -21,12 +22,16 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     
     // MARK: - Instance variables
     
+    var photoImage: UIImage? = nil
     var moveScrollView = false
     let commentsPlaceholder = "Comentarios acerca de ti..."
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        photoButton.layer.masksToBounds = true
+        photoButton.layer.cornerRadius = photoButton.frame.width/2
+
         nameTextField.delegate = self
         lastNameTextField.delegate = self
         commentsTextView.delegate = self
@@ -39,10 +44,37 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     
     // MARK: - IBActions
     
+    @IBAction func importPhoto() {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = false
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
     @IBAction func createUser() {
+        var message = ""
+        let title = "Error"
+        var alertController: UIAlertController
+        
+        guard photoImage != nil else {
+            message = "Debe de seleccionar una foto de perfil."
+            alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            present(alertController, animated: true, completion: nil)
+            return
+        }
+            
         guard nameTextField.text != "",
-            lastNameTextField.text != "",
-            let name = nameTextField.text,
+            let name = nameTextField.text else {
+            message = "Debe de introducir un nombre."
+            alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            present(alertController, animated: true, completion: nil)
+            return
+        }
+        
+        guard lastNameTextField.text != "",
             let lastName = lastNameTextField.text else {
                 return
         }
@@ -55,7 +87,23 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     }
     
     
-    // MARK: - TextField delegate methods
+    // MARK: - UIImagePickerControllerDelegate methods
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            photoImage = image
+            photoButton.setImage(photoImage, for: .normal)
+            photoButton.setTitle("", for: .normal)
+            photoButton.layer.borderWidth = 0.0
+        } else {
+            photoImage = nil
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    // MARK: - TextFieldDelegate methods
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
@@ -67,7 +115,7 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     }
     
     
-    // MARK: - TextView delegate methods
+    // MARK: - TextViewDelegate methods
     
     func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
         moveScrollView = true
