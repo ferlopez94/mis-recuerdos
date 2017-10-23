@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0B1-fe-ZqI">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -29,47 +25,81 @@
                         <viewControllerLayoutGuide type="bottom" id="lmm-g9-Sza"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="n8P-CH-G4K">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Qqz-9W-6Pn" userLabel="Main Content">
-                                <rect key="frame" x="32" y="60" width="311" height="567"/>
+                                <rect key="frame" x="36" y="60" width="528" height="500"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="F88-pe-UeH" userLabel="Top Content">
-                                        <rect key="frame" x="0.0" y="0.0" width="311" height="477"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="528" height="410"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis recuerdos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEy-Jb-weN">
-                                                <rect key="frame" x="0.0" y="0.0" width="311" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="528" height="33"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="GQ3-XR-Iin">
-                                                <rect key="frame" x="80.5" y="54.5" width="150" height="130"/>
+                                                <rect key="frame" x="189" y="53" width="150" height="130"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="GQ3-XR-Iin" secondAttribute="height" multiplier="15:13" id="CxE-Yr-dGa"/>
                                                     <constraint firstAttribute="width" constant="150" id="SEd-sY-0Oi"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona tu cuenta:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OUc-My-5kd">
-                                                <rect key="frame" x="0.0" y="204.5" width="311" height="22.5"/>
+                                                <rect key="frame" x="0.0" y="203" width="528" height="21"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ise-sy-Bj7">
-                                                <rect key="frame" x="0.0" y="247" width="311" height="230"/>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ise-sy-Bj7">
+                                                <rect key="frame" x="0.0" y="244" width="528" height="166"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="0aE-19-M0x">
-                                                        <rect key="frame" x="0.0" y="28" width="311" height="44"/>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="60" id="0aE-19-M0x" customClass="UserTableViewCell" customModule="MisRecuerdos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="528" height="60"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0aE-19-M0x" id="K6O-RV-ro9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="311" height="43.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="528" height="59.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eNF-ds-Rbz">
+                                                                    <rect key="frame" x="10" y="8.5" width="508" height="43"/>
+                                                                    <subviews>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2EY-kw-D0f">
+                                                                            <rect key="frame" x="0.0" y="1.5" width="40" height="40"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="2EY-kw-D0f" secondAttribute="height" multiplier="1:1" id="Kc9-xP-OcM"/>
+                                                                                <constraint firstAttribute="height" constant="40" id="qcb-6G-fyX"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uAn-cB-FiH">
+                                                                            <rect key="frame" x="50" y="11" width="458" height="21"/>
+                                                                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="eNF-ds-Rbz" secondAttribute="bottom" constant="8" id="7iB-sS-ZDd"/>
+                                                                <constraint firstItem="eNF-ds-Rbz" firstAttribute="leading" secondItem="K6O-RV-ro9" secondAttribute="leading" constant="10" id="M92-yM-yy6"/>
+                                                                <constraint firstAttribute="trailing" secondItem="eNF-ds-Rbz" secondAttribute="trailing" constant="10" id="NBA-st-gfV"/>
+                                                                <constraint firstItem="eNF-ds-Rbz" firstAttribute="top" secondItem="K6O-RV-ro9" secondAttribute="top" constant="8" id="Um1-FT-CEM"/>
+                                                            </constraints>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="nameLabel" destination="uAn-cB-FiH" id="dQa-7B-3Ft"/>
+                                                            <outlet property="photoImage" destination="2EY-kw-D0f" id="utk-oZ-6Fb"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="0B1-fe-ZqI" id="6xb-O3-kxx"/>
+                                                    <outlet property="delegate" destination="0B1-fe-ZqI" id="D0s-gv-nnV"/>
+                                                </connections>
                                             </tableView>
                                         </subviews>
                                         <constraints>
@@ -82,7 +112,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPw-6H-wTD" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                        <rect key="frame" x="78" y="527" width="155.5" height="40"/>
+                                        <rect key="frame" x="132" y="460" width="264" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="HMW-Vt-fic"/>
                                         </constraints>
@@ -137,6 +167,9 @@
                             <constraint firstItem="Qqz-9W-6Pn" firstAttribute="top" secondItem="dk0-k1-Rhe" secondAttribute="bottom" constant="40" id="tIN-nC-C7G"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="ise-sy-Bj7" id="qb5-Cg-fe6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0x-yx-3kX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

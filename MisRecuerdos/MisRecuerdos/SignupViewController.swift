@@ -26,6 +26,9 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     var moveScrollView = false
     let commentsPlaceholder = "Comentarios acerca de ti..."
     
+    
+    // MARK: - View Controller life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

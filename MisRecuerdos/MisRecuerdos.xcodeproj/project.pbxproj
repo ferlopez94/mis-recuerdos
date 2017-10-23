@@ -21,6 +21,7 @@
 		AD9750211F9C7ADE00E81BB6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9750201F9C7ADE00E81BB6 /* RoundedButton.swift */; };
 		ADA5E3821F9D4AED00714837 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3811F9D4AED00714837 /* User.swift */; };
 		ADA5E3851F9D90D000714837 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3841F9D90CF00714837 /* Constants.swift */; };
+		ADA5E3871F9D9E1600714837 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3861F9D9E1600714837 /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		AD9750201F9C7ADE00E81BB6 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		ADA5E3811F9D4AED00714837 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ADA5E3841F9D90CF00714837 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ADA5E3861F9D9E1600714837 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				AD4ADD4D1F9D00880071C6F1 /* Login.storyboard */,
 				AD4ADD4F1F9D04EB0071C6F1 /* LoginViewController.swift */,
+				ADA5E3861F9D9E1600714837 /* UserTableViewCell.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				AD9750061F9AFC2500E81BB6 /* ViewController.swift in Sources */,
 				ADA5E3821F9D4AED00714837 /* User.swift in Sources */,
 				AD9750041F9AFC2400E81BB6 /* AppDelegate.swift in Sources */,
+				ADA5E3871F9D9E1600714837 /* UserTableViewCell.swift in Sources */,
 				ADA5E3851F9D90D000714837 /* Constants.swift in Sources */,
 				AD4ADD501F9D04EB0071C6F1 /* LoginViewController.swift in Sources */,
 				AD9750211F9C7ADE00E81BB6 /* RoundedButton.swift in Sources */,
