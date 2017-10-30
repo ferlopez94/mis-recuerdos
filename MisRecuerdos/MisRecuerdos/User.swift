@@ -23,6 +23,9 @@ final class User: NSObject, NSCoding {
     let comments: String
     let photo: UIImage
     let photoData: Data
+    override var description: String {
+        return "\(name) \(lastName) \(dateOfBirth)"
+    }
     
     
     // MARK: - Initializers

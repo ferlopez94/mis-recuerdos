@@ -11,7 +11,7 @@ import Foundation
 struct K {
     
     struct Accounts {
-        static let accountsKey = "accounts"
+        static let actualUserKey = "actualUser"
     }
     
 }

@@ -24,6 +24,7 @@
 		ADA5E3871F9D9E1600714837 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3861F9D9E1600714837 /* UserTableViewCell.swift */; };
 		ADA5E38A1F9DB86E00714837 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA5E3891F9DB86D00714837 /* Menu.storyboard */; };
 		ADA5E38C1F9DB8C200714837 /* AssetsMenu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA5E38B1F9DB8C200714837 /* AssetsMenu.xcassets */; };
+		ADF9AB491FA6F5F8002F6789 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9AB481FA6F5F8002F6789 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		ADA5E3861F9D9E1600714837 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		ADA5E3891F9DB86D00714837 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		ADA5E38B1F9DB8C200714837 /* AssetsMenu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetsMenu.xcassets; sourceTree = "<group>"; };
+		ADF9AB481FA6F5F8002F6789 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				ADA5E3891F9DB86D00714837 /* Menu.storyboard */,
+				ADF9AB481FA6F5F8002F6789 /* MenuViewController.swift */,
 				ADA5E38B1F9DB8C200714837 /* AssetsMenu.xcassets */,
 			);
 			name = Menu;
@@ -231,6 +234,7 @@
 				AD9750061F9AFC2500E81BB6 /* ViewController.swift in Sources */,
 				ADA5E3821F9D4AED00714837 /* User.swift in Sources */,
 				AD9750041F9AFC2400E81BB6 /* AppDelegate.swift in Sources */,
+				ADF9AB491FA6F5F8002F6789 /* MenuViewController.swift in Sources */,
 				ADA5E3871F9D9E1600714837 /* UserTableViewCell.swift in Sources */,
 				ADA5E3851F9D90D000714837 /* Constants.swift in Sources */,
 				AD4ADD501F9D04EB0071C6F1 /* LoginViewController.swift in Sources */,

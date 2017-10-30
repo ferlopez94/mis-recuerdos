@@ -18,6 +18,7 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
     // MARK: - Instance properties
     
     var users = [User]()
+    let segueToMenuIdentifier = "segueToMenu"
 
     
     // MARK: - View Controller life cycle
@@ -62,6 +63,18 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         
         return indexPath
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let user = users[indexPath.row]
+        let message = "¿Quieres iniciar sesión con la cuenta de: \(user.name) \(user.lastName)?"
+        let alertController = UIAlertController(title: "Confirmar", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Si", style: .default) { (alert) in
+            UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: user), forKey: K.Accounts.actualUserKey)
+            self.performSegue(withIdentifier: self.segueToMenuIdentifier, sender: nil)
+        })
+        alertController.addAction(UIAlertAction(title: "No", style: .destructive, handler: nil))
+        present(alertController, animated: true, completion: nil)
     }
     
     

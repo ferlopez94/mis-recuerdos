@@ -80,11 +80,11 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         
         guard lastNameTextField.text != "",
             let lastName = lastNameTextField.text?.trimmingCharacters(in: .whitespaces) else {
-                message = "Debes de introducir tus apellidos."
-                alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                present(alertController, animated: true, completion: nil)
-                return
+            message = "Debes de introducir tus apellidos."
+            alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            present(alertController, animated: true, completion: nil)
+            return
         }
         
         guard dobTextField.text != "",

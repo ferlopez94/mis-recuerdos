@@ -17,10 +17,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="FOj-98-EHs">
             <objects>
-                <viewController id="gyu-6V-GT0" sceneMemberID="viewController">
+                <viewController id="gyu-6V-GT0" customClass="MenuViewController" customModule="MisRecuerdos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f23-Le-ole"/>
                         <viewControllerLayoutGuide type="bottom" id="fWG-lp-TQD"/>
