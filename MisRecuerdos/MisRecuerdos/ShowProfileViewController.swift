@@ -21,8 +21,8 @@ class ShowProfileViewController: UIViewController {
     
     // MARK: - View Controller life cycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
         guard let data = UserDefaults.standard.data(forKey: K.Accounts.actualUserKey),
             let user = NSKeyedUnarchiver.unarchiveObject(with: data) as? User else {
@@ -46,7 +46,6 @@ class ShowProfileViewController: UIViewController {
         print(user)
     }
     
-
     /*
     // MARK: - Navigation
 

@@ -12,6 +12,7 @@ struct K {
     
     struct Accounts {
         static let actualUserKey = "actualUser"
+        static let actualUserIndexKey = "actualUserIndex"
     }
     
 }

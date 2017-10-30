@@ -105,6 +105,8 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         
         let user = User(name: name, lastName: lastName, dateOfBirth: dateOfBirth, comments: comments, photo: photoImage!)
         if User.saveToFile(user) {
+            UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: user), forKey: K.Accounts.actualUserKey)
+            UserDefaults.standard.set(User.loadFromFile().count - 1, forKey: K.Accounts.actualUserIndexKey)
             performSegue(withIdentifier: segueToMenuIdentifier, sender: nil)
         } else {
             message = "No se puede crear una cuenta nueva en este momento."

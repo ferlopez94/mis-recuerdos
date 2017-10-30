@@ -71,6 +71,7 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let alertController = UIAlertController(title: "Confirmar", message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Si", style: .default) { (alert) in
             UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: user), forKey: K.Accounts.actualUserKey)
+            UserDefaults.standard.set(indexPath.row, forKey: K.Accounts.actualUserIndexKey)
             self.performSegue(withIdentifier: self.segueToMenuIdentifier, sender: nil)
         })
         alertController.addAction(UIAlertAction(title: "No", style: .destructive, handler: nil))

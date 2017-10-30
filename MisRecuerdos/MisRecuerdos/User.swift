@@ -91,6 +91,16 @@ final class User: NSObject, NSCoding {
         return NSKeyedArchiver.archiveRootObject(users, toFile: userDirectory.path)
     }
     
+    static func saveToFile(_ user: User, replaceAtIndex index: Int) -> Bool {
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let userDirectory = documentsDirectory.appendingPathComponent(User.pathToFile)
+        
+        var users = User.loadFromFile()
+        users[index] = user
+        
+        return NSKeyedArchiver.archiveRootObject(users, toFile: userDirectory.path)
+    }
+    
     static func loadFromFile() -> [User] {
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let userDirectory = documentsDirectory.appendingPathComponent(User.pathToFile)

@@ -27,6 +27,7 @@
 		ADF9AB491FA6F5F8002F6789 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9AB481FA6F5F8002F6789 /* MenuViewController.swift */; };
 		ADF9AB4C1FA7977D002F6789 /* ShowProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF9AB4B1FA7977D002F6789 /* ShowProfile.storyboard */; };
 		ADF9AB4E1FA797A7002F6789 /* ShowProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9AB4D1FA797A7002F6789 /* ShowProfileViewController.swift */; };
+		ADF9AB751FA7A38A002F6789 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9AB741FA7A38A002F6789 /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		ADF9AB481FA6F5F8002F6789 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		ADF9AB4B1FA7977D002F6789 /* ShowProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShowProfile.storyboard; sourceTree = "<group>"; };
 		ADF9AB4D1FA797A7002F6789 /* ShowProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProfileViewController.swift; sourceTree = "<group>"; };
+		ADF9AB741FA7A38A002F6789 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			children = (
 				ADF9AB4B1FA7977D002F6789 /* ShowProfile.storyboard */,
 				ADF9AB4D1FA797A7002F6789 /* ShowProfileViewController.swift */,
+				ADF9AB741FA7A38A002F6789 /* EditViewController.swift */,
 			);
 			name = ShowProfile;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				ADA5E3871F9D9E1600714837 /* UserTableViewCell.swift in Sources */,
 				ADA5E3851F9D90D000714837 /* Constants.swift in Sources */,
 				AD4ADD501F9D04EB0071C6F1 /* LoginViewController.swift in Sources */,
+				ADF9AB751FA7A38A002F6789 /* EditViewController.swift in Sources */,
 				AD9750211F9C7ADE00E81BB6 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
