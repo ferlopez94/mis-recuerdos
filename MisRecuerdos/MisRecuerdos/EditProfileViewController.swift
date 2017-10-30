@@ -1,5 +1,5 @@
 //
-//  EditViewController.swift
+//  EditProfileViewController.swift
 //  MisRecuerdos
 //
 //  Created by fernandolopezmartinez on 30/10/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EditViewController: SignupViewController {
+class EditProfileViewController: SignupViewController {
     
     // MARK: - Instance variables
     
