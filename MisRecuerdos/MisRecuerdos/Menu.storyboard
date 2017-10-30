@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gyu-6V-GT0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7dG-Hc-u0b">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,7 +17,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Menu View Controller-->
+        <!--Menú-->
         <scene sceneID="FOj-98-EHs">
             <objects>
                 <viewController id="gyu-6V-GT0" customClass="MenuViewController" customModule="MisRecuerdos" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,10 +30,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cmM-DD-umX" userLabel="Content">
-                                <rect key="frame" x="32" y="60" width="256" height="468"/>
+                                <rect key="frame" x="32" y="94" width="256" height="434"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gC-fg-5Zv">
-                                        <rect key="frame" x="70" y="0.0" width="116.5" height="69"/>
+                                        <rect key="frame" x="74" y="0.0" width="108.5" height="65.5"/>
                                         <string key="text">Menú
 Principal</string>
                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
@@ -44,7 +44,7 @@ Principal</string>
                                         </variation>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dhm-Ct-6Wd" userLabel="Buttons">
-                                        <rect key="frame" x="0.0" y="120.5" width="256" height="256"/>
+                                        <rect key="frame" x="0.0" y="102" width="256" height="256"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jAC-VR-49w">
                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="118"/>
@@ -55,6 +55,9 @@ Principal</string>
                                                             <constraint firstAttribute="width" secondItem="Xht-5u-RIC" secondAttribute="height" multiplier="1:1" id="VS8-1o-4wX"/>
                                                         </constraints>
                                                         <state key="normal" image="My profile"/>
+                                                        <connections>
+                                                            <segue destination="raf-jW-bFt" kind="show" id="G8T-MB-7dM"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rE0-mN-kFN">
                                                         <rect key="frame" x="138" y="0.0" width="118" height="118"/>
@@ -90,7 +93,7 @@ Principal</string>
                                         <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZL-vw-eAa" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                        <rect key="frame" x="64" y="428" width="128" height="40"/>
+                                        <rect key="frame" x="64" y="394" width="128" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="IZg-nw-rot">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
@@ -152,19 +155,46 @@ Principal</string>
                             <constraint firstItem="fWG-lp-TQD" firstAttribute="top" secondItem="cmM-DD-umX" secondAttribute="bottom" constant="40" id="Cdw-iE-Vfa">
                                 <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                             </constraint>
-                            <constraint firstItem="cmM-DD-umX" firstAttribute="top" secondItem="f23-Le-ole" secondAttribute="bottom" constant="40" id="QTd-De-fbu">
-                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            <constraint firstItem="cmM-DD-umX" firstAttribute="top" secondItem="f23-Le-ole" secondAttribute="bottom" constant="30" id="QTd-De-fbu">
+                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
                             </constraint>
                             <constraint firstItem="cmM-DD-umX" firstAttribute="leading" secondItem="jee-Qa-0Ay" secondAttribute="leadingMargin" constant="16" id="Ulg-9u-fGA">
                                 <variation key="heightClass=regular-widthClass=regular" constant="32"/>
                             </constraint>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Menú" id="F2U-XB-dc8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHl-m3-uMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="zN6-Lf-agX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="276" y="111"/>
+            <point key="canvasLocation" x="1273.125" y="110.91549295774648"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KDj-7d-bOT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7dG-Hc-u0b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7jH-oL-hoS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gyu-6V-GT0" kind="relationship" relationship="rootViewController" id="1yq-dy-cn9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KG0-Bx-bEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275.625" y="110.91549295774648"/>
+        </scene>
+        <!--ShowProfile-->
+        <scene sceneID="eOt-ZH-dud">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ShowProfile" id="raf-jW-bFt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rAf-T7-wl2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2159" y="111"/>
         </scene>
     </scenes>
     <resources>

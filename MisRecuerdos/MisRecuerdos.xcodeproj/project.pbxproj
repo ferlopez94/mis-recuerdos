@@ -25,6 +25,8 @@
 		ADA5E38A1F9DB86E00714837 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA5E3891F9DB86D00714837 /* Menu.storyboard */; };
 		ADA5E38C1F9DB8C200714837 /* AssetsMenu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA5E38B1F9DB8C200714837 /* AssetsMenu.xcassets */; };
 		ADF9AB491FA6F5F8002F6789 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9AB481FA6F5F8002F6789 /* MenuViewController.swift */; };
+		ADF9AB4C1FA7977D002F6789 /* ShowProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF9AB4B1FA7977D002F6789 /* ShowProfile.storyboard */; };
+		ADF9AB4E1FA797A7002F6789 /* ShowProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9AB4D1FA797A7002F6789 /* ShowProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		ADA5E3891F9DB86D00714837 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		ADA5E38B1F9DB8C200714837 /* AssetsMenu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetsMenu.xcassets; sourceTree = "<group>"; };
 		ADF9AB481FA6F5F8002F6789 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		ADF9AB4B1FA7977D002F6789 /* ShowProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShowProfile.storyboard; sourceTree = "<group>"; };
+		ADF9AB4D1FA797A7002F6789 /* ShowProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +98,10 @@
 				AD97501F1F9C7AC900E81BB6 /* Custom Views */,
 				AD97501A1F9C77CB00E81BB6 /* Resources */,
 				ADA5E3801F9D4ABD00714837 /* Model */,
-				AD9750151F9C5BCB00E81BB6 /* Signup */,
 				AD4ADD4C1F9D00630071C6F1 /* Login */,
+				AD9750151F9C5BCB00E81BB6 /* Signup */,
 				ADA5E3881F9DB85900714837 /* Menu */,
+				ADF9AB4A1FA79754002F6789 /* ShowProfile */,
 				AD9750031F9AFC2400E81BB6 /* AppDelegate.swift */,
 				AD9750051F9AFC2500E81BB6 /* ViewController.swift */,
 				AD9750071F9AFC2B00E81BB6 /* Main.storyboard */,
@@ -149,6 +154,15 @@
 				ADA5E38B1F9DB8C200714837 /* AssetsMenu.xcassets */,
 			);
 			name = Menu;
+			sourceTree = "<group>";
+		};
+		ADF9AB4A1FA79754002F6789 /* ShowProfile */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9AB4B1FA7977D002F6789 /* ShowProfile.storyboard */,
+				ADF9AB4D1FA797A7002F6789 /* ShowProfileViewController.swift */,
+			);
+			name = ShowProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +230,7 @@
 				AD97500B1F9AFC2E00E81BB6 /* Assets.xcassets in Resources */,
 				AD4ADD4E1F9D00880071C6F1 /* Login.storyboard in Resources */,
 				ADA5E38A1F9DB86E00714837 /* Menu.storyboard in Resources */,
+				ADF9AB4C1FA7977D002F6789 /* ShowProfile.storyboard in Resources */,
 				AD97501C1F9C782C00E81BB6 /* Century Gothic.ttf in Resources */,
 				AD9750171F9C5C2300E81BB6 /* Signup.storyboard in Resources */,
 				AD97501E1F9C783800E81BB6 /* Century Gothic Bold.ttf in Resources */,
@@ -233,6 +248,7 @@
 				AD9750191F9C739D00E81BB6 /* SignupViewController.swift in Sources */,
 				AD9750061F9AFC2500E81BB6 /* ViewController.swift in Sources */,
 				ADA5E3821F9D4AED00714837 /* User.swift in Sources */,
+				ADF9AB4E1FA797A7002F6789 /* ShowProfileViewController.swift in Sources */,
 				AD9750041F9AFC2400E81BB6 /* AppDelegate.swift in Sources */,
 				ADF9AB491FA6F5F8002F6789 /* MenuViewController.swift in Sources */,
 				ADA5E3871F9D9E1600714837 /* UserTableViewCell.swift in Sources */,
