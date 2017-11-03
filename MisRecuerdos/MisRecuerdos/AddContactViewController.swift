@@ -116,7 +116,7 @@ class AddContactViewController: SignupViewController, UIPickerViewDataSource, UI
             UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: user!), forKey: K.Accounts.actualUserKey)
             performSegue(withIdentifier: segueAfterAddIdentifier, sender: nil)
         } else {
-            message = "No se pueden realizar cambios en este momento."
+            message = "No se puede agregar personas en este momento."
             alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             present(alertController, animated: true, completion: nil)

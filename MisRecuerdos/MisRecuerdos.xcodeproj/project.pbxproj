@@ -26,6 +26,7 @@
 		AD9750211F9C7ADE00E81BB6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9750201F9C7ADE00E81BB6 /* RoundedButton.swift */; };
 		AD9BBDE11FACE98700B5DF2B /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BBDE01FACE98700B5DF2B /* ContactsTableViewController.swift */; };
 		AD9BBDE31FACF99600B5DF2B /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BBDE21FACF99600B5DF2B /* ContactTableViewCell.swift */; };
+		AD9BBDE51FAD164F00B5DF2B /* ShowContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BBDE41FAD164F00B5DF2B /* ShowContactViewController.swift */; };
 		ADA5E3821F9D4AED00714837 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3811F9D4AED00714837 /* User.swift */; };
 		ADA5E3851F9D90D000714837 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3841F9D90CF00714837 /* Constants.swift */; };
 		ADA5E3871F9D9E1600714837 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3861F9D9E1600714837 /* UserTableViewCell.swift */; };
@@ -59,6 +60,7 @@
 		AD9750201F9C7ADE00E81BB6 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		AD9BBDE01FACE98700B5DF2B /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		AD9BBDE21FACF99600B5DF2B /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		AD9BBDE41FAD164F00B5DF2B /* ShowContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowContactViewController.swift; sourceTree = "<group>"; };
 		ADA5E3811F9D4AED00714837 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ADA5E3841F9D90CF00714837 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ADA5E3861F9D9E1600714837 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				AD7D99971FABD8E200B319D2 /* ContactsViewController.swift */,
 				AD9BBDE01FACE98700B5DF2B /* ContactsTableViewController.swift */,
 				AD9BBDE21FACF99600B5DF2B /* ContactTableViewCell.swift */,
+				AD9BBDE41FAD164F00B5DF2B /* ShowContactViewController.swift */,
 			);
 			name = Contacts;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				ADF9AB491FA6F5F8002F6789 /* MenuViewController.swift in Sources */,
 				ADA5E3871F9D9E1600714837 /* UserTableViewCell.swift in Sources */,
 				ADA5E3851F9D90D000714837 /* Constants.swift in Sources */,
+				AD9BBDE51FAD164F00B5DF2B /* ShowContactViewController.swift in Sources */,
 				AD7D999A1FABDD6D00B319D2 /* AddContactViewController.swift in Sources */,
 				AD7D99961FABCF3100B319D2 /* RoundedView.swift in Sources */,
 				AD4ADD501F9D04EB0071C6F1 /* LoginViewController.swift in Sources */,

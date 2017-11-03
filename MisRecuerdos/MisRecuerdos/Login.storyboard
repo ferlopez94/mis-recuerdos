@@ -73,7 +73,7 @@
                                                         <rect key="frame" x="0.0" y="28" width="256" height="76"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0aE-19-M0x" id="K6O-RV-ro9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="256" height="75.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="256" height="75"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eNF-ds-Rbz">
@@ -87,7 +87,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uAn-cB-FiH">
-                                                                            <rect key="frame" x="60" y="14" width="160" height="22.5"/>
+                                                                            <rect key="frame" x="60" y="14.5" width="160" height="21"/>
                                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>

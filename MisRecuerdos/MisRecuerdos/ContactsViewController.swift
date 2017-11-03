@@ -19,8 +19,8 @@ class ContactsViewController: UIViewController {
     // MARK: - Instance variables
     
     var user: User? = nil
-    var familyContacts = [Contact]()
-    var knownContacts = [Contact]()
+    var familyContacts = [(offset: Int, element: Contact)]()
+    var knownContacts = [(offset: Int, element: Contact)]()
     
     let segueToShowAll = "segueToShowAll"
     let segueToShowFamily = "segueToShowFamily"
@@ -43,8 +43,9 @@ class ContactsViewController: UIViewController {
         self.user = user
         print(self.user!)
         print(self.user!.contacts)
-        familyContacts = self.user!.contacts.filter {$0.category == .family }
-        knownContacts = self.user!.contacts.filter {$0.category == .known }
+        
+        familyContacts = self.user!.contacts.enumerated().filter {$0.element.category == .family }
+        knownContacts = self.user!.contacts.enumerated().filter {$0.element.category == .known }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,12 +61,12 @@ class ContactsViewController: UIViewController {
     
     func changeImages() {        
         if familyContacts.count > 0 {
-            let contact = familyContacts[imageIndex % familyContacts.count]
+            let contact = familyContacts[imageIndex % familyContacts.count].element
             familyPhoto.image = contact.photo
         }
         
         if knownContacts.count > 0 {
-            let contact = knownContacts[imageIndex % knownContacts.count]
+            let contact = knownContacts[imageIndex % knownContacts.count].element
             knownPhoto.image = contact.photo
         }
         
@@ -86,14 +87,14 @@ class ContactsViewController: UIViewController {
         self.user = user
         print(self.user!)
         print(self.user!.contacts)
-        familyContacts = self.user!.contacts.filter {$0.category == .family }
-        knownContacts = self.user!.contacts.filter {$0.category == .known }
+        familyContacts = self.user!.contacts.enumerated().filter {$0.element.category == .family }
+        knownContacts = self.user!.contacts.enumerated().filter {$0.element.category == .known }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueToShowAll {
             let vc = segue.destination as! ContactsTableViewController
-            vc.contacts = user!.contacts
+            vc.contacts = user!.contacts.enumerated().filter { _,_ in true }
             vc.category = nil
         } else if segue.identifier == segueToShowFamily {
             let vc = segue.destination as! ContactsTableViewController

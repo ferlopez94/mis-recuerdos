@@ -12,13 +12,10 @@ class ContactsTableViewController: UITableViewController {
 
     // MARK: - Instance variables
     
-    var contacts = [Contact]()
+    var contacts = [(offset: Int, element: Contact)]()
     var category: ContactCategory? = nil
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -50,20 +47,19 @@ class ContactsTableViewController: UITableViewController {
             return cell
         }
         
-        let contact = contacts[indexPath.row]
+        let contact = contacts[indexPath.row].element
         cell.update(with: contact)
         return cell
     }
 
    
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let index = tableView.indexPathForSelectedRow!.row
+        let contact = contacts[index]
+        let vc = segue.destination as! ShowContactViewController
+        vc.contact = contact
     }
-    */
 
 }
