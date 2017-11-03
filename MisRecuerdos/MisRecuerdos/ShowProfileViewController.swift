@@ -42,8 +42,6 @@ class ShowProfileViewController: UIViewController {
         formatter.dateStyle = .long
         dobLabel.text = formatter.string(from: date)
         commentsLabel.text = user.comments == "" ? "No tienes comentarios acerca de ti." : user.comments
-        
-        print(user)
     }
     
     /*

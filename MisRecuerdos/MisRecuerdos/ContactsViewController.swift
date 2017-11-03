@@ -9,16 +9,39 @@
 import UIKit
 
 class ContactsViewController: UIViewController {
+    
+    // MARK: - Instance variables
+    
+    var user: User? = nil
 
+    
+    // MARK: - View Controller life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        guard let data = UserDefaults.standard.data(forKey: K.Accounts.actualUserKey),
+            let user = NSKeyedUnarchiver.unarchiveObject(with: data) as? User else {
+                return
+        }
+        
+        self.user = user
+        print(self.user!)
+        print(self.user!.contacts)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    @IBAction func unwindToContacts(segue: UIStoryboardSegue) {}
+    
+    @IBAction func unwindToContactsAfterAddNewContact(segue: UIStoryboardSegue) {
+        guard let data = UserDefaults.standard.data(forKey: K.Accounts.actualUserKey),
+            let user = NSKeyedUnarchiver.unarchiveObject(with: data) as? User else {
+                return
+        }
+        
+        self.user = user
+        print(self.user!)
+        print(self.user!.contacts)
     }
     
 

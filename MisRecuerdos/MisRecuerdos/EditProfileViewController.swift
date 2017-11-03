@@ -14,6 +14,9 @@ class EditProfileViewController: SignupViewController {
     
     var user: User!
 
+    
+    // MARK: - View Controller life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

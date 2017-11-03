@@ -33,7 +33,7 @@
                                 <rect key="frame" x="32" y="94" width="256" height="434"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gC-fg-5Zv">
-                                        <rect key="frame" x="74" y="0.0" width="108.5" height="65.5"/>
+                                        <rect key="frame" x="70" y="0.0" width="116.5" height="69"/>
                                         <string key="text">Menú
 Principal</string>
                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
@@ -44,7 +44,7 @@ Principal</string>
                                         </variation>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dhm-Ct-6Wd" userLabel="Buttons">
-                                        <rect key="frame" x="0.0" y="102" width="256" height="256"/>
+                                        <rect key="frame" x="0.0" y="103.5" width="256" height="256"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jAC-VR-49w">
                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="118"/>
