@@ -35,19 +35,15 @@ class ContactsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ContactTableViewCell
         
         guard !contacts.isEmpty else {
-            cell.textLabel?.text = "Aún no has agregado personas"
-            cell.detailTextLabel?.text = ""
+            cell.reset()
             return cell
         }
         
         let contact = contacts[indexPath.row]
-        
-        cell.textLabel?.text = contact.name
-        cell.detailTextLabel?.text = contact.category == .family ? "Familiar" : "Conocido"
-
+        cell.update(with: contact)
         return cell
     }
 
