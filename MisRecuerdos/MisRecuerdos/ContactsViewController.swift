@@ -14,6 +14,8 @@ class ContactsViewController: UIViewController {
     
     var user: User? = nil
     let segueToShowAll = "segueToShowAll"
+    let segueToShowFamily = "segueToShowFamily"
+    let segueToShowKnown = "segueToShowKnown"
 
     
     // MARK: - View Controller life cycle
@@ -53,8 +55,13 @@ class ContactsViewController: UIViewController {
         if segue.identifier == segueToShowAll {
             let vc = segue.destination as! ContactsTableViewController
             vc.contacts = user!.contacts
+        } else if segue.identifier == segueToShowFamily {
+            let vc = segue.destination as! ContactsTableViewController
+            vc.contacts = user!.contacts.filter {$0.category == .family }
+        } else if segue.identifier == segueToShowKnown {
+            let vc = segue.destination as! ContactsTableViewController
+            vc.contacts = user!.contacts.filter {$0.category == .known }
         }
-        
     }
 
 }
