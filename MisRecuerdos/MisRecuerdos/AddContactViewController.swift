@@ -13,6 +13,14 @@ class AddContactViewController: SignupViewController, UIPickerViewDataSource, UI
     // MARK: - Instance variables
     
     var user: User? = nil
+    override var commentsPlaceholder: String {
+        get {
+            return "Comentarios acerca de la persona..."
+        }
+        set {
+            
+        }
+    }
     
     let relationshipOptions = ["Familiar", "Conocido"]
     let relationshipPickerView = UIPickerView()
@@ -33,7 +41,7 @@ class AddContactViewController: SignupViewController, UIPickerViewDataSource, UI
         birthdayPickerView.delegate = self
         lastNameTextField.inputView = relationshipPickerView
         dobTextField.inputView = birthdayPickerView
-        
+
         guard let data = UserDefaults.standard.data(forKey: K.Accounts.actualUserKey),
             let user = NSKeyedUnarchiver.unarchiveObject(with: data) as? User else {
                 return

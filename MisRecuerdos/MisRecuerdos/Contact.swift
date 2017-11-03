@@ -23,7 +23,7 @@ final class Contact: NSObject, NSCoding {
     let photo: UIImage
     let photoData: Data
     override var description: String {
-        return "\(name) \(birthday) \(category.rawValue)"
+        return "Nombre: \(name). Cumpleaños: \(birthday). Relación: \(category.rawValue)"
     }
     
     

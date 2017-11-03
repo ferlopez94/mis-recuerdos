@@ -24,6 +24,7 @@
 		AD97501C1F9C782C00E81BB6 /* Century Gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD97501B1F9C782C00E81BB6 /* Century Gothic.ttf */; };
 		AD97501E1F9C783800E81BB6 /* Century Gothic Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD97501D1F9C783800E81BB6 /* Century Gothic Bold.ttf */; };
 		AD9750211F9C7ADE00E81BB6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9750201F9C7ADE00E81BB6 /* RoundedButton.swift */; };
+		AD9BBDE11FACE98700B5DF2B /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BBDE01FACE98700B5DF2B /* ContactsTableViewController.swift */; };
 		ADA5E3821F9D4AED00714837 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3811F9D4AED00714837 /* User.swift */; };
 		ADA5E3851F9D90D000714837 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3841F9D90CF00714837 /* Constants.swift */; };
 		ADA5E3871F9D9E1600714837 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3861F9D9E1600714837 /* UserTableViewCell.swift */; };
@@ -55,6 +56,7 @@
 		AD97501B1F9C782C00E81BB6 /* Century Gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Century Gothic.ttf"; sourceTree = "<group>"; };
 		AD97501D1F9C783800E81BB6 /* Century Gothic Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Century Gothic Bold.ttf"; sourceTree = "<group>"; };
 		AD9750201F9C7ADE00E81BB6 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		AD9BBDE01FACE98700B5DF2B /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		ADA5E3811F9D4AED00714837 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ADA5E3841F9D90CF00714837 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ADA5E3861F9D9E1600714837 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
@@ -91,8 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				AD7D99931FABB86900B319D2 /* Contacts.storyboard */,
-				AD7D99971FABD8E200B319D2 /* ContactsViewController.swift */,
 				AD7D99991FABDD6D00B319D2 /* AddContactViewController.swift */,
+				AD7D99971FABD8E200B319D2 /* ContactsViewController.swift */,
+				AD9BBDE01FACE98700B5DF2B /* ContactsTableViewController.swift */,
 			);
 			name = Contacts;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				ADA5E3821F9D4AED00714837 /* User.swift in Sources */,
 				ADF9AB4E1FA797A7002F6789 /* ShowProfileViewController.swift in Sources */,
 				AD9750041F9AFC2400E81BB6 /* AppDelegate.swift in Sources */,
+				AD9BBDE11FACE98700B5DF2B /* ContactsTableViewController.swift in Sources */,
 				ADF9AB491FA6F5F8002F6789 /* MenuViewController.swift in Sources */,
 				ADA5E3871F9D9E1600714837 /* UserTableViewCell.swift in Sources */,
 				ADA5E3851F9D90D000714837 /* Constants.swift in Sources */,

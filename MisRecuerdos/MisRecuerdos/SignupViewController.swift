@@ -24,7 +24,7 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     
     var photoImage: UIImage? = nil
     var moveScrollView = false
-    let commentsPlaceholder = "Comentarios acerca de ti..."
+    var commentsPlaceholder = "Comentarios acerca de ti..."
     let segueToMenuIdentifier = "segueToMenu"
     
     
