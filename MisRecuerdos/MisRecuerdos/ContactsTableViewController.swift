@@ -13,6 +13,7 @@ class ContactsTableViewController: UITableViewController {
     // MARK: - Instance variables
     
     var contacts = [Contact]()
+    var category: ContactCategory? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,14 @@ class ContactsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ContactTableViewCell
         
         guard !contacts.isEmpty else {
-            cell.reset()
+            if category == .family {
+                cell.reset(withMessage: "No has agregado familiares")
+            } else if category == .known {
+                cell.reset(withMessage: "No has agregado conocidos")
+            } else {
+                cell.reset()
+            }
+            
             return cell
         }
         

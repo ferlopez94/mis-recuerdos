@@ -19,12 +19,14 @@ class ContactTableViewCell: UITableViewCell {
     
     // MARK: - Instance methods
 
-    func reset() {
+    func reset(withMessage message: String = "No has agregado personas") {
         if let constraint = (photoImage.constraints.filter { $0.firstAttribute == .height}.first) {
             constraint.isActive = false
         }
         
-        titleLabel.text = "No has agregado a personas"
+        titleLabel.text = message
+        subtitleLabel.text = ""
+        photoImage.isHidden = true
     }
     
     func update(with contact: Contact) {
@@ -32,6 +34,7 @@ class ContactTableViewCell: UITableViewCell {
             constraint.isActive = true
         }
         
+        photoImage.isHidden = false
         photoImage.layer.masksToBounds = true
         photoImage.layer.cornerRadius = photoImage.frame.height / 2
         photoImage.image = contact.photo

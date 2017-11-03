@@ -94,12 +94,15 @@ class ContactsViewController: UIViewController {
         if segue.identifier == segueToShowAll {
             let vc = segue.destination as! ContactsTableViewController
             vc.contacts = user!.contacts
+            vc.category = nil
         } else if segue.identifier == segueToShowFamily {
             let vc = segue.destination as! ContactsTableViewController
             vc.contacts = familyContacts
+            vc.category = .family
         } else if segue.identifier == segueToShowKnown {
             let vc = segue.destination as! ContactsTableViewController
             vc.contacts = knownContacts
+            vc.category = .known
         }
     }
 
