@@ -6,6 +6,7 @@
 //  Copyright © 2017 Personal. All rights reserved.
 //
 
+import INSPhotoGallery
 import UIKit
 
 class ShowContactViewController: UIViewController {
@@ -22,6 +23,7 @@ class ShowContactViewController: UIViewController {
     // MARK: - Instance variables
     
     var contact: (offset: Int, element: Contact)!
+    var photos = [INSPhotoViewable]()
     
     
     // MARK: - View Controller life cycle
@@ -29,6 +31,9 @@ class ShowContactViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(showPhoto))
+        photoImage.isUserInteractionEnabled = true
+        photoImage.addGestureRecognizer(tap)
         photoImage.layer.masksToBounds = true
         photoImage.layer.cornerRadius = photoImage.frame.width / 2
         photoImage.image = contact.element.photo
@@ -37,8 +42,25 @@ class ShowContactViewController: UIViewController {
         categoryLabel.text = contact.element.category == .family ? "Familiar" : "Conocido"
         birthdayLabel.text = contact.element.birthday
         commentsLabel.text = contact.element.comments == "" ? "No tienes comentarios acerca de esta persona." : contact.element.comments
+        
+        let title = "\(contact.offset)"
+        let photo = INSPhoto(image: contact.element.photo, thumbnailImage: contact.element.photo)
+        photo.attributedTitle = NSAttributedString(string: title, attributes: [NSForegroundColorAttributeName: UIColor.white])
+        photos.append(photo)
     }
-
+    
+    func showPhoto() {
+        let currentPhoto = photos.first!
+        let galleryPreview = INSPhotosViewController(photos: photos, initialPhoto: currentPhoto)
+        
+        let contactOverlayView = ContactOverlayView(frame: CGRect.zero)
+        contactOverlayView.index = contact.offset
+        galleryPreview.overlayView = contactOverlayView
+        
+        present(galleryPreview, animated: true, completion: nil)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

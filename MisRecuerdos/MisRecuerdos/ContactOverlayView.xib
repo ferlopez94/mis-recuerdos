@@ -21,13 +21,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOU-Rv-6BI">
-                    <rect key="frame" x="0.0" y="581" width="375" height="86"/>
+                    <rect key="frame" x="0.0" y="577" width="375" height="90"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KzD-Gh-xdY" userLabel="Bottom Buttons">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqV-c4-Ia4" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="33"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
                                     <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                     <state key="normal" title="Ver detalles de persona"/>
                                     <userDefinedRuntimeAttributes>
@@ -58,7 +58,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nct-hh-vvj" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="53" width="375" height="33"/>
+                                    <rect key="frame" x="0.0" y="55" width="375" height="35"/>
                                     <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                     <state key="normal" title="Cerrar"/>
                                     <userDefinedRuntimeAttributes>
@@ -89,6 +89,7 @@
                                     </connections>
                                 </button>
                             </subviews>
+                            <variation key="heightClass=regular-widthClass=regular" spacing="60"/>
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
