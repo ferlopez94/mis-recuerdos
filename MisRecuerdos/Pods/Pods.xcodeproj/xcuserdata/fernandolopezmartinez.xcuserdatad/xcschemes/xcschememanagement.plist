@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>INSNibLoading.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>INSPhotoGallery-INSPhotoGallery.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>INSPhotoGallery.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MisRecuerdos.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>160F3D2B181465FD6DEC4E9916DF2092</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5AB2AFB1E6DC8D2967EF130A030AD1B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>876A456D7926F6B8C6A0D203786B88BE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>92EAABB74F214AB6172322CD0D0505FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

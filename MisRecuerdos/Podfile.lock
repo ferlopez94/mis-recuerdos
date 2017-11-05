@@ -1,0 +1,15 @@
+PODS:
+  - INSNibLoading (1.0.2)
+  - INSPhotoGallery (1.1.0)
+
+DEPENDENCIES:
+  - INSNibLoading (= 1.0.2)
+  - INSPhotoGallery (= 1.1.0)
+
+SPEC CHECKSUMS:
+  INSNibLoading: 0244d5b9c30d4642c77b31469cbfd905e8b1efb3
+  INSPhotoGallery: 81056815e82fb7ee6f271ca017db5985b4f96d0a
+
+PODFILE CHECKSUM: c825cc1820df6bcde7c8505da08d03d658af1c60
+
+COCOAPODS: 1.2.1

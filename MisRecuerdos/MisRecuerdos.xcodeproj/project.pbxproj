@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		618136D8793AAE6BFB13F204 /* Pods_MisRecuerdos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B2DB62BAECCC0E5D33724B /* Pods_MisRecuerdos.framework */; };
 		AD4ADD4E1F9D00880071C6F1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4ADD4D1F9D00880071C6F1 /* Login.storyboard */; };
 		AD4ADD501F9D04EB0071C6F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4ADD4F1F9D04EB0071C6F1 /* LoginViewController.swift */; };
 		AD7D99941FABB86900B319D2 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7D99931FABB86900B319D2 /* Contacts.storyboard */; };
@@ -27,6 +28,10 @@
 		AD9BBDE11FACE98700B5DF2B /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BBDE01FACE98700B5DF2B /* ContactsTableViewController.swift */; };
 		AD9BBDE31FACF99600B5DF2B /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BBDE21FACF99600B5DF2B /* ContactTableViewCell.swift */; };
 		AD9BBDE51FAD164F00B5DF2B /* ShowContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BBDE41FAD164F00B5DF2B /* ShowContactViewController.swift */; };
+		AD9BBDE71FAEB65E00B5DF2B /* ContactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BBDE61FAEB65E00B5DF2B /* ContactCollectionViewCell.swift */; };
+		AD9BBDEB1FAEB90200B5DF2B /* ContactsGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BBDEA1FAEB90200B5DF2B /* ContactsGalleryViewController.swift */; };
+		AD9BBDED1FAEC62000B5DF2B /* ContactOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD9BBDEC1FAEC62000B5DF2B /* ContactOverlayView.xib */; };
+		AD9BBDEF1FAEC79500B5DF2B /* ContactOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BBDEE1FAEC79500B5DF2B /* ContactOverlayView.swift */; };
 		ADA5E3821F9D4AED00714837 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3811F9D4AED00714837 /* User.swift */; };
 		ADA5E3851F9D90D000714837 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3841F9D90CF00714837 /* Constants.swift */; };
 		ADA5E3871F9D9E1600714837 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E3861F9D9E1600714837 /* UserTableViewCell.swift */; };
@@ -39,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03B2DB62BAECCC0E5D33724B /* Pods_MisRecuerdos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MisRecuerdos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4ADD4D1F9D00880071C6F1 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		AD4ADD4F1F9D04EB0071C6F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AD7D99931FABB86900B319D2 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
@@ -61,6 +67,10 @@
 		AD9BBDE01FACE98700B5DF2B /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		AD9BBDE21FACF99600B5DF2B /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		AD9BBDE41FAD164F00B5DF2B /* ShowContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowContactViewController.swift; sourceTree = "<group>"; };
+		AD9BBDE61FAEB65E00B5DF2B /* ContactCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCollectionViewCell.swift; sourceTree = "<group>"; };
+		AD9BBDEA1FAEB90200B5DF2B /* ContactsGalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsGalleryViewController.swift; sourceTree = "<group>"; };
+		AD9BBDEC1FAEC62000B5DF2B /* ContactOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactOverlayView.xib; sourceTree = "<group>"; };
+		AD9BBDEE1FAEC79500B5DF2B /* ContactOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactOverlayView.swift; sourceTree = "<group>"; };
 		ADA5E3811F9D4AED00714837 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ADA5E3841F9D90CF00714837 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ADA5E3861F9D9E1600714837 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
@@ -70,6 +80,8 @@
 		ADF9AB4B1FA7977D002F6789 /* ShowProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShowProfile.storyboard; sourceTree = "<group>"; };
 		ADF9AB4D1FA797A7002F6789 /* ShowProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProfileViewController.swift; sourceTree = "<group>"; };
 		ADF9AB741FA7A38A002F6789 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		B164FA49BF8E3BADE8CEEA5D /* Pods-MisRecuerdos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MisRecuerdos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MisRecuerdos/Pods-MisRecuerdos.debug.xcconfig"; sourceTree = "<group>"; };
+		EFAA2F90A9D14C7133F6980C /* Pods-MisRecuerdos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MisRecuerdos.release.xcconfig"; path = "Pods/Target Support Files/Pods-MisRecuerdos/Pods-MisRecuerdos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +89,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618136D8793AAE6BFB13F204 /* Pods_MisRecuerdos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F28DADC9C73D0483836747C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B164FA49BF8E3BADE8CEEA5D /* Pods-MisRecuerdos.debug.xcconfig */,
+				EFAA2F90A9D14C7133F6980C /* Pods-MisRecuerdos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8CE74110D4BCA4250E787AB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03B2DB62BAECCC0E5D33724B /* Pods_MisRecuerdos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD4ADD4C1F9D00630071C6F1 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,10 +128,14 @@
 			children = (
 				AD7D99931FABB86900B319D2 /* Contacts.storyboard */,
 				AD7D99991FABDD6D00B319D2 /* AddContactViewController.swift */,
+				AD9BBDE61FAEB65E00B5DF2B /* ContactCollectionViewCell.swift */,
 				AD7D99971FABD8E200B319D2 /* ContactsViewController.swift */,
+				AD9BBDEA1FAEB90200B5DF2B /* ContactsGalleryViewController.swift */,
 				AD9BBDE01FACE98700B5DF2B /* ContactsTableViewController.swift */,
 				AD9BBDE21FACF99600B5DF2B /* ContactTableViewCell.swift */,
 				AD9BBDE41FAD164F00B5DF2B /* ShowContactViewController.swift */,
+				AD9BBDEC1FAEC62000B5DF2B /* ContactOverlayView.xib */,
+				AD9BBDEE1FAEC79500B5DF2B /* ContactOverlayView.swift */,
 			);
 			name = Contacts;
 			sourceTree = "<group>";
@@ -111,6 +145,8 @@
 			children = (
 				AD9750021F9AFC2300E81BB6 /* MisRecuerdos */,
 				AD9750011F9AFC2300E81BB6 /* Products */,
+				1F28DADC9C73D0483836747C /* Pods */,
+				8CE74110D4BCA4250E787AB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD9750121F9AFC3100E81BB6 /* Build configuration list for PBXNativeTarget "MisRecuerdos" */;
 			buildPhases = (
+				C00CAA002D264B192B7CCE47 /* [CP] Check Pods Manifest.lock */,
 				AD974FFC1F9AFC2200E81BB6 /* Sources */,
 				AD974FFD1F9AFC2200E81BB6 /* Frameworks */,
 				AD974FFE1F9AFC2200E81BB6 /* Resources */,
+				32D528A1FDB99826718D9801 /* [CP] Embed Pods Frameworks */,
+				CE470DED75D32DF04C8A3514 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD97500E1F9AFC2F00E81BB6 /* LaunchScreen.storyboard in Resources */,
+				AD9BBDED1FAEC62000B5DF2B /* ContactOverlayView.xib in Resources */,
 				ADA5E38C1F9DB8C200714837 /* AssetsMenu.xcassets in Resources */,
 				AD97500B1F9AFC2E00E81BB6 /* Assets.xcassets in Resources */,
 				AD4ADD4E1F9D00880071C6F1 /* Login.storyboard in Resources */,
@@ -275,6 +315,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32D528A1FDB99826718D9801 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MisRecuerdos/Pods-MisRecuerdos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C00CAA002D264B192B7CCE47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE470DED75D32DF04C8A3514 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MisRecuerdos/Pods-MisRecuerdos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD974FFC1F9AFC2200E81BB6 /* Sources */ = {
@@ -293,12 +381,15 @@
 				ADA5E3851F9D90D000714837 /* Constants.swift in Sources */,
 				AD9BBDE51FAD164F00B5DF2B /* ShowContactViewController.swift in Sources */,
 				AD7D999A1FABDD6D00B319D2 /* AddContactViewController.swift in Sources */,
+				AD9BBDEB1FAEB90200B5DF2B /* ContactsGalleryViewController.swift in Sources */,
 				AD7D99961FABCF3100B319D2 /* RoundedView.swift in Sources */,
 				AD4ADD501F9D04EB0071C6F1 /* LoginViewController.swift in Sources */,
 				AD7D999C1FABE2A100B319D2 /* Contact.swift in Sources */,
 				ADF9AB751FA7A38A002F6789 /* EditProfileViewController.swift in Sources */,
 				AD9750211F9C7ADE00E81BB6 /* RoundedButton.swift in Sources */,
 				AD9BBDE31FACF99600B5DF2B /* ContactTableViewCell.swift in Sources */,
+				AD9BBDEF1FAEC79500B5DF2B /* ContactOverlayView.swift in Sources */,
+				AD9BBDE71FAEB65E00B5DF2B /* ContactCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +512,7 @@
 		};
 		AD9750131F9AFC3100E81BB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B164FA49BF8E3BADE8CEEA5D /* Pods-MisRecuerdos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V884MP7EX7;
@@ -434,6 +526,7 @@
 		};
 		AD9750141F9AFC3100E81BB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAA2F90A9D14C7133F6980C /* Pods-MisRecuerdos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V884MP7EX7;

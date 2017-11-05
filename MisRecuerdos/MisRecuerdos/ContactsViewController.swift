@@ -23,6 +23,7 @@ class ContactsViewController: UIViewController {
     var knownContacts = [(offset: Int, element: Contact)]()
     
     let segueToShowAll = "segueToShowAll"
+    let segueToShowAllPhotos = "segueToShowAllPhotos"
     let segueToShowFamily = "segueToShowFamily"
     let segueToShowKnown = "segueToShowKnown"
     
@@ -104,6 +105,9 @@ class ContactsViewController: UIViewController {
             let vc = segue.destination as! ContactsTableViewController
             vc.contacts = knownContacts
             vc.category = .known
+        } else if segue.identifier == segueToShowAllPhotos {
+            let vc = segue.destination as! ContactsGalleryViewController
+            vc.contacts = user!.contacts.enumerated().filter { _,_ in true }
         }
     }
 
