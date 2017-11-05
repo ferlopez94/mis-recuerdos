@@ -14,6 +14,7 @@ class UserTableViewCell: UITableViewCell {
     
     @IBOutlet weak var photoImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var lastNameLabel: UILabel!
 
 
     // MARK: - Instance methods
@@ -24,6 +25,7 @@ class UserTableViewCell: UITableViewCell {
         }
         
         nameLabel.text = "No se ha creado ninguna cuenta"
+        lastNameLabel.text = ""
     }
     
     func update(with user: User) {
@@ -34,7 +36,8 @@ class UserTableViewCell: UITableViewCell {
         photoImage.layer.masksToBounds = true
         photoImage.layer.cornerRadius = photoImage.frame.height / 2
         photoImage.image = user.photo
-        nameLabel.text = "\(user.name) \(user.lastName)"
+        nameLabel.text = user.name
+        lastNameLabel.text = user.lastName
     }
 
 }

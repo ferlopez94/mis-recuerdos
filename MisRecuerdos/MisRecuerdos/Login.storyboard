@@ -33,10 +33,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Qqz-9W-6Pn" userLabel="Content">
-                                <rect key="frame" x="32" y="50" width="256" height="478"/>
+                                <rect key="frame" x="32" y="40" width="256" height="508"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="F88-pe-UeH" userLabel="Top Content">
-                                        <rect key="frame" x="0.0" y="0.0" width="256" height="408"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="256" height="438"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis recuerdos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEy-Jb-weN">
                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="34.5"/>
@@ -48,16 +48,16 @@
                                                 </variation>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="GQ3-XR-Iin">
-                                                <rect key="frame" x="78" y="54.5" width="100" height="86.5"/>
+                                                <rect key="frame" x="88" y="54.5" width="80" height="69"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="GQ3-XR-Iin" secondAttribute="height" multiplier="15:13" id="CxE-Yr-dGa"/>
-                                                    <constraint firstAttribute="width" constant="100" id="SEd-sY-0Oi">
+                                                    <constraint firstAttribute="width" constant="80" id="SEd-sY-0Oi">
                                                         <variation key="heightClass=regular-widthClass=regular" constant="250"/>
                                                     </constraint>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona tu cuenta:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OUc-My-5kd">
-                                                <rect key="frame" x="0.0" y="161" width="256" height="22.5"/>
+                                                <rect key="frame" x="0.0" y="143.5" width="256" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -65,47 +65,62 @@
                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
                                                 </variation>
                                             </label>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ise-sy-Bj7">
-                                                <rect key="frame" x="0.0" y="203.5" width="256" height="204.5"/>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="115" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ise-sy-Bj7">
+                                                <rect key="frame" x="0.0" y="186" width="256" height="252"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="76" id="0aE-19-M0x" customClass="UserTableViewCell" customModule="MisRecuerdos" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="256" height="76"/>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="115" id="0aE-19-M0x" customClass="UserTableViewCell" customModule="MisRecuerdos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="256" height="115"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0aE-19-M0x" id="K6O-RV-ro9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="256" height="75"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="256" height="114.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eNF-ds-Rbz">
-                                                                    <rect key="frame" x="18" y="13" width="220" height="50"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="eNF-ds-Rbz">
+                                                                    <rect key="frame" x="13" y="12.5" width="230" height="90"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2EY-kw-D0f">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" secondItem="2EY-kw-D0f" secondAttribute="height" multiplier="1:1" id="Kc9-xP-OcM"/>
-                                                                                <constraint firstAttribute="height" constant="50" id="qcb-6G-fyX"/>
+                                                                                <constraint firstAttribute="height" constant="90" id="qcb-6G-fyX"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uAn-cB-FiH">
-                                                                            <rect key="frame" x="60" y="14.5" width="160" height="21"/>
-                                                                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
-                                                                            <nil key="textColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="22"/>
-                                                                            </variation>
-                                                                        </label>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lqo-Nf-oYk">
+                                                                            <rect key="frame" x="105" y="22.5" width="125" height="45"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="John" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uAn-cB-FiH">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="125" height="22.5"/>
+                                                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                                                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="22"/>
+                                                                                    </variation>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Doe Down" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Q1-8D-b5S">
+                                                                                    <rect key="frame" x="0.0" y="22.5" width="125" height="22.5"/>
+                                                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                                                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="22"/>
+                                                                                    </variation>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
                                                                     </subviews>
                                                                     <variation key="heightClass=regular-widthClass=regular" spacing="30"/>
                                                                 </stackView>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="eNF-ds-Rbz" firstAttribute="leading" secondItem="K6O-RV-ro9" secondAttribute="leadingMargin" constant="10" id="I4Q-fI-YPn"/>
-                                                                <constraint firstAttribute="trailingMargin" secondItem="eNF-ds-Rbz" secondAttribute="trailing" constant="10" id="NmX-3L-YZq"/>
+                                                                <constraint firstItem="eNF-ds-Rbz" firstAttribute="leading" secondItem="K6O-RV-ro9" secondAttribute="leadingMargin" constant="5" id="I4Q-fI-YPn"/>
+                                                                <constraint firstAttribute="trailingMargin" secondItem="eNF-ds-Rbz" secondAttribute="trailing" constant="5" id="NmX-3L-YZq"/>
                                                                 <constraint firstItem="eNF-ds-Rbz" firstAttribute="centerY" secondItem="K6O-RV-ro9" secondAttribute="centerY" id="YKA-Rr-S74"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
                                                         <connections>
+                                                            <outlet property="lastNameLabel" destination="2Q1-8D-b5S" id="jLt-SM-yjA"/>
                                                             <outlet property="nameLabel" destination="uAn-cB-FiH" id="dQa-7B-3Ft"/>
                                                             <outlet property="photoImage" destination="2EY-kw-D0f" id="utk-oZ-6Fb"/>
                                                         </connections>
@@ -128,7 +143,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPw-6H-wTD" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                        <rect key="frame" x="64" y="438" width="128" height="40"/>
+                                        <rect key="frame" x="64" y="468" width="128" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="HMW-Vt-fic"/>
                                         </constraints>
@@ -181,13 +196,13 @@
                             <constraint firstItem="Qqz-9W-6Pn" firstAttribute="leading" secondItem="n8P-CH-G4K" secondAttribute="leadingMargin" constant="16" id="2mh-Vv-D2J">
                                 <variation key="heightClass=regular-widthClass=regular" constant="32"/>
                             </constraint>
-                            <constraint firstAttribute="bottomMargin" secondItem="Qqz-9W-6Pn" secondAttribute="bottom" constant="40" id="AuQ-Ua-yrI">
+                            <constraint firstAttribute="bottomMargin" secondItem="Qqz-9W-6Pn" secondAttribute="bottom" constant="20" id="AuQ-Ua-yrI">
                                 <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                             </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="Qqz-9W-6Pn" secondAttribute="trailing" constant="16" id="Zkk-hd-a6j">
                                 <variation key="heightClass=regular-widthClass=regular" constant="32"/>
                             </constraint>
-                            <constraint firstItem="Qqz-9W-6Pn" firstAttribute="top" secondItem="dk0-k1-Rhe" secondAttribute="bottom" constant="30" id="tIN-nC-C7G">
+                            <constraint firstItem="Qqz-9W-6Pn" firstAttribute="top" secondItem="dk0-k1-Rhe" secondAttribute="bottom" constant="20" id="tIN-nC-C7G">
                                 <variation key="heightClass=regular-widthClass=regular" constant="70"/>
                             </constraint>
                         </constraints>
