@@ -13,7 +13,11 @@ import UIKit
 
 class ContactOverlayView: INSNibLoadedView {
 
+    // MARK: - Instance variables
+    
     weak var photosViewController: INSPhotosViewController?
+    var index = 0
+    var delegate: ContactsGalleryDelegate?
     
     // Pass the touches down to other views
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
@@ -21,6 +25,11 @@ class ContactOverlayView: INSNibLoadedView {
             return hitView
         }
         return nil
+    }
+    
+    @IBAction func detailsButtonTapped(_ sender: AnyObject) {
+        delegate?.showContactDetails(atIndex: index)
+        photosViewController?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func closeButtonTapped(_ sender: AnyObject) {

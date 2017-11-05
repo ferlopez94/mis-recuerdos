@@ -9,7 +9,11 @@
 import INSPhotoGallery
 import UIKit
 
-class ContactsGalleryViewController: UIViewController {
+protocol ContactsGalleryDelegate {
+    func showContactDetails(atIndex index: Int)
+}
+
+class ContactsGalleryViewController: UIViewController, ContactsGalleryDelegate {
 
     // MARK: - IBOutlets
     
@@ -21,7 +25,8 @@ class ContactsGalleryViewController: UIViewController {
     var contacts = [(offset: Int, element: Contact)]()
     var photos = [INSPhotoViewable]()
     let numberOfItems: CGFloat = 2
-    
+    let showContactDetailsSegueIdentifier = "showContactDetails"
+    var contactToShowIndex = 0
     
     // MARK: - View Controller life cycle
     
@@ -32,7 +37,7 @@ class ContactsGalleryViewController: UIViewController {
         collectionView.dataSource = self
         
         for contact in contacts {
-            let title = "Nombre: \(contact.element.name)\nRelación: \(contact.element.category == .family ? "Familiar" : "Conocido")"
+            let title = "\(contact.offset)"
             let photo = INSPhoto(image: contact.element.photo, thumbnailImage: contact.element.photo)
             photo.attributedTitle = NSAttributedString(string: title, attributes: [NSForegroundColorAttributeName: UIColor.white])
             photos.append(photo)
@@ -48,15 +53,20 @@ class ContactsGalleryViewController: UIViewController {
         collectionView.collectionViewLayout = layout
     }
     
-    /*
+    func showContactDetails(atIndex index: Int) {
+        contactToShowIndex = index
+        performSegue(withIdentifier: showContactDetailsSegueIdentifier, sender: nil)
+    }
+    
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == showContactDetailsSegueIdentifier {
+            let vc = segue.destination as! ShowContactViewController
+            vc.contact = contacts[contactToShowIndex]
+        }
     }
-    */
 
 }
 
@@ -79,13 +89,21 @@ extension ContactsGalleryViewController: UICollectionViewDataSource, UICollectio
         let currentPhoto = photos[indexPath.row]
         let galleryPreview = INSPhotosViewController(photos: photos, initialPhoto: currentPhoto, referenceView: cell)
         
-        galleryPreview.overlayView = ContactOverlayView(frame: CGRect.zero)
+        let contactOverlayView = ContactOverlayView(frame: CGRect.zero)
+        contactOverlayView.index = indexPath.row
+        contactOverlayView.delegate = self
+        
+        galleryPreview.overlayView = contactOverlayView
         galleryPreview.referenceViewForPhotoWhenDismissingHandler = { [weak self] photo in
             if let index = self?.photos.index(where: {$0 === photo}) {
                 let indexPath = IndexPath(item: index, section: 0)
                 return collectionView.cellForItem(at: indexPath) as? ContactCollectionViewCell
             }
             return nil
+        }
+        
+        galleryPreview.navigateToPhotoHandler = { photo in
+            contactOverlayView.index = Int((photo.attributedTitle?.string)!) ?? 0
         }
         
         present(galleryPreview, animated: true, completion: nil)
