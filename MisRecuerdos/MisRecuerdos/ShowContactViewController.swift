@@ -30,7 +30,7 @@ class ShowContactViewController: UIViewController {
         super.viewDidLoad()
         
         photoImage.layer.masksToBounds = true
-        photoImage.layer.cornerRadius = photoImage.frame.height / 2
+        photoImage.layer.cornerRadius = photoImage.frame.width / 2
         photoImage.image = contact.element.photo
         
         nameLabel.text = contact.element.name
