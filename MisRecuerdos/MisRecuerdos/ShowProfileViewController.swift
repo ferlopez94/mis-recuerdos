@@ -6,6 +6,7 @@
 //  Copyright © 2017 Personal. All rights reserved.
 //
 
+import INSPhotoGallery
 import UIKit
 
 class ShowProfileViewController: UIViewController {
@@ -19,6 +20,11 @@ class ShowProfileViewController: UIViewController {
     @IBOutlet weak var commentsLabel: UILabel!
 
     
+    // MARK: - Instance variables
+    
+    var photos = [INSPhotoViewable]()
+    
+    
     // MARK: - View Controller life cycle
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,6 +35,9 @@ class ShowProfileViewController: UIViewController {
                 return
         }
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(showPhoto))
+        photoImage.isUserInteractionEnabled = true
+        photoImage.addGestureRecognizer(tap)
         photoImage.layer.masksToBounds = true
         photoImage.layer.cornerRadius = photoImage.frame.height / 2
         photoImage.image = user.photo
@@ -42,6 +51,19 @@ class ShowProfileViewController: UIViewController {
         formatter.dateStyle = .long
         dobLabel.text = formatter.string(from: date)
         commentsLabel.text = user.comments == "" ? "No tienes comentarios acerca de ti." : user.comments
+        
+        let photo = INSPhoto(image: user.photo, thumbnailImage: user.photo)
+        photos.append(photo)
+    }
+    
+    func showPhoto() {
+        let currentPhoto = photos.first!
+        let galleryPreview = INSPhotosViewController(photos: photos, initialPhoto: currentPhoto)
+        
+        let contactOverlayView = ContactOverlayView(frame: CGRect.zero)
+        galleryPreview.overlayView = contactOverlayView
+        
+        present(galleryPreview, animated: true, completion: nil)
     }
 
 }

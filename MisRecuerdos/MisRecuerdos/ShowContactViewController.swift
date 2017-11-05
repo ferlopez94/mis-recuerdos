@@ -43,9 +43,7 @@ class ShowContactViewController: UIViewController {
         birthdayLabel.text = contact.element.birthday
         commentsLabel.text = contact.element.comments == "" ? "No tienes comentarios acerca de esta persona." : contact.element.comments
         
-        let title = "\(contact.offset)"
         let photo = INSPhoto(image: contact.element.photo, thumbnailImage: contact.element.photo)
-        photo.attributedTitle = NSAttributedString(string: title, attributes: [NSForegroundColorAttributeName: UIColor.white])
         photos.append(photo)
     }
     
