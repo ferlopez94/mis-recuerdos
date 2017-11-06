@@ -127,7 +127,9 @@ class ContactsViewController: UIViewController, UISearchBarDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.identifier! {
+        guard let identifier = segue.identifier else { return }
+        
+        switch identifier {
         case segueToShowAll:
             let vc = segue.destination as! ContactsTableViewController
             vc.contacts = user!.contacts.enumerated().filter { _,_ in true }
