@@ -13,8 +13,9 @@ class ContactsTableViewController: UITableViewController {
     // MARK: - Instance variables
     
     var contacts = [(offset: Int, element: Contact)]()
-    var category: ContactCategory? = nil
-
+    var category: ContactCategory?
+    var filtered: Bool?
+    
     
     // MARK: - Table view data source
 
@@ -36,7 +37,9 @@ class ContactsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ContactTableViewCell
         
         guard !contacts.isEmpty else {
-            if category == .family {
+            if filtered != nil {
+                cell.reset(withMessage: "No hay personas con la palabras buscada")
+            } else if category == .family {
                 cell.reset(withMessage: "No has agregado familiares")
             } else if category == .known {
                 cell.reset(withMessage: "No has agregado conocidos")

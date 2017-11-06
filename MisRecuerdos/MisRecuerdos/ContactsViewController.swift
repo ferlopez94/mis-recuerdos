@@ -8,17 +8,19 @@
 
 import UIKit
 
-class ContactsViewController: UIViewController {
+class ContactsViewController: UIViewController, UISearchBarDelegate {
     
     // MARK: - IBOutlets
     
     @IBOutlet weak var familyPhoto: UIImageView!
     @IBOutlet weak var knownPhoto: UIImageView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     
     // MARK: - Instance variables
     
     var user: User? = nil
+    var filteredContacts = [(offset: Int, element: Contact)]()
     var familyContacts = [(offset: Int, element: Contact)]()
     var knownContacts = [(offset: Int, element: Contact)]()
     
@@ -26,6 +28,7 @@ class ContactsViewController: UIViewController {
     let segueToShowAllPhotos = "segueToShowAllPhotos"
     let segueToShowFamily = "segueToShowFamily"
     let segueToShowKnown = "segueToShowKnown"
+    let segueToFiltered = "segueToFiltered"
     
     var timer = Timer()
     var imageIndex = 0
@@ -35,6 +38,8 @@ class ContactsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchBar.delegate = self
 
         guard let data = UserDefaults.standard.data(forKey: K.Accounts.actualUserKey),
             let user = NSKeyedUnarchiver.unarchiveObject(with: data) as? User else {
@@ -74,6 +79,35 @@ class ContactsViewController: UIViewController {
         imageIndex += 1
     }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("search")
+        
+        guard let user = self.user,
+            let text = searchBar.text,
+            text != "" else { return }
+        
+        filteredContacts = user.contacts.enumerated().filter { contact in
+            if contact.element.name.lowercased().range(of: text.lowercased()) != nil {
+                return true
+            }
+            
+            let category = contact.element.category == .family ? "Familiar" : "Conocido"
+            
+            if category.lowercased().range(of: text.lowercased()) != nil {
+                return true
+            }
+            
+            return false
+        }
+        
+        hideKeyboard()
+        performSegue(withIdentifier: segueToFiltered, sender: nil)
+    }
+    
+    @IBAction func hideKeyboard() {
+        view.endEditing(true)
+    }
+    
     
     // MARK: - Navigation
     
@@ -93,21 +127,27 @@ class ContactsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == segueToShowAll {
+        switch segue.identifier! {
+        case segueToShowAll:
             let vc = segue.destination as! ContactsTableViewController
             vc.contacts = user!.contacts.enumerated().filter { _,_ in true }
-            vc.category = nil
-        } else if segue.identifier == segueToShowFamily {
+        case segueToShowFamily:
             let vc = segue.destination as! ContactsTableViewController
             vc.contacts = familyContacts
             vc.category = .family
-        } else if segue.identifier == segueToShowKnown {
+        case segueToShowKnown:
             let vc = segue.destination as! ContactsTableViewController
             vc.contacts = knownContacts
             vc.category = .known
-        } else if segue.identifier == segueToShowAllPhotos {
+        case segueToShowAllPhotos:
             let vc = segue.destination as! ContactsGalleryViewController
             vc.contacts = user!.contacts.enumerated().filter { _,_ in true }
+        case segueToFiltered:
+            let vc = segue.destination as! ContactsTableViewController
+            vc.contacts = filteredContacts
+            vc.filtered = true
+        default:
+            break
         }
     }
 
