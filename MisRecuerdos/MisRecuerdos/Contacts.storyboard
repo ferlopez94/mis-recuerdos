@@ -318,7 +318,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GvX-zr-BOV" id="gaE-If-7A6">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="124.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EMK-0p-PSH">
@@ -332,10 +332,10 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yau-Vz-2Kc">
-                                                    <rect key="frame" x="114.5" y="17.5" width="175.5" height="60"/>
+                                                    <rect key="frame" x="114.5" y="19" width="175.5" height="57"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o4L-8n-M3S">
-                                                            <rect key="frame" x="0.0" y="0.0" width="175.5" height="25"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="175.5" height="23.5"/>
                                                             <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -344,7 +344,7 @@
                                                             </variation>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gKS-xo-3ol">
-                                                            <rect key="frame" x="0.0" y="35" width="175.5" height="25"/>
+                                                            <rect key="frame" x="0.0" y="33.5" width="175.5" height="23.5"/>
                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -909,10 +909,10 @@ Foto</string>
             </objects>
             <point key="canvasLocation" x="4155" y="563"/>
         </scene>
-        <!--Add Contact View Controller-->
+        <!--Edit Contact View Controller-->
         <scene sceneID="ekP-YZ-MGH">
             <objects>
-                <viewController id="gDU-eF-k1j" customClass="AddContactViewController" customModule="MisRecuerdos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gDU-eF-k1j" customClass="EditContactViewController" customModule="MisRecuerdos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5aa-r2-VZM"/>
                         <viewControllerLayoutGuide type="bottom" id="lFf-Pd-Yl8"/>
@@ -1192,7 +1192,7 @@ Foto</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="V3u-0O-I1G"/>
         <segue reference="bMM-iO-yEM"/>
+        <segue reference="LJR-RQ-bq2"/>
     </inferredMetricsTieBreakers>
 </document>

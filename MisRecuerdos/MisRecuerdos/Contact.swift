@@ -35,7 +35,7 @@ final class Contact: NSObject, NSCoding {
         self.category = category
         self.comments = comments
         self.photo = photo
-        self.photoData = UIImageJPEGRepresentation(photo, 0.5)!
+        self.photoData = UIImageJPEGRepresentation(photo, 0.2)!
     }
     
     

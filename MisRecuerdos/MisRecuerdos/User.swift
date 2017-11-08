@@ -37,7 +37,7 @@ final class User: NSObject, NSCoding {
         self.dateOfBirth = dateOfBirth
         self.comments = comments
         self.photo = photo
-        self.photoData = UIImageJPEGRepresentation(photo, 0.5)!
+        self.photoData = UIImageJPEGRepresentation(photo, 0.2)!
         self.contacts = contacts
     }
     
@@ -124,6 +124,10 @@ final class User: NSObject, NSCoding {
     func addContact(_ contact: Contact) {
         contacts.append(contact)
         contacts.sort {$0.name < $1.name}
+    }
+    
+    func addContact(_ contact: Contact, atIndex index: Int) {
+        contacts[index] = contact
     }
 
 }

@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ContactsTableViewController: UITableViewController {
+class ContactsTableViewController: UITableViewController, UpdateContact {
 
     // MARK: - Instance variables
     
     var contacts = [(offset: Int, element: Contact)]()
     var category: ContactCategory?
     var filtered: Bool?
+    var selectedIndex = 0
+    var delegate: ReloadData?
     
     
     // MARK: - Table view data source
@@ -56,13 +58,24 @@ class ContactsTableViewController: UITableViewController {
     }
 
    
+    // MARK: - UpdateContact methods
+    
+    func update(contact: (offset: Int, element: Contact)) {
+        self.contacts[selectedIndex] = contact
+        tableView.reloadData()
+        delegate?.reloadData(shouldReload: true)
+    }
+    
+    
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let index = tableView.indexPathForSelectedRow!.row
+        self.selectedIndex = index
         let contact = contacts[index]
         let vc = segue.destination as! ShowContactViewController
         vc.contact = contact
+        vc.delegate = self
     }
 
 }

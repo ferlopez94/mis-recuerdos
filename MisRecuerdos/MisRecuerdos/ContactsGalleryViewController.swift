@@ -13,7 +13,7 @@ protocol ContactsGalleryDelegate {
     func showContactDetails(atIndex index: Int)
 }
 
-class ContactsGalleryViewController: UIViewController, ContactsGalleryDelegate {
+class ContactsGalleryViewController: UIViewController, ContactsGalleryDelegate, UpdateContact {
 
     // MARK: - IBOutlets
     
@@ -27,6 +27,8 @@ class ContactsGalleryViewController: UIViewController, ContactsGalleryDelegate {
     let numberOfItems: CGFloat = 2
     let showContactDetailsSegueIdentifier = "showContactDetails"
     var contactToShowIndex = 0
+    var delegate: ReloadData?
+    
     
     // MARK: - View Controller life cycle
     
@@ -59,12 +61,22 @@ class ContactsGalleryViewController: UIViewController, ContactsGalleryDelegate {
     }
     
     
+    // MARK: - UpdateContact methods
+    
+    func update(contact: (offset: Int, element: Contact)) {
+        self.contacts[contactToShowIndex] = contact
+        collectionView.reloadData()
+        delegate?.reloadData(shouldReload: true)
+    }
+    
+    
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == showContactDetailsSegueIdentifier {
             let vc = segue.destination as! ShowContactViewController
             vc.contact = contacts[contactToShowIndex]
+            vc.delegate = self
         }
     }
 

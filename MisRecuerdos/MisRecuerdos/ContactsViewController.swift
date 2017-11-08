@@ -8,7 +8,13 @@
 
 import UIKit
 
-class ContactsViewController: UIViewController, UISearchBarDelegate {
+protocol ReloadData {
+    var shouldReload: Bool {get set}
+    
+    func reloadData(shouldReload: Bool)
+}
+
+class ContactsViewController: UIViewController, UISearchBarDelegate, ReloadData {
     
     // MARK: - IBOutlets
     
@@ -32,15 +38,19 @@ class ContactsViewController: UIViewController, UISearchBarDelegate {
     
     var timer = Timer()
     var imageIndex = 0
+    var shouldReload = true
     
     
     // MARK: - View Controller life cycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         searchBar.delegate = self
-
+        
+        guard shouldReload else { return }
+        shouldReload = false
+        
         guard let data = UserDefaults.standard.data(forKey: K.Accounts.actualUserKey),
             let user = NSKeyedUnarchiver.unarchiveObject(with: data) as? User else {
                 return
@@ -54,8 +64,9 @@ class ContactsViewController: UIViewController, UISearchBarDelegate {
         knownContacts = self.user!.contacts.enumerated().filter {$0.element.category == .known }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         imageIndex = 0
         timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImages), userInfo: nil, repeats: true)
     }
@@ -109,6 +120,13 @@ class ContactsViewController: UIViewController, UISearchBarDelegate {
     }
     
     
+    // MARK: - ReloadData methods
+    
+    func reloadData(shouldReload: Bool) {
+        self.shouldReload = shouldReload
+    }
+    
+    
     // MARK: - Navigation
     
     @IBAction func unwindToContacts(segue: UIStoryboardSegue) {}
@@ -133,21 +151,26 @@ class ContactsViewController: UIViewController, UISearchBarDelegate {
         case segueToShowAll:
             let vc = segue.destination as! ContactsTableViewController
             vc.contacts = user!.contacts.enumerated().filter { _,_ in true }
+            vc.delegate = self
         case segueToShowFamily:
             let vc = segue.destination as! ContactsTableViewController
             vc.contacts = familyContacts
             vc.category = .family
+            vc.delegate = self
         case segueToShowKnown:
             let vc = segue.destination as! ContactsTableViewController
             vc.contacts = knownContacts
             vc.category = .known
+            vc.delegate = self
         case segueToShowAllPhotos:
             let vc = segue.destination as! ContactsGalleryViewController
             vc.contacts = user!.contacts.enumerated().filter { _,_ in true }
+            vc.delegate = self
         case segueToFiltered:
             let vc = segue.destination as! ContactsTableViewController
             vc.contacts = filteredContacts
             vc.filtered = true
+            vc.delegate = self
         default:
             break
         }

@@ -9,7 +9,11 @@
 import INSPhotoGallery
 import UIKit
 
-class ShowContactViewController: UIViewController {
+protocol UpdateContact {
+    func update(contact: (offset: Int, element: Contact))
+}
+
+class ShowContactViewController: UIViewController, UpdateContact {
 
     // MARK: - IBOutlets
     
@@ -25,12 +29,13 @@ class ShowContactViewController: UIViewController {
     var contact: (offset: Int, element: Contact)!
     var photos = [INSPhotoViewable]()
     let segueToEditContact = "segueToEditContact"
+    var delegate: UpdateContact?
     
     
     // MARK: - View Controller life cycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(showPhoto))
         photoImage.isUserInteractionEnabled = true
@@ -60,11 +65,21 @@ class ShowContactViewController: UIViewController {
     }
     
     
+    // MARK: - UpdateContact methods
+    
+    func update(contact: (offset: Int, element: Contact)) {
+        self.contact = contact
+        self.delegate?.update(contact: contact)
+    }
+    
+    
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueToEditContact {
-            
+            let vc = segue.destination as! EditContactViewController
+            vc.contact = contact
+            vc.delegate = self
         }
     }
 
