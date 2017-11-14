@@ -1,0 +1,1423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1yH-ZV-7YR">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Century Gothic Bold.ttf">
+            <string>CenturyGothic-Bold</string>
+        </array>
+        <array key="Century Gothic.ttf">
+            <string>CenturyGothic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Detalles de evento-->
+        <scene sceneID="ZpJ-78-8pP">
+            <objects>
+                <viewController id="ebY-hq-cOh" customClass="ShowEventViewController" customModule="MisRecuerdos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ARW-6Y-ygP"/>
+                        <viewControllerLayoutGuide type="bottom" id="ag0-0Z-d51"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H70-pu-Jra">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9U3-bL-6us" userLabel="Content">
+                                <rect key="frame" x="32" y="74" width="256" height="474"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R6A-sh-Q23">
+                                        <rect key="frame" x="64" y="0.0" width="128" height="128"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="R6A-sh-Q23" secondAttribute="height" multiplier="1:1" id="BEe-5C-eT5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="zaB-75-SQy" userLabel="Name Stack View">
+                                        <rect key="frame" x="0.0" y="134" width="256" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="S1Q-q0-sgM">
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="uJm-bb-OUS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi boda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vqj-Fr-zfl">
+                                                <rect key="frame" x="0.0" y="20" width="256" height="40"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="Epp-HZ-dnr" userLabel="LastName Stack View">
+                                        <rect key="frame" x="0.0" y="200" width="256" height="74"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="J47-PW-KOe">
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="23" id="fzo-Dj-x7E"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El día de mi boda, un primero de abril de 1960" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="80Q-LI-0Yl">
+                                                <rect key="frame" x="0.0" y="8" width="256" height="66"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qQN-L0-H1G" userLabel="LastName Stack View">
+                                        <rect key="frame" x="0.0" y="280" width="256" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoría:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ot9-Vj-O1b">
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="29"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iGB-bc-6b4">
+                                                <rect key="frame" x="133" y="0.0" width="123" height="29"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="30"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="cOP-yg-JzZ" userLabel="LastName Stack View">
+                                        <rect key="frame" x="0.0" y="315" width="256" height="58"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Persona relacionada:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hTp-Ob-fkC">
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="23" id="Gun-Be-RgA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi esposa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="99T-7S-kCb">
+                                                <rect key="frame" x="0.0" y="3" width="256" height="55"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZbE-ca-FOC" userLabel="LastName Stack View">
+                                        <rect key="frame" x="0.0" y="379" width="256" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comentarios:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3Iv-Df-hUm">
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="gc7-hA-G56"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Un día excelente" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b7K-9P-Kkd">
+                                                <rect key="frame" x="0.0" y="20" width="256" height="29"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1bq-IS-Tma" userLabel="Buttons">
+                                        <rect key="frame" x="0.0" y="434" width="256" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sx6-nY-i2i" userLabel="Buttons">
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfe-rq-xbv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="20"/>
+                                                        <state key="normal" image="playIcon"/>
+                                                        <connections>
+                                                            <action selector="playMusic:" destination="EcQ-ym-dZR" eventType="touchUpInside" id="lCI-vR-0oZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2T-36-JMN">
+                                                        <rect key="frame" x="138" y="0.0" width="118" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4bt-HU-KZ8" userLabel="Buttons">
+                                                <rect key="frame" x="0.0" y="20" width="256" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vns-Zy-2UY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="20"/>
+                                                        <connections>
+                                                            <action selector="addMusic:" destination="EcQ-ym-dZR" eventType="touchUpInside" id="WGe-z3-eeL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LN-R0-orq">
+                                                        <rect key="frame" x="138" y="0.0" width="118" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="DuF-7w-Fg0"/>
+                                                </constraints>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
+                                            </stackView>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qQN-L0-H1G" firstAttribute="top" secondItem="9U3-bL-6us" secondAttribute="top" constant="280" id="2Nz-g5-eHk"/>
+                                    <constraint firstItem="qQN-L0-H1G" firstAttribute="leading" secondItem="9U3-bL-6us" secondAttribute="leadingMargin" id="G1T-4n-Ssr"/>
+                                    <constraint firstItem="ZbE-ca-FOC" firstAttribute="leading" secondItem="9U3-bL-6us" secondAttribute="leading" id="GPU-GY-bx5"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZbE-ca-FOC" secondAttribute="trailing" id="HVa-Q9-p5o"/>
+                                    <constraint firstItem="R6A-sh-Q23" firstAttribute="width" secondItem="9U3-bL-6us" secondAttribute="width" multiplier="0.5" id="Hik-Tx-Ado"/>
+                                    <constraint firstAttribute="trailing" secondItem="Epp-HZ-dnr" secondAttribute="trailing" id="Isz-Ld-csN"/>
+                                    <constraint firstItem="zaB-75-SQy" firstAttribute="leading" secondItem="9U3-bL-6us" secondAttribute="leading" id="V6o-d5-q7G"/>
+                                    <constraint firstItem="Epp-HZ-dnr" firstAttribute="leading" secondItem="9U3-bL-6us" secondAttribute="leading" id="a2b-hW-jsh"/>
+                                    <constraint firstAttribute="trailing" secondItem="zaB-75-SQy" secondAttribute="trailing" id="ago-qG-uvZ"/>
+                                    <constraint firstItem="ZbE-ca-FOC" firstAttribute="top" secondItem="9U3-bL-6us" secondAttribute="top" constant="379" id="clS-H7-Bhp"/>
+                                    <constraint firstItem="Epp-HZ-dnr" firstAttribute="top" secondItem="9U3-bL-6us" secondAttribute="top" constant="200" id="ldN-Jp-bj8"/>
+                                    <constraint firstItem="cOP-yg-JzZ" firstAttribute="top" secondItem="9U3-bL-6us" secondAttribute="top" constant="315" id="mHV-g8-rgY"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="qQN-L0-H1G" secondAttribute="trailing" id="mIK-pJ-JbS"/>
+                                    <constraint firstItem="cOP-yg-JzZ" firstAttribute="leading" secondItem="9U3-bL-6us" secondAttribute="leading" id="uPg-sk-wZp"/>
+                                    <constraint firstAttribute="trailing" secondItem="cOP-yg-JzZ" secondAttribute="trailing" id="xt9-mr-zP5"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9U3-bL-6us" secondAttribute="trailing" constant="16" id="5pO-F9-c3c">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="9U3-bL-6us" firstAttribute="leading" secondItem="H70-pu-Jra" secondAttribute="leadingMargin" constant="16" id="NtJ-tl-WpV">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="9U3-bL-6us" firstAttribute="top" secondItem="ARW-6Y-ygP" secondAttribute="bottom" constant="10" id="bdW-TP-FQ3">
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="ag0-0Z-d51" firstAttribute="top" secondItem="9U3-bL-6us" secondAttribute="bottom" constant="20" id="c9k-8K-2lS">
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detalles de evento" id="u7X-9C-IQi">
+                        <barButtonItem key="rightBarButtonItem" title="Editar" id="6RJ-cD-Qth">
+                            <connections>
+                                <segue destination="SBy-n3-2WA" kind="presentation" identifier="segueToEditEvent" id="isN-hd-QFd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="artistLabel" destination="0LN-R0-orq" id="y7A-nn-NcC"/>
+                        <outlet property="categoryLabel" destination="iGB-bc-6b4" id="fgW-cO-kCv"/>
+                        <outlet property="commentsLabel" destination="b7K-9P-Kkd" id="cNn-gz-W8F"/>
+                        <outlet property="descriptLabel" destination="80Q-LI-0Yl" id="84U-rg-CrG"/>
+                        <outlet property="nameLabel" destination="vqj-Fr-zfl" id="8gV-RX-vXz"/>
+                        <outlet property="photoImage" destination="R6A-sh-Q23" id="fOA-5M-bod"/>
+                        <outlet property="relativeLabel" destination="99T-7S-kCb" id="CHX-E1-tM6"/>
+                        <outlet property="songLabel" destination="u2T-36-JMN" id="KM9-Ma-Paz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAF-RG-M5R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4155" y="563"/>
+        </scene>
+        <!--Edit Event View Controller-->
+        <scene sceneID="Shr-uA-xDb">
+            <objects>
+                <viewController id="SBy-n3-2WA" customClass="EditEventViewController" customModule="MisRecuerdos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ddf-Lr-mwL"/>
+                        <viewControllerLayoutGuide type="bottom" id="QWI-xI-phu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p2b-eU-sBI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ozt-Uh-1bx">
+                                <rect key="frame" x="32" y="20" width="256" height="528"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sbd-tG-DbW" userLabel="Content">
+                                        <rect key="frame" x="0.0" y="0.0" width="257" height="529"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Editar evento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNl-QU-8Ke">
+                                                <rect key="frame" x="0.0" y="0.0" width="257" height="34.5"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="42"/>
+                                                </variation>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3xo-Rf-7ua" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
+                                                <rect key="frame" x="83.5" y="44.5" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="R2u-Zd-iHg">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" secondItem="3xo-Rf-7ua" secondAttribute="height" multiplier="1:1" id="o9b-uW-cgm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
+                                                <state key="normal">
+                                                    <string key="title">Agregar
+Foto</string>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
+                                                        <color key="value" red="0.6705882353" green="0.6705882353" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                        <color key="value" red="0.6705882353" green="0.6705882353" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
+                                                        <color key="value" red="0.6705882353" green="0.6705882353" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
+                                                        <color key="value" red="0.6705882353" green="0.6705882353" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.textAlignment">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="24"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="importPhoto" destination="SBy-n3-2WA" eventType="touchUpInside" id="wdJ-pa-V0f"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Ingresa la siguiente información:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jEP-2u-xpm">
+                                                <rect key="frame" x="0.0" y="144.5" width="257" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
+                                                </variation>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9sf-BW-2JN">
+                                                <rect key="frame" x="0.0" y="177" width="257" height="52"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgQ-VK-8Vb">
+                                                <rect key="frame" x="0.0" y="239" width="257" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="textFieldEditingDidBegin:" destination="SBy-n3-2WA" eventType="editingDidBegin" id="BGQ-3z-a3M"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Categoría" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhi-wd-eXG">
+                                                <rect key="frame" x="0.0" y="279" width="257" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Persona relacionada" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T8k-v4-I85">
+                                                <rect key="frame" x="0.0" y="319" width="257" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
+                                                </variation>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="Comentarios acerca del evento..." translatesAutoresizingMaskIntoConstraints="NO" id="MOg-xM-JyI">
+                                                <rect key="frame" x="0.0" y="359" width="257" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="cMP-Pf-ktH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
+                                                </variation>
+                                            </textView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6Ik-u8-l6J" userLabel="Buttons">
+                                                <rect key="frame" x="0.0" y="439" width="257" height="40"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZTx-37-r2Y" userLabel="Buttons">
+                                                        <rect key="frame" x="0.0" y="0.0" width="257" height="20"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tto-t5-8Up">
+                                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="20"/>
+                                                                <state key="normal" image="playIcon"/>
+                                                                <connections>
+                                                                    <action selector="playMusic:" destination="EcQ-ym-dZR" eventType="touchUpInside" id="pId-K9-hac"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKY-OC-Qap">
+                                                                <rect key="frame" x="138.5" y="0.0" width="118.5" height="20"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Q6t-of-keo" userLabel="Buttons">
+                                                        <rect key="frame" x="0.0" y="20" width="257" height="20"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Da2-5S-y8H">
+                                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="20"/>
+                                                                <connections>
+                                                                    <action selector="addMusic:" destination="EcQ-ym-dZR" eventType="touchUpInside" id="p4f-jp-UaZ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teJ-Ij-IHk">
+                                                                <rect key="frame" x="138.5" y="0.0" width="118.5" height="20"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="LGS-j2-UPk"/>
+                                                        </constraints>
+                                                        <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bw2-lh-NcH" userLabel="Buttons">
+                                                <rect key="frame" x="0.0" y="489" width="257" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqM-wa-MDE" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="7Fj-2j-0A8">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                        <state key="normal" title="Cancelar"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
+                                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
+                                                                <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
+                                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
+                                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="cancel" destination="SBy-n3-2WA" eventType="touchUpInside" id="59C-xe-fue"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHr-10-tI0" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
+                                                        <rect key="frame" x="138.5" y="0.0" width="118.5" height="40"/>
+                                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                        <state key="normal" title="Guardar"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
+                                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                                <color key="value" red="0.0" green="0.57647058819999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
+                                                                <color key="value" red="0.0" green="0.57647058819999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                                <color key="value" red="0.0" green="0.57647058819999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
+                                                                <color key="value" red="0.0" green="0.57647058819999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
+                                                                <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="createUser" destination="SBy-n3-2WA" eventType="touchUpInside" id="egk-I7-uWa"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="fhi-wd-eXG" firstAttribute="leading" secondItem="Sbd-tG-DbW" secondAttribute="leading" id="1qz-cI-4Yk"/>
+                                            <constraint firstItem="wgQ-VK-8Vb" firstAttribute="leading" secondItem="Sbd-tG-DbW" secondAttribute="leading" id="6U0-Fn-Xl1"/>
+                                            <constraint firstAttribute="trailing" secondItem="wgQ-VK-8Vb" secondAttribute="trailing" id="Co8-mx-8mh"/>
+                                            <constraint firstItem="yNl-QU-8Ke" firstAttribute="leading" secondItem="Sbd-tG-DbW" secondAttribute="leading" id="EJh-8T-vQY"/>
+                                            <constraint firstItem="MOg-xM-JyI" firstAttribute="leading" secondItem="Sbd-tG-DbW" secondAttribute="leading" id="Fli-M6-cyy"/>
+                                            <constraint firstItem="MOg-xM-JyI" firstAttribute="leading" secondItem="Sbd-tG-DbW" secondAttribute="leading" id="Fxt-vJ-cjI"/>
+                                            <constraint firstItem="T8k-v4-I85" firstAttribute="leading" secondItem="Sbd-tG-DbW" secondAttribute="leading" id="GHe-GL-mVA"/>
+                                            <constraint firstItem="jEP-2u-xpm" firstAttribute="leading" secondItem="Sbd-tG-DbW" secondAttribute="leading" id="J2K-Df-xJA"/>
+                                            <constraint firstAttribute="trailing" secondItem="yNl-QU-8Ke" secondAttribute="trailing" id="Ryi-jq-TyU"/>
+                                            <constraint firstAttribute="trailing" secondItem="fhi-wd-eXG" secondAttribute="trailing" id="X9f-Y6-s0B"/>
+                                            <constraint firstAttribute="trailing" secondItem="MOg-xM-JyI" secondAttribute="trailing" id="ZOS-nh-Ozg"/>
+                                            <constraint firstItem="9sf-BW-2JN" firstAttribute="leading" secondItem="Sbd-tG-DbW" secondAttribute="leading" id="b3R-sL-N83"/>
+                                            <constraint firstAttribute="trailing" secondItem="T8k-v4-I85" secondAttribute="trailing" id="dcV-qr-pY6"/>
+                                            <constraint firstAttribute="trailing" secondItem="MOg-xM-JyI" secondAttribute="trailing" id="gmK-sV-f0l"/>
+                                            <constraint firstItem="bw2-lh-NcH" firstAttribute="leading" secondItem="Sbd-tG-DbW" secondAttribute="leading" id="tI6-aJ-jFp"/>
+                                            <constraint firstAttribute="trailing" secondItem="bw2-lh-NcH" secondAttribute="trailing" id="y2d-ER-xXv"/>
+                                            <constraint firstAttribute="trailing" secondItem="9sf-BW-2JN" secondAttribute="trailing" id="yLm-Qd-rL1"/>
+                                            <constraint firstAttribute="trailing" secondItem="jEP-2u-xpm" secondAttribute="trailing" id="ymU-Mh-evw"/>
+                                        </constraints>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Sbd-tG-DbW" firstAttribute="centerY" secondItem="Ozt-Uh-1bx" secondAttribute="centerY" id="9HM-ZG-W7G"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sbd-tG-DbW" secondAttribute="bottom" id="aBu-fb-bTS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sbd-tG-DbW" secondAttribute="trailing" id="iuS-I0-hr2"/>
+                                    <constraint firstItem="Sbd-tG-DbW" firstAttribute="leading" secondItem="Ozt-Uh-1bx" secondAttribute="leading" id="njr-Nk-sri"/>
+                                    <constraint firstItem="Sbd-tG-DbW" firstAttribute="top" secondItem="Ozt-Uh-1bx" secondAttribute="top" id="rSR-1G-vER"/>
+                                    <constraint firstItem="Sbd-tG-DbW" firstAttribute="centerX" secondItem="Ozt-Uh-1bx" secondAttribute="centerX" id="y21-qx-eNP"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="QWI-xI-phu" firstAttribute="top" secondItem="Ozt-Uh-1bx" secondAttribute="bottom" constant="20" id="6tV-De-Qd8">
+                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            </constraint>
+                            <constraint firstItem="Ozt-Uh-1bx" firstAttribute="top" secondItem="Ddf-Lr-mwL" secondAttribute="bottom" id="Lpk-oV-sYP">
+                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            </constraint>
+                            <constraint firstItem="Ozt-Uh-1bx" firstAttribute="leading" secondItem="p2b-eU-sBI" secondAttribute="leadingMargin" constant="16" id="SXK-0X-rH8">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ozt-Uh-1bx" secondAttribute="trailing" constant="16" id="gDd-lI-W2z">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5V4-17-ZEl" appends="YES" id="uuh-lq-5qi"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="artistLabelE" destination="teJ-Ij-IHk" id="bAA-Zo-vcr"/>
+                        <outlet property="commentsTextView" destination="MOg-xM-JyI" id="RuZ-5Y-t6O"/>
+                        <outlet property="dobTextField" destination="wgQ-VK-8Vb" id="PHh-xT-0q7"/>
+                        <outlet property="lastNameTextField" destination="fhi-wd-eXG" id="wE0-sP-ImA"/>
+                        <outlet property="nameTextField" destination="9sf-BW-2JN" id="IsT-Nu-afD"/>
+                        <outlet property="photoButton" destination="3xo-Rf-7ua" id="g1z-Wn-Z0B"/>
+                        <outlet property="relationTextFieldE" destination="T8k-v4-I85" id="8NZ-qH-Ksv"/>
+                        <outlet property="scrollView" destination="Ozt-Uh-1bx" id="cgb-0M-zGd"/>
+                        <outlet property="songLabelE" destination="wKY-OC-Qap" id="j5Y-ef-a5Z"/>
+                        <segue destination="zsh-la-2X7" kind="unwind" identifier="unwindToEventsAfterAddNewevent" unwindAction="unwindToEventsAfterAddNewEventWithSegue:" id="qgj-bg-CJd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sc9-xY-X9W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zsh-la-2X7" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="5V4-17-ZEl">
+                    <connections>
+                        <action selector="hideKeyboard" destination="SBy-n3-2WA" id="TVw-gy-iFO"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="5136" y="563"/>
+        </scene>
+        <!--Events Gallery View Controller-->
+        <scene sceneID="dar-6o-r67">
+            <objects>
+                <viewController id="xYM-Dq-UBn" customClass="EventsGalleryViewController" customModule="MisRecuerdos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c4s-48-jKQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="dlG-f6-sXh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3lQ-pd-8MT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1z0-aM-Guj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1oL-hP-Ceh">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="itA-4e-hhW" customClass="ContactCollectionViewCell" customModule="MisRecuerdos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vhM-en-N3y">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="vhM-en-N3y" firstAttribute="top" secondItem="itA-4e-hhW" secondAttribute="top" id="Thh-8J-eFL"/>
+                                            <constraint firstAttribute="bottom" secondItem="vhM-en-N3y" secondAttribute="bottom" id="YRO-GT-CUV"/>
+                                            <constraint firstItem="vhM-en-N3y" firstAttribute="leading" secondItem="itA-4e-hhW" secondAttribute="leading" id="aM2-BU-2Or"/>
+                                            <constraint firstAttribute="trailing" secondItem="vhM-en-N3y" secondAttribute="trailing" id="kyr-Vd-BWe"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="vhM-en-N3y" id="bws-nS-OiT"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dlG-f6-sXh" firstAttribute="top" secondItem="1z0-aM-Guj" secondAttribute="bottom" id="L2g-ko-JZY"/>
+                            <constraint firstItem="1z0-aM-Guj" firstAttribute="leading" secondItem="3lQ-pd-8MT" secondAttribute="leading" id="Mc9-Z7-371"/>
+                            <constraint firstAttribute="trailing" secondItem="1z0-aM-Guj" secondAttribute="trailing" id="UYD-kn-FAM"/>
+                            <constraint firstItem="1z0-aM-Guj" firstAttribute="top" secondItem="3lQ-pd-8MT" secondAttribute="top" id="jm3-hw-omO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EbD-sK-t8J">
+                        <barButtonItem key="backBarButtonItem" title="Fotos" id="R5s-Py-sCm"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="1z0-aM-Guj" id="POW-vg-4tV"/>
+                        <segue destination="ebY-hq-cOh" kind="show" identifier="showEventDetails" id="y9z-Xs-vYv">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NiH-1P-7Yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3262.5" y="1328.8732394366198"/>
+        </scene>
+        <!--Add Event View Controller-->
+        <scene sceneID="F2D-qC-s1U">
+            <objects>
+                <viewController id="EcQ-ym-dZR" customClass="AddEventViewController" customModule="MisRecuerdos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Q2-3W-46i"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vte-8G-6f2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EtT-Jz-lul">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Du4-C0-qE5">
+                                <rect key="frame" x="32" y="20" width="256" height="528"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZIZ-Xd-NFB" userLabel="Content">
+                                        <rect key="frame" x="0.0" y="0.0" width="257" height="529"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Agregar evento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpR-lz-zdG">
+                                                <rect key="frame" x="0.0" y="0.0" width="257" height="31.5"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="42"/>
+                                                </variation>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="iwn-pf-p6m" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
+                                                <rect key="frame" x="83.5" y="46.5" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="iwn-pf-p6m" secondAttribute="height" multiplier="1:1" id="duP-ls-F7l"/>
+                                                    <constraint firstAttribute="width" constant="90" id="s9s-iD-Qvd">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
+                                                <state key="normal">
+                                                    <string key="title">Agregar
+Foto</string>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
+                                                        <color key="value" red="0.6705882353" green="0.6705882353" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                        <color key="value" red="0.6705882353" green="0.6705882353" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
+                                                        <color key="value" red="0.6705882353" green="0.6705882353" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
+                                                        <color key="value" red="0.6705882353" green="0.6705882353" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.textAlignment">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="24"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="importPhoto" destination="EcQ-ym-dZR" eventType="touchUpInside" id="pPc-Jm-gGh"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Ingresa la siguiente información:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1c9-WJ-F8I">
+                                                <rect key="frame" x="0.0" y="151.5" width="257" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
+                                                </variation>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5VT-Fy-vJH">
+                                                <rect key="frame" x="0.0" y="189" width="257" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4DV-wo-FtZ">
+                                                <rect key="frame" x="0.0" y="234" width="257" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="textFieldEditingDidBegin:" destination="EcQ-ym-dZR" eventType="editingDidBegin" id="Nyv-FJ-6R1"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Categoría" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1b5-WB-tLk">
+                                                <rect key="frame" x="0.0" y="279" width="257" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Persona relacionada" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nzD-xH-TLM">
+                                                <rect key="frame" x="0.0" y="324" width="257" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
+                                                </variation>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="Comentarios acerca del evento..." translatesAutoresizingMaskIntoConstraints="NO" id="JAk-eD-WXG">
+                                                <rect key="frame" x="0.0" y="369" width="257" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
+                                                </variation>
+                                            </textView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eM7-L3-DqP" userLabel="Buttons">
+                                                <rect key="frame" x="0.0" y="434" width="257" height="40"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zfd-bL-uHl" userLabel="Buttons">
+                                                        <rect key="frame" x="0.0" y="0.0" width="257" height="20"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NQ-up-Jtp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="20"/>
+                                                                <state key="normal" image="playIcon"/>
+                                                                <connections>
+                                                                    <action selector="playMusic:" destination="EcQ-ym-dZR" eventType="touchUpInside" id="CCy-vo-qHl"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jng-1u-8xz">
+                                                                <rect key="frame" x="138.5" y="0.0" width="118.5" height="20"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GKL-Ag-E5d" userLabel="Buttons">
+                                                        <rect key="frame" x="0.0" y="20" width="257" height="20"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JET-4r-aFg">
+                                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="20"/>
+                                                                <connections>
+                                                                    <action selector="addMusic:" destination="EcQ-ym-dZR" eventType="touchUpInside" id="pEX-0i-wdz"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qws-qQ-KDR">
+                                                                <rect key="frame" x="138.5" y="0.0" width="118.5" height="20"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="eaD-Cl-odj"/>
+                                                        </constraints>
+                                                        <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZWl-JR-SaS" userLabel="Buttons">
+                                                <rect key="frame" x="0.0" y="489" width="257" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSx-g3-g4C" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="mlp-Zy-TgP">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                        <state key="normal" title="Cancelar"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
+                                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
+                                                                <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
+                                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
+                                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="cancel" destination="EcQ-ym-dZR" eventType="touchUpInside" id="11R-qv-KAC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1h-qy-o4p" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
+                                                        <rect key="frame" x="138.5" y="0.0" width="118.5" height="40"/>
+                                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                        <state key="normal" title="Guardar"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
+                                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                                <color key="value" red="0.0" green="0.57647058819999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
+                                                                <color key="value" red="0.0" green="0.57647058819999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                                <color key="value" red="0.0" green="0.57647058819999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
+                                                                <color key="value" red="0.0" green="0.57647058819999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
+                                                                <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="createUser" destination="EcQ-ym-dZR" eventType="touchUpInside" id="DEL-hf-RMp"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ZWl-JR-SaS" firstAttribute="leading" secondItem="ZIZ-Xd-NFB" secondAttribute="leading" id="6nz-7D-ql0"/>
+                                            <constraint firstAttribute="trailing" secondItem="5VT-Fy-vJH" secondAttribute="trailing" id="9Vq-mM-AKW"/>
+                                            <constraint firstAttribute="trailing" secondItem="JAk-eD-WXG" secondAttribute="trailing" id="GwZ-Yw-mcT"/>
+                                            <constraint firstItem="JAk-eD-WXG" firstAttribute="leading" secondItem="ZIZ-Xd-NFB" secondAttribute="leading" id="Huq-X4-uvJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="nzD-xH-TLM" secondAttribute="trailing" id="OqL-yv-Rps"/>
+                                            <constraint firstItem="eM7-L3-DqP" firstAttribute="leading" secondItem="ZIZ-Xd-NFB" secondAttribute="leading" id="Uqo-fN-omA"/>
+                                            <constraint firstItem="KpR-lz-zdG" firstAttribute="leading" secondItem="ZIZ-Xd-NFB" secondAttribute="leading" id="VrY-8K-dAS"/>
+                                            <constraint firstAttribute="trailing" secondItem="JAk-eD-WXG" secondAttribute="trailing" id="Xxr-l0-ztH"/>
+                                            <constraint firstItem="JAk-eD-WXG" firstAttribute="leading" secondItem="ZIZ-Xd-NFB" secondAttribute="leading" id="bDy-8x-BNL"/>
+                                            <constraint firstItem="4DV-wo-FtZ" firstAttribute="leading" secondItem="ZIZ-Xd-NFB" secondAttribute="leading" id="cJF-oq-M9J"/>
+                                            <constraint firstItem="1b5-WB-tLk" firstAttribute="leading" secondItem="ZIZ-Xd-NFB" secondAttribute="leading" id="ebf-nl-XTG"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZWl-JR-SaS" secondAttribute="trailing" id="fP1-9g-8L9"/>
+                                            <constraint firstAttribute="trailing" secondItem="4DV-wo-FtZ" secondAttribute="trailing" id="gu6-Qo-ezg"/>
+                                            <constraint firstAttribute="trailing" secondItem="1b5-WB-tLk" secondAttribute="trailing" id="hQ1-hq-hsP"/>
+                                            <constraint firstAttribute="trailing" secondItem="1c9-WJ-F8I" secondAttribute="trailing" id="hon-TZ-LKo"/>
+                                            <constraint firstItem="nzD-xH-TLM" firstAttribute="leading" secondItem="ZIZ-Xd-NFB" secondAttribute="leading" id="jF8-Dp-HHK"/>
+                                            <constraint firstAttribute="trailing" secondItem="KpR-lz-zdG" secondAttribute="trailing" id="mVY-Lz-1Up"/>
+                                            <constraint firstItem="1c9-WJ-F8I" firstAttribute="leading" secondItem="ZIZ-Xd-NFB" secondAttribute="leading" id="pPe-2S-IrD"/>
+                                            <constraint firstItem="5VT-Fy-vJH" firstAttribute="leading" secondItem="ZIZ-Xd-NFB" secondAttribute="leading" id="qgn-74-Yk7"/>
+                                            <constraint firstAttribute="trailing" secondItem="eM7-L3-DqP" secondAttribute="trailing" id="vX3-tR-txB"/>
+                                        </constraints>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZIZ-Xd-NFB" firstAttribute="top" secondItem="Du4-C0-qE5" secondAttribute="top" id="4dl-4N-btT"/>
+                                    <constraint firstItem="ZIZ-Xd-NFB" firstAttribute="centerY" secondItem="Du4-C0-qE5" secondAttribute="centerY" id="9fJ-Dk-tyu"/>
+                                    <constraint firstItem="ZIZ-Xd-NFB" firstAttribute="leading" secondItem="Du4-C0-qE5" secondAttribute="leading" id="NQz-vC-mgS"/>
+                                    <constraint firstItem="ZIZ-Xd-NFB" firstAttribute="centerX" secondItem="Du4-C0-qE5" secondAttribute="centerX" id="QRd-KA-52l"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZIZ-Xd-NFB" secondAttribute="trailing" id="Wzx-gC-emv"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZIZ-Xd-NFB" secondAttribute="bottom" id="bvz-Z3-k84"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Du4-C0-qE5" firstAttribute="leading" secondItem="EtT-Jz-lul" secondAttribute="leadingMargin" constant="16" id="bi2-fH-x6C">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="Vte-8G-6f2" firstAttribute="top" secondItem="Du4-C0-qE5" secondAttribute="bottom" constant="20" id="lgS-5V-NYD">
+                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            </constraint>
+                            <constraint firstItem="Du4-C0-qE5" firstAttribute="top" secondItem="4Q2-3W-46i" secondAttribute="bottom" id="lrW-y6-5sy">
+                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="Du4-C0-qE5" secondAttribute="trailing" constant="16" id="m6i-6k-kxa">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cvR-LU-JNN" appends="YES" id="OdU-Zx-jbO"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="JET-4r-aFg" id="Tdl-7V-3Bh"/>
+                        <outlet property="artistLabel" destination="Qws-qQ-KDR" id="Y1k-Qs-peN"/>
+                        <outlet property="commentsTextView" destination="JAk-eD-WXG" id="9Sa-FO-LyX"/>
+                        <outlet property="dobTextField" destination="4DV-wo-FtZ" id="w4p-uP-DWM"/>
+                        <outlet property="lastNameTextField" destination="1b5-WB-tLk" id="nmS-sn-VDr"/>
+                        <outlet property="nameTextField" destination="5VT-Fy-vJH" id="RTv-g4-QTO"/>
+                        <outlet property="photoButton" destination="iwn-pf-p6m" id="MaT-J7-7Fa"/>
+                        <outlet property="playButton" destination="4NQ-up-Jtp" id="ORk-N6-SwU"/>
+                        <outlet property="relationTextField" destination="nzD-xH-TLM" id="8s7-9u-ZJh"/>
+                        <outlet property="scrollView" destination="Du4-C0-qE5" id="wiL-lM-uEa"/>
+                        <outlet property="songLabel" destination="Jng-1u-8xz" id="FRp-C0-1jx"/>
+                        <segue destination="d52-5z-vCI" kind="unwind" identifier="unwindToEventsAfterAddNewEvent" unwindAction="unwindToEventsAfterAddNewEventWithSegue:" id="zUZ-oW-M5n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhp-hC-hWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="d52-5z-vCI" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="cvR-LU-JNN">
+                    <connections>
+                        <action selector="hideKeyboard" destination="EcQ-ym-dZR" id="kUJ-ne-YYP"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3249" y="-116"/>
+        </scene>
+        <!--Events Table View Controller-->
+        <scene sceneID="2an-zF-enr">
+            <objects>
+                <tableViewController id="JbE-iJ-SNT" customClass="EventsTableViewController" customModule="MisRecuerdos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="28" sectionFooterHeight="28" id="UV3-HA-UhX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="125" id="PtV-z9-Lk6" customClass="EventTableViewCell" customModule="MisRecuerdos" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="125"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PtV-z9-Lk6" id="LWo-sZ-tZp">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="124.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aC1-TH-Uvf">
+                                            <rect key="frame" x="15" y="15.5" width="290" height="95"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fCx-LE-Gsf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="94.5" id="vWp-wT-EUg"/>
+                                                        <constraint firstAttribute="width" secondItem="fCx-LE-Gsf" secondAttribute="height" multiplier="1:1" id="zMd-jH-mn0"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FBh-pt-yrK">
+                                                    <rect key="frame" x="115" y="17.5" width="175" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="srn-pz-dUR">
+                                                            <rect key="frame" x="0.0" y="0.0" width="175" height="25"/>
+                                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="30"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="x3v-7u-3PM">
+                                                            <rect key="frame" x="0.0" y="35" width="175" height="25"/>
+                                                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                    <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
+                                                </stackView>
+                                            </subviews>
+                                            <variation key="heightClass=regular-widthClass=regular" spacing="60"/>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="aC1-TH-Uvf" firstAttribute="leading" secondItem="LWo-sZ-tZp" secondAttribute="leading" constant="15" id="7Ia-B5-Kgy">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                        </constraint>
+                                        <constraint firstItem="aC1-TH-Uvf" firstAttribute="top" secondItem="LWo-sZ-tZp" secondAttribute="top" constant="15" id="L5z-Vb-jqq"/>
+                                        <constraint firstAttribute="trailing" secondItem="aC1-TH-Uvf" secondAttribute="trailing" constant="15" id="Xwd-kf-H80">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                        </constraint>
+                                        <constraint firstAttribute="bottom" secondItem="aC1-TH-Uvf" secondAttribute="bottom" constant="15" id="rtI-Q6-8h3"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="photoImage" destination="fCx-LE-Gsf" id="HXK-2w-2C8"/>
+                                    <outlet property="subtitleLabel" destination="x3v-7u-3PM" id="GOu-d5-0Wo"/>
+                                    <outlet property="titleLabel" destination="srn-pz-dUR" id="H2d-gu-pmD"/>
+                                    <segue destination="ebY-hq-cOh" kind="show" id="8bw-SV-Zva">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JbE-iJ-SNT" id="nkI-QY-DOE"/>
+                            <outlet property="delegate" destination="JbE-iJ-SNT" id="vvb-4D-wo2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="IEf-6h-OX4">
+                        <barButtonItem key="backBarButtonItem" title="Lista" id="Gss-NC-E2G"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bur-py-Qb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3249" y="537"/>
+        </scene>
+        <!--Eventos-->
+        <scene sceneID="sLz-HW-kPg">
+            <objects>
+                <viewController id="1yH-ZV-7YR" customClass="EventsViewController" customModule="MisRecuerdos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2NM-qJ-UKJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ory-pe-Alh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a73-7N-c0B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Buscar evento" translatesAutoresizingMaskIntoConstraints="NO" id="n46-Id-hQz">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="R1d-JF-EQs" userLabel="Content">
+                                <rect key="frame" x="32" y="134" width="256" height="404"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEi-JB-bZy" userLabel="Category" customClass="RoundedView" customModule="MisRecuerdos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="256" height="101.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AcN-5a-Vuv" userLabel="Content">
+                                                <rect key="frame" x="15" y="15" width="226" height="71.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="E9w-j0-B0q" userLabel="Labels">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoría" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="88S-ea-3KB">
+                                                                <rect key="frame" x="0.0" y="0.0" width="103" height="36"/>
+                                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular">
+                                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
+                                                                </variation>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6pu-oS-bpD">
+                                                                <rect key="frame" x="0.0" y="36" width="103" height="35.5"/>
+                                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular">
+                                                                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zwO-eD-kLl">
+                                                        <rect key="frame" x="123" y="0.0" width="103" height="71.5"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="60"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="AcN-5a-Vuv" secondAttribute="bottom" constant="15" id="Zag-uG-BRH"/>
+                                            <constraint firstItem="AcN-5a-Vuv" firstAttribute="leading" secondItem="NEi-JB-bZy" secondAttribute="leading" constant="15" id="bBh-Y4-G0Y"/>
+                                            <constraint firstItem="AcN-5a-Vuv" firstAttribute="top" secondItem="NEi-JB-bZy" secondAttribute="top" constant="15" id="dyh-uk-MlY"/>
+                                            <constraint firstAttribute="trailing" secondItem="AcN-5a-Vuv" secondAttribute="trailing" constant="15" id="l1W-yh-pRq"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                <color key="value" red="0.88472157419999997" green="0.88472157419999997" blue="0.88472157419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                <color key="value" red="0.88472157419999997" green="0.88472157419999997" blue="0.88472157419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="sR2-hI-Kid" appends="YES" id="EVZ-Td-cLP"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ID9-ip-9Pf" userLabel="Category" customClass="RoundedView" customModule="MisRecuerdos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="135.5" width="256" height="101"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="c5n-UA-8S1" userLabel="Content">
+                                                <rect key="frame" x="15" y="15" width="226" height="71"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tmc-dr-XIa" userLabel="Labels">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="71"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Otros" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MEV-od-aex">
+                                                                <rect key="frame" x="0.0" y="0.0" width="103" height="35.5"/>
+                                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular">
+                                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
+                                                                </variation>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Otros" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="daa-qe-Rhb">
+                                                                <rect key="frame" x="0.0" y="35.5" width="103" height="35.5"/>
+                                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular">
+                                                                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m9W-Qx-hqi">
+                                                        <rect key="frame" x="123" y="0.0" width="103" height="71"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="60"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="c5n-UA-8S1" firstAttribute="leading" secondItem="ID9-ip-9Pf" secondAttribute="leading" constant="15" id="WIh-to-eEt"/>
+                                            <constraint firstItem="c5n-UA-8S1" firstAttribute="top" secondItem="ID9-ip-9Pf" secondAttribute="top" constant="15" id="iCF-eT-zID"/>
+                                            <constraint firstAttribute="trailing" secondItem="c5n-UA-8S1" secondAttribute="trailing" constant="15" id="kLn-XK-lsp"/>
+                                            <constraint firstAttribute="bottom" secondItem="c5n-UA-8S1" secondAttribute="bottom" constant="15" id="ygy-IT-8tO"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                <color key="value" red="0.88472157419999997" green="0.88472157419999997" blue="0.88472157419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                <color key="value" red="0.88472157419999997" green="0.88472157419999997" blue="0.88472157419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="gkt-kK-v4t" appends="YES" id="jgq-oJ-uqC"/>
+                                        </connections>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edW-ah-5b9" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="270" width="256" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cSn-rh-Z66">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="20"/>
+                                        <state key="normal" title="Ver todos los eventos"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
+                                                <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
+                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
+                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
+                                                <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="30"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="JbE-iJ-SNT" kind="show" identifier="segueToShowAll" id="9oF-F9-Wjx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4d-ml-dEk" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="354" width="256" height="50"/>
+                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="20"/>
+                                        <state key="normal" title="Ver todas las fotos"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
+                                                <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
+                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
+                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
+                                                <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="30"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="xYM-Dq-UBn" kind="show" identifier="segueToShowAllPhotos" id="6WI-od-slh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="N4d-ml-dEk" firstAttribute="height" secondItem="edW-ah-5b9" secondAttribute="height" id="8LW-7U-MZu"/>
+                                    <constraint firstItem="ID9-ip-9Pf" firstAttribute="height" secondItem="R1d-JF-EQs" secondAttribute="height" multiplier="0.25" id="Fcg-45-Kia"/>
+                                    <constraint firstItem="NEi-JB-bZy" firstAttribute="height" secondItem="R1d-JF-EQs" secondAttribute="height" multiplier="0.25" id="w96-9f-mcc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Ory-pe-Alh" firstAttribute="top" secondItem="R1d-JF-EQs" secondAttribute="bottom" constant="30" id="7hY-cx-aVI">
+                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="n46-Id-hQz" secondAttribute="trailing" id="JH6-nV-ANh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R1d-JF-EQs" secondAttribute="trailing" constant="16" id="Mre-wq-2vc">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="R1d-JF-EQs" firstAttribute="leading" secondItem="a73-7N-c0B" secondAttribute="leadingMargin" constant="16" id="Tkq-FV-jq1">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="R1d-JF-EQs" firstAttribute="top" secondItem="2NM-qJ-UKJ" secondAttribute="bottom" constant="70" id="VCH-hf-ySu"/>
+                            <constraint firstItem="n46-Id-hQz" firstAttribute="leading" secondItem="a73-7N-c0B" secondAttribute="leading" id="YmY-u5-V7B"/>
+                            <constraint firstItem="n46-Id-hQz" firstAttribute="top" secondItem="2NM-qJ-UKJ" secondAttribute="bottom" id="m4l-nQ-N8w"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="DrJ-Fw-REf" appends="YES" id="qkF-Wj-Z49"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Eventos" id="EoB-Fu-BKL">
+                        <barButtonItem key="rightBarButtonItem" title="Agregar" id="ncq-a2-JSG">
+                            <connections>
+                                <segue destination="EcQ-ym-dZR" kind="presentation" id="LHG-JP-y4p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="otherPhoto" destination="m9W-Qx-hqi" id="id3-he-HLU"/>
+                        <outlet property="personalPhoto" destination="zwO-eD-kLl" id="bcV-16-h9O"/>
+                        <outlet property="searchBar" destination="n46-Id-hQz" id="Lk4-cd-VtI"/>
+                        <segue destination="JbE-iJ-SNT" kind="show" identifier="segueToFiltered" id="aUI-tz-PlO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Aj-YZ-Rrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="sR2-hI-Kid">
+                    <connections>
+                        <segue destination="JbE-iJ-SNT" kind="show" identifier="segueToShowPersonal" id="ica-3p-5Yh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="gkt-kK-v4t">
+                    <connections>
+                        <segue destination="JbE-iJ-SNT" kind="show" identifier="segueToShowOther" id="ppm-Jv-8sv"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="DrJ-Fw-REf" userLabel="Hide Keyboard">
+                    <connections>
+                        <action selector="hideKeyboard" destination="1yH-ZV-7YR" id="hDU-IN-Lge"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2363" y="538"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="playIcon" width="512" height="512"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8bw-SV-Zva"/>
+        <segue reference="ppm-Jv-8sv"/>
+    </inferredMetricsTieBreakers>
+</document>

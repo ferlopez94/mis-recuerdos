@@ -24,6 +24,7 @@ final class User: NSObject, NSCoding {
     let photo: UIImage
     let photoData: Data
     var contacts: [Contact]
+    var events: [Event]
     override var description: String {
         return "\(name) \(lastName) \(dateOfBirth)"
     }
@@ -31,7 +32,7 @@ final class User: NSObject, NSCoding {
     
     // MARK: - Initializers
     
-    init(name: String, lastName: String, dateOfBirth: String, comments: String, photo: UIImage, contacts: [Contact] = [Contact]()) {
+    init(name: String, lastName: String, dateOfBirth: String, comments: String, photo: UIImage, contacts: [Contact] = [Contact](), events: [Event] = [Event]()) {
         self.name = name
         self.lastName = lastName
         self.dateOfBirth = dateOfBirth
@@ -39,6 +40,7 @@ final class User: NSObject, NSCoding {
         self.photo = photo
         self.photoData = UIImageJPEGRepresentation(photo, 0.2)!
         self.contacts = contacts
+        self.events = events
     }
     
     
@@ -51,6 +53,7 @@ final class User: NSObject, NSCoding {
         static let comments = "comments"
         static let photoData = "photoData"
         static let contacts = "contacts"
+        static let events = "events"
     }
     
     convenience init?(coder aDecoder: NSCoder) {
@@ -60,9 +63,10 @@ final class User: NSObject, NSCoding {
             let comments = aDecoder.decodeObject(forKey: PropertyKey.comments) as? String,
             let photoData = aDecoder.decodeObject(forKey: PropertyKey.photoData) as? Data,
             let photo = UIImage(data: photoData),
-            let contacts = aDecoder.decodeObject(forKey: PropertyKey.contacts) as? [Contact] else { return nil }
+            let contacts = aDecoder.decodeObject(forKey: PropertyKey.contacts) as? [Contact],
+            let events = aDecoder.decodeObject(forKey: PropertyKey.events) as? [Event] else { return nil }
         
-        self.init(name: name, lastName: lastName, dateOfBirth: dateOfBirth, comments: comments, photo: photo, contacts: contacts)
+        self.init(name: name, lastName: lastName, dateOfBirth: dateOfBirth, comments: comments, photo: photo, contacts: contacts, events: events)
     }
     
     func encode(with aCoder: NSCoder) {
@@ -72,6 +76,7 @@ final class User: NSObject, NSCoding {
         aCoder.encode(comments, forKey: PropertyKey.comments)
         aCoder.encode(photoData, forKey: PropertyKey.photoData)
         aCoder.encode(contacts, forKey: PropertyKey.contacts)
+        aCoder.encode(events, forKey: PropertyKey.events)
     }
     
     
@@ -128,6 +133,18 @@ final class User: NSObject, NSCoding {
     
     func addContact(_ contact: Contact, atIndex index: Int) {
         contacts[index] = contact
+    }
+    
+    
+    // MARK: - Events
+    
+    func addEvent(_ event: Event) {
+        events.append(event)
+        events.sort {$0.name < $1.name}
+    }
+    
+    func addEvent(_ event: Event, atIndex index: Int) {
+        events[index] = event
     }
 
 }

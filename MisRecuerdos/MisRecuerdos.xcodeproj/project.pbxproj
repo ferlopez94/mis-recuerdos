@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224B09E51FB36521004B1BF0 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224B09E41FB36521004B1BF0 /* Events.storyboard */; };
+		224B09E91FB37365004B1BF0 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B09E81FB37365004B1BF0 /* EventsViewController.swift */; };
+		224B09EB1FB376E6004B1BF0 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B09EA1FB376E6004B1BF0 /* EventsTableViewController.swift */; };
+		224B09ED1FB37773004B1BF0 /* EventsGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B09EC1FB37773004B1BF0 /* EventsGalleryViewController.swift */; };
+		224B09F11FB37D5B004B1BF0 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B09F01FB37D5B004B1BF0 /* EventCollectionViewCell.swift */; };
+		224B09F31FB37E4F004B1BF0 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B09F21FB37E4F004B1BF0 /* EventTableViewCell.swift */; };
+		224B09F51FB37F98004B1BF0 /* ShowEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B09F41FB37F98004B1BF0 /* ShowEventViewController.swift */; };
+		224B09F71FB38331004B1BF0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224B09F61FB38331004B1BF0 /* Event.swift */; };
+		22582E151FB4DAB500E3BEAF /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22582E141FB4DAB500E3BEAF /* AddEventViewController.swift */; };
+		2275CD5D1FB83DC000B3BD5B /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2275CD5C1FB83DC000B3BD5B /* EditEventViewController.swift */; };
+		22E281C81FB3A664008376C1 /* EventOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E281C61FB3A664008376C1 /* EventOverlayView.swift */; };
+		22E281C91FB3A664008376C1 /* EventOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E281C71FB3A664008376C1 /* EventOverlayView.xib */; };
 		618136D8793AAE6BFB13F204 /* Pods_MisRecuerdos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B2DB62BAECCC0E5D33724B /* Pods_MisRecuerdos.framework */; };
 		AD4ADD4E1F9D00880071C6F1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4ADD4D1F9D00880071C6F1 /* Login.storyboard */; };
 		AD4ADD501F9D04EB0071C6F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4ADD4F1F9D04EB0071C6F1 /* LoginViewController.swift */; };
@@ -46,6 +58,18 @@
 
 /* Begin PBXFileReference section */
 		03B2DB62BAECCC0E5D33724B /* Pods_MisRecuerdos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MisRecuerdos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		224B09E41FB36521004B1BF0 /* Events.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		224B09E81FB37365004B1BF0 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		224B09EA1FB376E6004B1BF0 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		224B09EC1FB37773004B1BF0 /* EventsGalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsGalleryViewController.swift; sourceTree = "<group>"; };
+		224B09F01FB37D5B004B1BF0 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		224B09F21FB37E4F004B1BF0 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		224B09F41FB37F98004B1BF0 /* ShowEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEventViewController.swift; sourceTree = "<group>"; };
+		224B09F61FB38331004B1BF0 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		22582E141FB4DAB500E3BEAF /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		2275CD5C1FB83DC000B3BD5B /* EditEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
+		22E281C61FB3A664008376C1 /* EventOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventOverlayView.swift; sourceTree = "<group>"; };
+		22E281C71FB3A664008376C1 /* EventOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventOverlayView.xib; sourceTree = "<group>"; };
 		AD4ADD4D1F9D00880071C6F1 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		AD4ADD4F1F9D04EB0071C6F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AD7D99931FABB86900B319D2 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
@@ -107,6 +131,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		224B09E31FB364EE004B1BF0 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				224B09E41FB36521004B1BF0 /* Events.storyboard */,
+				224B09E81FB37365004B1BF0 /* EventsViewController.swift */,
+				224B09EA1FB376E6004B1BF0 /* EventsTableViewController.swift */,
+				224B09EC1FB37773004B1BF0 /* EventsGalleryViewController.swift */,
+				224B09F21FB37E4F004B1BF0 /* EventTableViewCell.swift */,
+				224B09F01FB37D5B004B1BF0 /* EventCollectionViewCell.swift */,
+				224B09F41FB37F98004B1BF0 /* ShowEventViewController.swift */,
+				22E281C61FB3A664008376C1 /* EventOverlayView.swift */,
+				22E281C71FB3A664008376C1 /* EventOverlayView.xib */,
+				22582E141FB4DAB500E3BEAF /* AddEventViewController.swift */,
+				2275CD5C1FB83DC000B3BD5B /* EditEventViewController.swift */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
 		8CE74110D4BCA4250E787AB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,8 +174,8 @@
 				AD7D99991FABDD6D00B319D2 /* AddContactViewController.swift */,
 				AD9BBDE61FAEB65E00B5DF2B /* ContactCollectionViewCell.swift */,
 				AD7D99971FABD8E200B319D2 /* ContactsViewController.swift */,
-				AD9BBDEA1FAEB90200B5DF2B /* ContactsGalleryViewController.swift */,
 				AD9BBDE01FACE98700B5DF2B /* ContactsTableViewController.swift */,
+				AD9BBDEA1FAEB90200B5DF2B /* ContactsGalleryViewController.swift */,
 				AD9BBDE21FACF99600B5DF2B /* ContactTableViewCell.swift */,
 				AD89943D1FB0BD6800FD60AE /* EditContactViewController.swift */,
 				AD9BBDE41FAD164F00B5DF2B /* ShowContactViewController.swift */,
@@ -164,6 +206,7 @@
 		AD9750021F9AFC2300E81BB6 /* MisRecuerdos */ = {
 			isa = PBXGroup;
 			children = (
+				224B09E31FB364EE004B1BF0 /* Events */,
 				ADA5E3841F9D90CF00714837 /* Constants.swift */,
 				AD97501F1F9C7AC900E81BB6 /* Custom Views */,
 				AD97501A1F9C77CB00E81BB6 /* Resources */,
@@ -215,6 +258,7 @@
 			children = (
 				AD7D999B1FABE2A100B319D2 /* Contact.swift */,
 				ADA5E3811F9D4AED00714837 /* User.swift */,
+				224B09F61FB38331004B1BF0 /* Event.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -304,6 +348,7 @@
 			files = (
 				AD97500E1F9AFC2F00E81BB6 /* LaunchScreen.storyboard in Resources */,
 				AD9BBDED1FAEC62000B5DF2B /* ContactOverlayView.xib in Resources */,
+				22E281C91FB3A664008376C1 /* EventOverlayView.xib in Resources */,
 				ADA5E38C1F9DB8C200714837 /* AssetsMenu.xcassets in Resources */,
 				AD97500B1F9AFC2E00E81BB6 /* Assets.xcassets in Resources */,
 				AD4ADD4E1F9D00880071C6F1 /* Login.storyboard in Resources */,
@@ -314,6 +359,7 @@
 				AD9750171F9C5C2300E81BB6 /* Signup.storyboard in Resources */,
 				AD97501E1F9C783800E81BB6 /* Century Gothic Bold.ttf in Resources */,
 				AD9750091F9AFC2B00E81BB6 /* Main.storyboard in Resources */,
+				224B09E51FB36521004B1BF0 /* Events.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,21 +418,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22582E151FB4DAB500E3BEAF /* AddEventViewController.swift in Sources */,
 				AD9750191F9C739D00E81BB6 /* SignupViewController.swift in Sources */,
 				AD7D99981FABD8E200B319D2 /* ContactsViewController.swift in Sources */,
+				22E281C81FB3A664008376C1 /* EventOverlayView.swift in Sources */,
 				AD9750061F9AFC2500E81BB6 /* ViewController.swift in Sources */,
 				ADA5E3821F9D4AED00714837 /* User.swift in Sources */,
 				ADF9AB4E1FA797A7002F6789 /* ShowProfileViewController.swift in Sources */,
 				AD9750041F9AFC2400E81BB6 /* AppDelegate.swift in Sources */,
+				224B09F51FB37F98004B1BF0 /* ShowEventViewController.swift in Sources */,
 				AD9BBDE11FACE98700B5DF2B /* ContactsTableViewController.swift in Sources */,
 				ADF9AB491FA6F5F8002F6789 /* MenuViewController.swift in Sources */,
 				ADA5E3871F9D9E1600714837 /* UserTableViewCell.swift in Sources */,
+				224B09F11FB37D5B004B1BF0 /* EventCollectionViewCell.swift in Sources */,
 				ADA5E3851F9D90D000714837 /* Constants.swift in Sources */,
+				224B09E91FB37365004B1BF0 /* EventsViewController.swift in Sources */,
 				AD9BBDE51FAD164F00B5DF2B /* ShowContactViewController.swift in Sources */,
 				AD7D999A1FABDD6D00B319D2 /* AddContactViewController.swift in Sources */,
 				AD9BBDEB1FAEB90200B5DF2B /* ContactsGalleryViewController.swift in Sources */,
+				224B09EB1FB376E6004B1BF0 /* EventsTableViewController.swift in Sources */,
 				AD7D99961FABCF3100B319D2 /* RoundedView.swift in Sources */,
 				AD4ADD501F9D04EB0071C6F1 /* LoginViewController.swift in Sources */,
+				224B09F71FB38331004B1BF0 /* Event.swift in Sources */,
+				224B09F31FB37E4F004B1BF0 /* EventTableViewCell.swift in Sources */,
 				AD7D999C1FABE2A100B319D2 /* Contact.swift in Sources */,
 				ADF9AB751FA7A38A002F6789 /* EditProfileViewController.swift in Sources */,
 				AD9750211F9C7ADE00E81BB6 /* RoundedButton.swift in Sources */,
@@ -394,6 +448,8 @@
 				AD9BBDEF1FAEC79500B5DF2B /* ContactOverlayView.swift in Sources */,
 				AD9BBDE71FAEB65E00B5DF2B /* ContactCollectionViewCell.swift in Sources */,
 				AD89943E1FB0BD6800FD60AE /* EditContactViewController.swift in Sources */,
+				224B09ED1FB37773004B1BF0 /* EventsGalleryViewController.swift in Sources */,
+				2275CD5D1FB83DC000B3BD5B /* EditEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
