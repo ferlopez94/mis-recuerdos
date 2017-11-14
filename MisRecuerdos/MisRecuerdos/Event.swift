@@ -22,7 +22,7 @@ final class Event: NSObject, NSCoding {
     let category: EventCategory
     let relative: String
     let comments: String
-    let song: MPMediaItem
+    let song: MPMediaItem?
     let photo: UIImage
     let photoData: Data
     
@@ -33,7 +33,7 @@ final class Event: NSObject, NSCoding {
     
     // MARK: - Initializers
     
-    init(name: String, descript: String, category: EventCategory, relative: String, comments: String, song: MPMediaItem, photo: UIImage) {
+    init(name: String, descript: String, category: EventCategory, relative: String, comments: String, song: MPMediaItem?, photo: UIImage) {
         self.name = name
         self.descript = descript
         self.category = category
@@ -64,7 +64,7 @@ final class Event: NSObject, NSCoding {
             let category = EventCategory.init(rawValue: categoryRawValue),
             let relative = aDecoder.decodeObject(forKey: PropertyKey.relative) as? String,
             let comments = aDecoder.decodeObject(forKey: PropertyKey.comments) as? String,
-            let song = aDecoder.decodeObject(forKey: PropertyKey.song) as? MPMediaItem,
+            let song = aDecoder.decodeObject(forKey: PropertyKey.song) as? MPMediaItem?,
             let photoData = aDecoder.decodeObject(forKey: PropertyKey.photoData) as? Data,
             let photo = UIImage(data: photoData) else { return nil }
         

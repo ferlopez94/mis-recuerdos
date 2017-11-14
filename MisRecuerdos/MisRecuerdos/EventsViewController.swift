@@ -139,7 +139,7 @@ class EventsViewController: UIViewController, UISearchBarDelegate, ReloadDataE {
         
         self.user = user
         print(self.user!)
-        print(self.user!.contacts)
+        print(self.user!.events)
         personalEvents = self.user!.events.enumerated().filter {$0.element.category == .personal }
         otherEvents = self.user!.events.enumerated().filter {$0.element.category == .other }
     }

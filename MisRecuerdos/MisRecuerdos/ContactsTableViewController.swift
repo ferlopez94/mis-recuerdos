@@ -66,6 +66,13 @@ class ContactsTableViewController: UITableViewController, UpdateContact {
         delegate?.reloadData(shouldReload: true)
     }
     
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        if contacts.isEmpty {
+            return nil
+        }
+        
+        return indexPath
+    }
     
     // MARK: - Navigation
 

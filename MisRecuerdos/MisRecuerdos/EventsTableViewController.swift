@@ -69,6 +69,14 @@ class EventsTableViewController: UITableViewController, UpdateEvent {
     
     // MARK: - Navigation
     
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        if events.isEmpty {
+            return nil
+        }
+        
+        return indexPath
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let index = tableView.indexPathForSelectedRow!.row
         self.selectedIndex = index

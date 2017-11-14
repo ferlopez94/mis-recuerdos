@@ -52,8 +52,8 @@ class ShowEventViewController: UIViewController, UpdateEvent {
         categoryLabel.text = event.element.category == .personal ? "Personal" : "Otro"
         relativeLabel.text = event.element.relative
         commentsLabel.text = event.element.comments == "" ? "No tienes comentarios acerca de este evento." : event.element.comments
-        songLabel.text = event.element.song.title
-        artistLabel.text = event.element.song.artist
+        songLabel.text = event.element.song?.title ?? ""
+        artistLabel.text = event.element.song?.artist ?? ""
         
         let photo = INSPhoto(image: event.element.photo, thumbnailImage: event.element.photo)
         photos.append(photo)

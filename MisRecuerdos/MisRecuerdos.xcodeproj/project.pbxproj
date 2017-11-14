@@ -206,7 +206,6 @@
 		AD9750021F9AFC2300E81BB6 /* MisRecuerdos */ = {
 			isa = PBXGroup;
 			children = (
-				224B09E31FB364EE004B1BF0 /* Events */,
 				ADA5E3841F9D90CF00714837 /* Constants.swift */,
 				AD97501F1F9C7AC900E81BB6 /* Custom Views */,
 				AD97501A1F9C77CB00E81BB6 /* Resources */,
@@ -216,6 +215,7 @@
 				ADA5E3881F9DB85900714837 /* Menu */,
 				ADF9AB4A1FA79754002F6789 /* ShowProfile */,
 				AD7D99921FABB61500B319D2 /* Contacts */,
+				224B09E31FB364EE004B1BF0 /* Events */,
 				AD9750031F9AFC2400E81BB6 /* AppDelegate.swift */,
 				AD9750051F9AFC2500E81BB6 /* ViewController.swift */,
 				AD9750071F9AFC2B00E81BB6 /* Main.storyboard */,

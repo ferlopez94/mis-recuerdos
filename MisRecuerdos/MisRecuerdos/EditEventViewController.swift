@@ -36,8 +36,8 @@ class EditEventViewController: AddEventViewController {
         relationTextFieldE.text = event.relative
         commentsTextView.text = event.comments == "" ? commentsPlaceholder : event.comments
         commentsTextView.textColor = UIColor.lightGray
-        songLabelE.text = event.song.title
-        artistLabelE.text = event.song.artist
+        songLabelE.text = event.song?.title ?? ""
+        artistLabelE.text = event.song?.artist ?? ""
     }
     
     

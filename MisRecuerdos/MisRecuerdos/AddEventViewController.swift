@@ -63,7 +63,7 @@ class AddEventViewController: SignupViewController, UIPickerViewDataSource, UIPi
         self.user = user
     }
     
-    // Add new contact
+    // Add new event
     override func createUser() {
         print("Add event")
         var message = ""
@@ -116,7 +116,6 @@ class AddEventViewController: SignupViewController, UIPickerViewDataSource, UIPi
         let category = lastName == "Personal" ? EventCategory.personal : EventCategory.other
         let comments = commentsTextView.text == commentsPlaceholder ? "" : commentsTextView.text!
         let relative = relationTextField.text!
-        let song = songMedia!
         
         print(name)
         print(descript)
@@ -124,7 +123,7 @@ class AddEventViewController: SignupViewController, UIPickerViewDataSource, UIPi
         print(comments)
         
         let index = UserDefaults.standard.integer(forKey: K.Accounts.actualUserIndexKey)
-        let event = Event(name: name, descript: descript, category: category, relative: relative, comments: comments, song: song, photo: photoImage!)
+        let event = Event(name: name, descript: descript, category: category, relative: relative, comments: comments, song: songMedia, photo: photoImage!)
         
         user!.addEvent(event)
         
@@ -144,9 +143,9 @@ class AddEventViewController: SignupViewController, UIPickerViewDataSource, UIPi
         dismiss(animated: true, completion: nil)
     }
     
-    //Add music
-    
+    // Add music
     @IBAction func addMusic(_ sender: UIButton) {
+        print("addMusic")
         if let player = audioPlayer {
             if change {
                 playButton.setImage(#imageLiteral(resourceName: "playIcon"), for: .normal)
@@ -157,34 +156,33 @@ class AddEventViewController: SignupViewController, UIPickerViewDataSource, UIPi
         displayMediaPickerAndPlayItem()
     }
     
-    //Play song
-    
+    // Play song
     @IBAction func playMusic(_ sender: UIButton) {
+        print("playMusic")
         if songURL != nil {
             audioPlayer = try? AVAudioPlayer(contentsOf: songURL!)
             //Detect song ending
             audioPlayer.numberOfLoops = 0
             audioPlayer.delegate = self
+            
             if audioPlayer != nil {
                 audioPlayer.prepareToPlay()
-            }
-            else {
+            } else {
                 print("No se encontró la canción.")
             }
             reproducing = !reproducing
+            
             if let player = audioPlayer {
                 if reproducing {
                     playButton.setImage(#imageLiteral(resourceName: "playIcon"), for: .normal)
                     audioPlayer.play()
-                }
-                else {
+                } else {
                     playButton.setImage(#imageLiteral(resourceName: "stopIcon"), for: .normal)
                     player.stop()
                 }
             }
         }
     }
-    
     
     
     // MARK: - UIPickerViewDataSource methods
@@ -218,18 +216,17 @@ class AddEventViewController: SignupViewController, UIPickerViewDataSource, UIPi
             lastNameTextField.text = categoryOptions[row]
         }
     }
+    
     override func textFieldEditingDidBegin(_ sender: UITextField) {}
     
     
     // MARK: - Music methods
     
     func displayMediaPickerAndPlayItem() {
-        
         let mediaPicker: MPMediaPickerController = MPMediaPickerController.self(mediaTypes:MPMediaType.music)
         mediaPicker.delegate = self
         mediaPicker.allowsPickingMultipleItems = false
         self.present(mediaPicker, animated: true, completion: nil)
-        
     }
     
     func mediaPickerDidCancel(_ mediaPicker: MPMediaPickerController) {
@@ -237,17 +234,20 @@ class AddEventViewController: SignupViewController, UIPickerViewDataSource, UIPi
     }
     
     func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
-        //Get song information
+        // Get song information
         let representativeItem = mediaItemCollection.representativeItem
+        
         if representativeItem?.assetURL != nil {
             songMedia = representativeItem
             let title = representativeItem?.title
             let artist = representativeItem?.artist
-            //Get song URL
+            
+            // Get song URL
             songURL = (representativeItem?.assetURL)!
             songLabel.text = title
             artistLabel.text = artist
             self.dismiss(animated: true)
         }
     }
+    
 }
