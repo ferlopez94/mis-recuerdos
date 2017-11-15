@@ -7,18 +7,18 @@
 //
 
 import UIKit
-import MediaPlayer //M
-import AVFoundation //M
+import MediaPlayer
+import AVFoundation
 
 class AddEventViewController: SignupViewController, UIPickerViewDataSource, UIPickerViewDelegate, MPMediaPickerControllerDelegate, AVAudioPlayerDelegate {
     
     // MARK: - IBOutlets
     
     @IBOutlet weak var relationTextField: UITextField!
-    @IBOutlet weak var playButton: UIButton! //M
-    @IBOutlet weak var addButton: UIButton! //M
-    @IBOutlet weak var songLabel: UILabel! //M
-    @IBOutlet weak var artistLabel: UILabel! //M
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var songLabel: UILabel!
+    @IBOutlet weak var artistLabel: UILabel!
     
     
     // MARK: - Instance variables
@@ -33,13 +33,13 @@ class AddEventViewController: SignupViewController, UIPickerViewDataSource, UIPi
         }
     }
     
-    var mediaPicker: MPMediaPickerController? //M
-    var musicPlayer: MPMusicPlayerController? //M
-    var songURL: URL! = nil //M
-    var audioPlayer: AVAudioPlayer! //M
-    var reproducing = false //M
-    var change = false //M
-    var songMedia: MPMediaItem! = nil //M
+    var mediaPicker: MPMediaPickerController?
+    var musicPlayer: MPMusicPlayerController?
+    var songURL: URL! = nil
+    var audioPlayer: AVAudioPlayer!
+    var reproducing = false
+    var change = false
+    var songMedia: MPMediaItem! = nil
     
     let categoryOptions = ["Personal", "Otro"]
     let categoryPickerView = UIPickerView()
@@ -174,10 +174,10 @@ class AddEventViewController: SignupViewController, UIPickerViewDataSource, UIPi
             
             if let player = audioPlayer {
                 if reproducing {
-                    playButton.setImage(#imageLiteral(resourceName: "playIcon"), for: .normal)
+                    playButton.setImage(#imageLiteral(resourceName: "stopIcon"), for: .normal)
                     audioPlayer.play()
                 } else {
-                    playButton.setImage(#imageLiteral(resourceName: "stopIcon"), for: .normal)
+                    playButton.setImage(#imageLiteral(resourceName: "playIcon"), for: .normal)
                     player.stop()
                 }
             }

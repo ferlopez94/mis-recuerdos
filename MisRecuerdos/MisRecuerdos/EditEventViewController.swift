@@ -10,10 +10,6 @@ import UIKit
 
 class EditEventViewController: AddEventViewController {
     
-    @IBOutlet weak var relationTextFieldE: UITextField!
-    @IBOutlet weak var songLabelE: UILabel!
-    @IBOutlet weak var artistLabelE: UILabel!
-    
     // MARK: - Instance variables
     
     var event: (offset: Int, element: Event)!
@@ -33,11 +29,11 @@ class EditEventViewController: AddEventViewController {
         nameTextField.text = event.name
         dobTextField.text = event.descript
         lastNameTextField.text = event.category == .personal ? "Personal" : "Otro"
-        relationTextFieldE.text = event.relative
+        relationTextField.text = event.relative
         commentsTextView.text = event.comments == "" ? commentsPlaceholder : event.comments
         commentsTextView.textColor = UIColor.lightGray
-        songLabelE.text = event.song?.title ?? ""
-        artistLabelE.text = event.song?.artist ?? ""
+        songLabel.text = event.song?.title ?? "No hay canción asociada"
+        artistLabel.text = event.song?.artist ?? ""
     }
     
     
@@ -79,9 +75,9 @@ class EditEventViewController: AddEventViewController {
         
         let newPhotoImage = photoImage != nil ? photoImage! : event.photo
         let category = lastName == "Personal" ? EventCategory.personal : EventCategory.other
-        let relative = relationTextFieldE.text == relationTextFieldE.placeholder ? "" : relationTextFieldE.text!
+        let relative = relationTextField.text == relationTextField.placeholder ? "" : relationTextField.text!
         let comments = commentsTextView.text == commentsPlaceholder ? "" : commentsTextView.text!
-        let song = songMedia! //M
+        let song = songMedia != nil ? songMedia : event.song
         
         guard photoImage == nil,
             name == event.name,
@@ -120,6 +116,12 @@ class EditEventViewController: AddEventViewController {
         }
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    override func playMusic(_ sender: UIButton) {
+        print("playMusic2")
+        self.songURL = self.event.element.song?.assetURL
+        super.playMusic(sender)
     }
     
 }

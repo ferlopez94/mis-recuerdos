@@ -8,12 +8,14 @@
 
 import INSPhotoGallery
 import UIKit
+import MediaPlayer
+import AVFoundation
 
 protocol UpdateEvent {
     func update(event: (offset: Int, element: Event))
 }
 
-class ShowEventViewController: UIViewController, UpdateEvent {
+class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerControllerDelegate, AVAudioPlayerDelegate {
     
     // MARK: - IBOutlets
     
@@ -25,6 +27,7 @@ class ShowEventViewController: UIViewController, UpdateEvent {
     @IBOutlet weak var commentsLabel: UILabel!
     @IBOutlet weak var songLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
+    @IBOutlet weak var playButton: UIButton!
     
     
     // MARK: - Instance variables
@@ -33,6 +36,13 @@ class ShowEventViewController: UIViewController, UpdateEvent {
     var photos = [INSPhotoViewable]()
     let segueToEditEvent = "segueToEditEvent"
     var delegate: UpdateEvent?
+    
+    //var mediaPicker: MPMediaPickerController?
+    //var musicPlayer: MPMusicPlayerController?
+    var audioPlayer: AVAudioPlayer!
+    var reproducing = false
+    var change = false
+    var songMedia: MPMediaItem! = nil
     
     
     // MARK: - View Controller life cycle
@@ -52,7 +62,7 @@ class ShowEventViewController: UIViewController, UpdateEvent {
         categoryLabel.text = event.element.category == .personal ? "Personal" : "Otro"
         relativeLabel.text = event.element.relative
         commentsLabel.text = event.element.comments == "" ? "No tienes comentarios acerca de este evento." : event.element.comments
-        songLabel.text = event.element.song?.title ?? ""
+        songLabel.text = event.element.song?.title ?? "No hay canción asociada"
         artistLabel.text = event.element.song?.artist ?? ""
         
         let photo = INSPhoto(image: event.element.photo, thumbnailImage: event.element.photo)
@@ -81,11 +91,54 @@ class ShowEventViewController: UIViewController, UpdateEvent {
     
     // MARK: - Navigation
     
+    
+    @IBAction func segueToEdit(_ sender: Any) {
+        print("prepare")
+        if let player = audioPlayer {
+            print("prepare1")
+            if reproducing {
+                print("prepare2")
+                playButton.setImage(#imageLiteral(resourceName: "playIcon"), for: .normal)
+                player.stop()
+            }
+        }
+        
+        performSegue(withIdentifier: segueToEditEvent, sender: sender)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueToEditEvent {
             let ve = segue.destination as! EditEventViewController
             ve.event = event
             ve.delegate = self
+        }
+    }
+    
+    // Play song
+    @IBAction func playMusic(_ sender: UIButton) {
+        print("playMusic")
+        if self.event.element.song?.assetURL != nil {
+            audioPlayer = try? AVAudioPlayer(contentsOf: self.event.element.song!.assetURL!)
+            //Detect song ending
+            audioPlayer.numberOfLoops = 0
+            audioPlayer.delegate = self
+            
+            if audioPlayer != nil {
+                audioPlayer.prepareToPlay()
+            } else {
+                print("No se encontró la canción.")
+            }
+            reproducing = !reproducing
+            
+            if let player = audioPlayer {
+                if reproducing {
+                    playButton.setImage(#imageLiteral(resourceName: "stopIcon"), for: .normal)
+                    audioPlayer.play()
+                } else {
+                    playButton.setImage(#imageLiteral(resourceName: "playIcon"), for: .normal)
+                    player.stop()
+                }
+            }
         }
     }
     
