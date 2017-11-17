@@ -98,11 +98,6 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
 
         let comments = commentsTextView.text == commentsPlaceholder ? "" : commentsTextView.text!
         
-        print(name)
-        print(lastName)
-        print(comments)
-        print(dateOfBirth)
-        
         let user = User(name: name, lastName: lastName, dateOfBirth: dateOfBirth, comments: comments, photo: photoImage!)
         if User.saveToFile(user) {
             UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: user), forKey: K.Accounts.actualUserKey)
