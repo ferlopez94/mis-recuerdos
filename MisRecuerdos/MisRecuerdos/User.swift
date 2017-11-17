@@ -135,6 +135,10 @@ final class User: NSObject, NSCoding {
         contacts[index] = contact
     }
     
+    func removeContact(atIndex index: Int) {
+        contacts.remove(at: index)
+    }
+    
     
     // MARK: - Events
     
@@ -145,6 +149,10 @@ final class User: NSObject, NSCoding {
     
     func addEvent(_ event: Event, atIndex index: Int) {
         events[index] = event
+    }
+    
+    func removeEvent(atIndex index: Int) {
+        events.remove(at: index)
     }
 
 }

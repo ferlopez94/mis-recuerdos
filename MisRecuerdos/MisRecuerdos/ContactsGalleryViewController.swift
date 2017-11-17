@@ -77,6 +77,7 @@ class ContactsGalleryViewController: UIViewController, ContactsGalleryDelegate, 
             let vc = segue.destination as! ShowContactViewController
             vc.contact = contacts[contactToShowIndex]
             vc.delegate = self
+            vc.delegateReload = delegate
         }
     }
 

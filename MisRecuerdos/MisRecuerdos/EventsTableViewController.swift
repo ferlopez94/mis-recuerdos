@@ -84,6 +84,7 @@ class EventsTableViewController: UITableViewController, UpdateEvent {
         let ve = segue.destination as! ShowEventViewController
         ve.event = event
         ve.delegate = self
+        ve.delegateReload = delegate
     }
     
 }

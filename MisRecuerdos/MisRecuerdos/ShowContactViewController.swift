@@ -30,6 +30,7 @@ class ShowContactViewController: UIViewController, UpdateContact {
     var photos = [INSPhotoViewable]()
     let segueToEditContact = "segueToEditContact"
     var delegate: UpdateContact?
+    var delegateReload: ReloadData?
     
     
     // MARK: - View Controller life cycle
@@ -80,6 +81,7 @@ class ShowContactViewController: UIViewController, UpdateContact {
             let vc = segue.destination as! EditContactViewController
             vc.contact = contact
             vc.delegate = self
+            vc.delegateReload = delegateReload
         }
     }
 

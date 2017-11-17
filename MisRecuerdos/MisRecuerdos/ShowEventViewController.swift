@@ -36,9 +36,8 @@ class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerContr
     var photos = [INSPhotoViewable]()
     let segueToEditEvent = "segueToEditEvent"
     var delegate: UpdateEvent?
+    var delegateReload: ReloadDataE?
     
-    //var mediaPicker: MPMediaPickerController?
-    //var musicPlayer: MPMusicPlayerController?
     var audioPlayer: AVAudioPlayer!
     var reproducing = false
     var change = false
@@ -91,13 +90,9 @@ class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerContr
     
     // MARK: - Navigation
     
-    
     @IBAction func segueToEdit(_ sender: Any) {
-        print("prepare")
         if let player = audioPlayer {
-            print("prepare1")
             if reproducing {
-                print("prepare2")
                 playButton.setImage(#imageLiteral(resourceName: "playIcon"), for: .normal)
                 player.stop()
             }
@@ -111,6 +106,7 @@ class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerContr
             let ve = segue.destination as! EditEventViewController
             ve.event = event
             ve.delegate = self
+            ve.delegateReload = delegateReload
         }
     }
     
