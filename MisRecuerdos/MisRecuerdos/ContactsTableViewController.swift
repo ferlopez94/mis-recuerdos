@@ -83,6 +83,7 @@ class ContactsTableViewController: UITableViewController, UpdateContact {
         let vc = segue.destination as! ShowContactViewController
         vc.contact = contact
         vc.delegate = self
+        vc.delegateReload = delegate
     }
 
 }

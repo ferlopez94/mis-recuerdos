@@ -14,6 +14,8 @@ class EditEventViewController: AddEventViewController {
     
     var event: (offset: Int, element: Event)!
     var delegate: UpdateEvent?
+    var delegateReload: ReloadDataE?
+    let unwindToEventsAfterRemoveSegue = "unwindToEventsAfterRemove"
     
     
     // MARK: - View Controller life cycle
@@ -33,7 +35,6 @@ class EditEventViewController: AddEventViewController {
         commentsTextView.text = event.comments == "" ? commentsPlaceholder : event.comments
         commentsTextView.textColor = UIColor.lightGray
         songLabel.text = event.song?.title ?? "No hay canción asociada"
-        artistLabel.text = event.song?.artist ?? ""
     }
     
     
@@ -118,10 +119,18 @@ class EditEventViewController: AddEventViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    override func playMusic(_ sender: UIButton) {
-        print("playMusic2")
-        self.songURL = self.event.element.song?.assetURL
-        super.playMusic(sender)
+    @IBAction func removeEvent() {
+        let message = "¿En realidad quieres eliminar este evento?"
+        let alertController = UIAlertController(title: "Confirmar", message: message, preferredStyle: .alert)
+        
+        alertController.addAction(UIAlertAction(title: "Sí", style: .destructive) { (alert) in
+            print("removeEvent")
+            self.delegateReload?.removeEvent(atIndex: self.event.offset)
+            self.performSegue(withIdentifier: self.unwindToEventsAfterRemoveSegue, sender: nil)
+        })
+        alertController.addAction(UIAlertAction(title: "No", style: .default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
     }
     
 }

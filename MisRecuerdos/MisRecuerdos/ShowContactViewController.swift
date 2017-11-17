@@ -30,6 +30,8 @@ class ShowContactViewController: UIViewController, UpdateContact {
     var photos = [INSPhotoViewable]()
     let segueToEditContact = "segueToEditContact"
     var delegate: UpdateContact?
+    var delegateReload: ReloadData?
+    var allowEdition = false
     
     
     // MARK: - View Controller life cycle
@@ -51,6 +53,8 @@ class ShowContactViewController: UIViewController, UpdateContact {
         
         let photo = INSPhoto(image: contact.element.photo, thumbnailImage: contact.element.photo)
         photos.append(photo)
+        
+        allowEdition = UserDefaults.standard.bool(forKey: K.Settings.allowEditionKey)
     }
     
     func showPhoto() {
@@ -74,12 +78,26 @@ class ShowContactViewController: UIViewController, UpdateContact {
     
     
     // MARK: - Navigation
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        guard allowEdition else {
+            let title = "Modo de edición desactivado"
+            let message = "Para activar el modo de edición ve a tu perfil."
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(alertController, animated: true, completion: nil)
+            return false
+        }
+        
+        return true
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueToEditContact {
             let vc = segue.destination as! EditContactViewController
             vc.contact = contact
             vc.delegate = self
+            vc.delegateReload = delegateReload
         }
     }
 

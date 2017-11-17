@@ -26,7 +26,6 @@ class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerContr
     @IBOutlet weak var relativeLabel: UILabel!
     @IBOutlet weak var commentsLabel: UILabel!
     @IBOutlet weak var songLabel: UILabel!
-    @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
     
     
@@ -36,13 +35,13 @@ class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerContr
     var photos = [INSPhotoViewable]()
     let segueToEditEvent = "segueToEditEvent"
     var delegate: UpdateEvent?
+    var delegateReload: ReloadDataE?
     
-    //var mediaPicker: MPMediaPickerController?
-    //var musicPlayer: MPMusicPlayerController?
     var audioPlayer: AVAudioPlayer!
     var reproducing = false
     var change = false
     var songMedia: MPMediaItem! = nil
+    var allowEdition = false
     
     
     // MARK: - View Controller life cycle
@@ -63,10 +62,10 @@ class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerContr
         relativeLabel.text = event.element.relative
         commentsLabel.text = event.element.comments == "" ? "No tienes comentarios acerca de este evento." : event.element.comments
         songLabel.text = event.element.song?.title ?? "No hay canción asociada"
-        artistLabel.text = event.element.song?.artist ?? ""
         
         let photo = INSPhoto(image: event.element.photo, thumbnailImage: event.element.photo)
         photos.append(photo)
+        allowEdition = UserDefaults.standard.bool(forKey: K.Settings.allowEditionKey)
     }
     
     func showPhoto() {
@@ -91,13 +90,19 @@ class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerContr
     
     // MARK: - Navigation
     
-    
     @IBAction func segueToEdit(_ sender: Any) {
-        print("prepare")
+        guard allowEdition else {
+            let title = "Modo de edición desactivado"
+            let message = "Para activar el modo de edición ve a tu perfil."
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(alertController, animated: true, completion: nil)
+            return
+        }
+        
+        
         if let player = audioPlayer {
-            print("prepare1")
             if reproducing {
-                print("prepare2")
                 playButton.setImage(#imageLiteral(resourceName: "playIcon"), for: .normal)
                 player.stop()
             }
@@ -111,6 +116,7 @@ class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerContr
             let ve = segue.destination as! EditEventViewController
             ve.event = event
             ve.delegate = self
+            ve.delegateReload = delegateReload
         }
     }
     

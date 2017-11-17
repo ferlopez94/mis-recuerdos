@@ -8,8 +8,19 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+protocol RootUser {
+    func modifyUser(_ user: User)
+}
 
+class MenuViewController: UIViewController, RootUser {
+    
+    // MARK: - Instance variables
+    
+    var user: User?
+    let segueToShowProfileIdentifier = "segueToShowProfile"
+
+    // MARK: - View Controller life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,6 +29,8 @@ class MenuViewController: UIViewController {
             return
         }
         
+        self.user = user
+        UserDefaults.standard.set(user.allowEdition, forKey: K.Settings.allowEditionKey)
         print(user)
     }
     
@@ -29,18 +42,30 @@ class MenuViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
-
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - RootUser methods
+    
+    func modifyUser(_ user: User) {
+        self.user = user
     }
-    */
-
+    
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier,
+            let user = self.user else { return }
+        
+        switch identifier {
+        case segueToShowProfileIdentifier:
+            let vc = segue.destination as! ShowProfileViewController
+            vc.user = user
+            vc.delegateRootUser = self
+        default:
+            break
+        }
+    }
+    
 }

@@ -152,7 +152,6 @@ class AddContactViewController: SignupViewController, UIPickerViewDataSource, UI
             }
         }
 
-        
         return 0
     }
     
