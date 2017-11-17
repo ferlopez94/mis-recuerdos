@@ -26,7 +26,6 @@ class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerContr
     @IBOutlet weak var relativeLabel: UILabel!
     @IBOutlet weak var commentsLabel: UILabel!
     @IBOutlet weak var songLabel: UILabel!
-    @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
     
     
@@ -63,7 +62,6 @@ class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerContr
         relativeLabel.text = event.element.relative
         commentsLabel.text = event.element.comments == "" ? "No tienes comentarios acerca de este evento." : event.element.comments
         songLabel.text = event.element.song?.title ?? "No hay canción asociada"
-        artistLabel.text = event.element.song?.artist ?? ""
         
         let photo = INSPhoto(image: event.element.photo, thumbnailImage: event.element.photo)
         photos.append(photo)

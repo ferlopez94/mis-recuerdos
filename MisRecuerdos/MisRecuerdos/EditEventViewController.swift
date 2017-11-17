@@ -119,13 +119,6 @@ class EditEventViewController: AddEventViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    override func playMusic(_ sender: UIButton) {
-        print("playMusic2")
-        self.songURL = self.event.element.song?.assetURL
-        super.playMusic(sender)
-    }
-    
-    
     @IBAction func removeEvent() {
         let message = "¿En realidad quieres eliminar este evento?"
         let alertController = UIAlertController(title: "Confirmar", message: message, preferredStyle: .alert)
