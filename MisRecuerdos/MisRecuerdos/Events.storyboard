@@ -43,10 +43,10 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zaB-75-SQy" userLabel="Name Stack View">
-                                        <rect key="frame" x="0.0" y="114.5" width="256" height="22.5"/>
+                                        <rect key="frame" x="0.0" y="124" width="256" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Nombre:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="S1Q-q0-sgM">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="22.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="qEJ-so-hiA"/>
                                                 </constraints>
@@ -58,7 +58,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Mi boda" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vqj-Fr-zfl">
-                                                <rect key="frame" x="105" y="0.0" width="151" height="22.5"/>
+                                                <rect key="frame" x="105" y="0.0" width="151" height="21"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -70,7 +70,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Epp-HZ-dnr" userLabel="LastName Stack View">
-                                        <rect key="frame" x="0.0" y="148.5" width="256" height="67.5"/>
+                                        <rect key="frame" x="0.0" y="166" width="256" height="65.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="J47-PW-KOe">
                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="23"/>
@@ -85,7 +85,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="El día de mi boda, un primero de abril de 1960" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="80Q-LI-0Yl">
-                                                <rect key="frame" x="0.0" y="28" width="256" height="39.5"/>
+                                                <rect key="frame" x="0.0" y="28" width="256" height="37.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -97,10 +97,10 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qQN-L0-H1G" userLabel="LastName Stack View">
-                                        <rect key="frame" x="0.0" y="228" width="256" height="22.5"/>
+                                        <rect key="frame" x="0.0" y="253" width="256" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoría:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ot9-Vj-O1b">
-                                                <rect key="frame" x="0.0" y="0.0" width="123" height="22.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="21"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -109,7 +109,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iGB-bc-6b4">
-                                                <rect key="frame" x="133" y="0.0" width="123" height="22.5"/>
+                                                <rect key="frame" x="133" y="0.0" width="123" height="21"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -121,7 +121,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="30"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cOP-yg-JzZ" userLabel="LastName Stack View">
-                                        <rect key="frame" x="0.0" y="262.5" width="256" height="48"/>
+                                        <rect key="frame" x="0.0" y="295.5" width="256" height="47"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Persona relacionada:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hTp-Ob-fkC">
                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="23"/>
@@ -136,7 +136,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Mi esposa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="99T-7S-kCb">
-                                                <rect key="frame" x="0.0" y="28" width="256" height="20"/>
+                                                <rect key="frame" x="0.0" y="28" width="256" height="19"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -148,7 +148,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZbE-ca-FOC" userLabel="LastName Stack View">
-                                        <rect key="frame" x="0.0" y="322" width="256" height="40"/>
+                                        <rect key="frame" x="0.0" y="363.5" width="256" height="39"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comentarios:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3Iv-Df-hUm">
                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="15"/>
@@ -163,7 +163,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Un día excelente" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b7K-9P-Kkd">
-                                                <rect key="frame" x="0.0" y="20" width="256" height="20"/>
+                                                <rect key="frame" x="0.0" y="20" width="256" height="19"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -175,13 +175,13 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1bq-IS-Tma" userLabel="Buttons">
-                                        <rect key="frame" x="0.0" y="374" width="256" height="100"/>
+                                        <rect key="frame" x="0.0" y="424" width="256" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sx6-nY-i2i" userLabel="Buttons">
-                                                <rect key="frame" x="0.0" y="0.0" width="192" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="192" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canción no asociada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="u2T-36-JMN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="47.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="50"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -189,35 +189,23 @@
                                                             <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
                                                         </variation>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0LN-R0-orq">
-                                                        <rect key="frame" x="0.0" y="52.5" width="192" height="47.5"/>
-                                                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <variation key="heightClass=regular-widthClass=regular">
-                                                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="21"/>
-                                                        </variation>
-                                                    </label>
                                                 </subviews>
                                                 <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4bt-HU-KZ8" userLabel="Buttons">
-                                                <rect key="frame" x="207" y="0.0" width="49" height="100"/>
+                                                <rect key="frame" x="207" y="0.0" width="49" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfe-rq-xbv">
-                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="47.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="EYb-EB-fKU"/>
+                                                        </constraints>
                                                         <state key="normal" image="playIcon"/>
                                                         <connections>
                                                             <action selector="playMusic:" destination="ebY-hq-cOh" eventType="touchUpInside" id="DIw-D0-cEZ"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vns-Zy-2UY">
-                                                        <rect key="frame" x="0.0" y="52.5" width="49" height="47.5"/>
-                                                    </button>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="DuF-7w-Fg0"/>
-                                                </constraints>
                                                 <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                                             </stackView>
                                         </subviews>
@@ -271,7 +259,6 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="artistLabel" destination="0LN-R0-orq" id="y7A-nn-NcC"/>
                         <outlet property="categoryLabel" destination="iGB-bc-6b4" id="fgW-cO-kCv"/>
                         <outlet property="commentsLabel" destination="b7K-9P-Kkd" id="cNn-gz-W8F"/>
                         <outlet property="descriptLabel" destination="80Q-LI-0Yl" id="84U-rg-CrG"/>
@@ -371,10 +358,10 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Du4-C0-qE5">
                                 <rect key="frame" x="32" y="20" width="256" height="528"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZIZ-Xd-NFB" userLabel="Content">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="ZIZ-Xd-NFB" userLabel="Content">
                                         <rect key="frame" x="0.0" y="0.0" width="257" height="529"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Agregar evento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpR-lz-zdG">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" text="Agregar evento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpR-lz-zdG">
                                                 <rect key="frame" x="0.0" y="0.0" width="257" height="34.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
                                                 <nil key="textColor"/>
@@ -384,10 +371,10 @@
                                                 </variation>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="iwn-pf-p6m" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                <rect key="frame" x="83.5" y="44.5" width="90" height="90"/>
+                                                <rect key="frame" x="88.5" y="47.5" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="iwn-pf-p6m" secondAttribute="height" multiplier="1:1" id="duP-ls-F7l"/>
-                                                    <constraint firstAttribute="width" constant="90" id="s9s-iD-Qvd">
+                                                    <constraint firstAttribute="width" constant="80" id="s9s-iD-Qvd">
                                                         <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                                                     </constraint>
                                                 </constraints>
@@ -432,8 +419,8 @@ Foto</string>
                                                     <action selector="importPhoto" destination="EcQ-ym-dZR" eventType="touchUpInside" id="pPc-Jm-gGh"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Ingresa la siguiente información:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1c9-WJ-F8I">
-                                                <rect key="frame" x="0.0" y="144.5" width="257" height="0.0"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" text="Ingresa la siguiente información:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1c9-WJ-F8I">
+                                                <rect key="frame" x="0.0" y="140.5" width="257" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -441,8 +428,8 @@ Foto</string>
                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
                                                 </variation>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5VT-Fy-vJH">
-                                                <rect key="frame" x="0.0" y="154.5" width="257" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5VT-Fy-vJH">
+                                                <rect key="frame" x="0.0" y="176" width="257" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -450,8 +437,8 @@ Foto</string>
                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
                                                 </variation>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4DV-wo-FtZ">
-                                                <rect key="frame" x="0.0" y="194.5" width="257" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4DV-wo-FtZ">
+                                                <rect key="frame" x="0.0" y="219" width="257" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -462,8 +449,8 @@ Foto</string>
                                                     <action selector="textFieldEditingDidBegin:" destination="EcQ-ym-dZR" eventType="editingDidBegin" id="Nyv-FJ-6R1"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Categoría" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1b5-WB-tLk">
-                                                <rect key="frame" x="0.0" y="234.5" width="257" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Categoría" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1b5-WB-tLk">
+                                                <rect key="frame" x="0.0" y="262" width="257" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -471,8 +458,8 @@ Foto</string>
                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
                                                 </variation>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Persona relacionada" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nzD-xH-TLM">
-                                                <rect key="frame" x="0.0" y="274.5" width="257" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Persona relacionada" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nzD-xH-TLM">
+                                                <rect key="frame" x="0.0" y="305" width="257" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -480,8 +467,8 @@ Foto</string>
                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
                                                 </variation>
                                             </textField>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Comentarios acerca del evento..." translatesAutoresizingMaskIntoConstraints="NO" id="JAk-eD-WXG">
-                                                <rect key="frame" x="0.0" y="314.5" width="257" height="54.5"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" text="Comentarios acerca del evento..." translatesAutoresizingMaskIntoConstraints="NO" id="JAk-eD-WXG">
+                                                <rect key="frame" x="0.0" y="348" width="257" height="65"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -490,13 +477,13 @@ Foto</string>
                                                 </variation>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="eM7-L3-DqP" userLabel="Buttons">
-                                                <rect key="frame" x="0.0" y="379" width="257" height="100"/>
+                                                <rect key="frame" x="0.0" y="426" width="257" height="50"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zfd-bL-uHl" userLabel="Buttons">
-                                                        <rect key="frame" x="0.0" y="0.0" width="193" height="100"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GKL-Ag-E5d" userLabel="Buttons">
+                                                        <rect key="frame" x="0.0" y="0.0" width="257" height="50"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Canción no asociada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jng-1u-8xz">
-                                                                <rect key="frame" x="0.0" y="0.0" width="193" height="45"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="251" horizontalCompressionResistancePriority="251" verticalCompressionResistancePriority="751" text="Canción no asociada" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jng-1u-8xz">
+                                                                <rect key="frame" x="0.0" y="0.0" width="137" height="50"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -504,44 +491,30 @@ Foto</string>
                                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
                                                                 </variation>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Qws-qQ-KDR">
-                                                                <rect key="frame" x="0.0" y="55" width="193" height="45"/>
-                                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                                <variation key="heightClass=regular-widthClass=regular">
-                                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="21"/>
-                                                                </variation>
-                                                            </label>
-                                                        </subviews>
-                                                        <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GKL-Ag-E5d" userLabel="Buttons">
-                                                        <rect key="frame" x="208" y="0.0" width="49" height="100"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NQ-up-Jtp">
-                                                                <rect key="frame" x="0.0" y="0.0" width="49" height="45"/>
+                                                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NQ-up-Jtp">
+                                                                <rect key="frame" x="147" y="0.0" width="50" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="50" id="0Ns-yh-rqV"/>
+                                                                </constraints>
                                                                 <state key="normal" image="playIcon"/>
                                                                 <connections>
                                                                     <action selector="playMusic:" destination="EcQ-ym-dZR" eventType="touchUpInside" id="CCy-vo-qHl"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JET-4r-aFg">
-                                                                <rect key="frame" x="0.0" y="55" width="49" height="45"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="251" verticalCompressionResistancePriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JET-4r-aFg">
+                                                                <rect key="frame" x="207" y="0.0" width="50" height="50"/>
                                                                 <connections>
                                                                     <action selector="addMusic:" destination="EcQ-ym-dZR" eventType="touchUpInside" id="pEX-0i-wdz"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="eaD-Cl-odj"/>
+                                                            <constraint firstItem="JET-4r-aFg" firstAttribute="width" secondItem="4NQ-up-Jtp" secondAttribute="width" id="0v6-VZ-6xL"/>
+                                                            <constraint firstAttribute="height" constant="50" id="eaD-Cl-odj"/>
                                                         </constraints>
                                                         <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                                                     </stackView>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="zfd-bL-uHl" firstAttribute="width" secondItem="eM7-L3-DqP" secondAttribute="width" multiplier="0.75" id="7bT-ZA-DgY"/>
-                                                </constraints>
                                                 <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZWl-JR-SaS" userLabel="Buttons">
@@ -685,7 +658,6 @@ Foto</string>
                     </view>
                     <connections>
                         <outlet property="addButton" destination="JET-4r-aFg" id="Tdl-7V-3Bh"/>
-                        <outlet property="artistLabel" destination="Qws-qQ-KDR" id="Y1k-Qs-peN"/>
                         <outlet property="commentsTextView" destination="JAk-eD-WXG" id="9Sa-FO-LyX"/>
                         <outlet property="dobTextField" destination="4DV-wo-FtZ" id="w4p-uP-DWM"/>
                         <outlet property="lastNameTextField" destination="1b5-WB-tLk" id="nmS-sn-VDr"/>
@@ -950,16 +922,16 @@ Foto</string>
                                         <state key="normal" title="Ver todos los eventos"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
-                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.24313725489999999" green="0.89411764709999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
                                                 <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
-                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.24313725490196078" green="0.89411764705882346" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
-                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.24313725489999999" green="0.89411764709999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="2"/>
@@ -968,7 +940,7 @@ Foto</string>
                                                 <real key="value" value="25"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
-                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.24313725489999999" green="0.89411764709999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
                                                 <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -987,16 +959,16 @@ Foto</string>
                                         <state key="normal" title="Ver todas las fotos"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
-                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.24313725489999999" green="0.89411764709999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
                                                 <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
-                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.24313725489999999" green="0.89411764709999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
-                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.24313725489999999" green="0.89411764709999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="2"/>
@@ -1005,7 +977,7 @@ Foto</string>
                                                 <real key="value" value="25"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
-                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.24313725489999999" green="0.89411764709999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
                                                 <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1094,13 +1066,13 @@ Foto</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="umG-CL-xUd">
-                                <rect key="frame" x="32" y="20" width="256" height="528"/>
+                                <rect key="frame" x="20" y="20" width="280" height="528"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QDc-A9-f3A" userLabel="Content">
-                                        <rect key="frame" x="0.0" y="0.0" width="257" height="529"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="QDc-A9-f3A" userLabel="Content">
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="529"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Editar evento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxP-Pt-bHA">
-                                                <rect key="frame" x="0.0" y="0.0" width="257" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="281" height="33"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1109,9 +1081,9 @@ Foto</string>
                                                 </variation>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Itv-WE-WTm" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                <rect key="frame" x="83.5" y="44.5" width="90" height="90"/>
+                                                <rect key="frame" x="100.5" y="46" width="80" height="80"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="90" id="UTi-cU-0hq">
+                                                    <constraint firstAttribute="width" constant="80" id="UTi-cU-0hq">
                                                         <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                                                     </constraint>
                                                     <constraint firstAttribute="width" secondItem="Itv-WE-WTm" secondAttribute="height" multiplier="1:1" id="gkt-GD-7fb"/>
@@ -1157,8 +1129,8 @@ Foto</string>
                                                     <action selector="importPhoto" destination="TS0-Eh-n2E" eventType="touchUpInside" id="aCT-te-OKt"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Ingresa la siguiente información:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JoM-wM-DCe">
-                                                <rect key="frame" x="0.0" y="144.5" width="257" height="0.0"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" text="Ingresa la siguiente información:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JoM-wM-DCe">
+                                                <rect key="frame" x="0.0" y="139" width="281" height="21"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1166,8 +1138,8 @@ Foto</string>
                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
                                                 </variation>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ODn-fl-dXh">
-                                                <rect key="frame" x="0.0" y="154.5" width="257" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ODn-fl-dXh">
+                                                <rect key="frame" x="0.0" y="173" width="281" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -1175,8 +1147,8 @@ Foto</string>
                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
                                                 </variation>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSN-JD-uP6">
-                                                <rect key="frame" x="0.0" y="194.5" width="257" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSN-JD-uP6">
+                                                <rect key="frame" x="0.0" y="216" width="281" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1187,8 +1159,8 @@ Foto</string>
                                                     <action selector="textFieldEditingDidBegin:" destination="TS0-Eh-n2E" eventType="editingDidBegin" id="QmA-J2-79H"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Categoría" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x9E-lo-oo6">
-                                                <rect key="frame" x="0.0" y="234.5" width="257" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Categoría" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x9E-lo-oo6">
+                                                <rect key="frame" x="0.0" y="259" width="281" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -1196,8 +1168,8 @@ Foto</string>
                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
                                                 </variation>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Persona relacionada" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8V8-tQ-8Yd">
-                                                <rect key="frame" x="0.0" y="274.5" width="257" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Persona relacionada" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8V8-tQ-8Yd">
+                                                <rect key="frame" x="0.0" y="302" width="281" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -1206,7 +1178,7 @@ Foto</string>
                                                 </variation>
                                             </textField>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Comentarios acerca del evento..." translatesAutoresizingMaskIntoConstraints="NO" id="BNf-LZ-tdl">
-                                                <rect key="frame" x="0.0" y="314.5" width="257" height="54.5"/>
+                                                <rect key="frame" x="0.0" y="345" width="281" height="68"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1215,13 +1187,13 @@ Foto</string>
                                                 </variation>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zaf-x6-SIe" userLabel="Buttons">
-                                                <rect key="frame" x="0.0" y="379" width="257" height="100"/>
+                                                <rect key="frame" x="0.0" y="426" width="281" height="50"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="phw-4b-Bu9" userLabel="Buttons">
-                                                        <rect key="frame" x="0.0" y="0.0" width="193" height="100"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vqg-Oe-v2X" userLabel="Buttons">
+                                                        <rect key="frame" x="0.0" y="0.0" width="281" height="50"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Canción no asociada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XBc-cL-Nic">
-                                                                <rect key="frame" x="0.0" y="0.0" width="193" height="45"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Canción no asociada" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XBc-cL-Nic">
+                                                                <rect key="frame" x="0.0" y="0.0" width="221" height="50"/>
                                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1229,51 +1201,29 @@ Foto</string>
                                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
                                                                 </variation>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oRX-pv-Mjb">
-                                                                <rect key="frame" x="0.0" y="55" width="193" height="45"/>
-                                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                                <variation key="heightClass=regular-widthClass=regular">
-                                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="21"/>
-                                                                </variation>
-                                                            </label>
-                                                        </subviews>
-                                                        <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vqg-Oe-v2X" userLabel="Buttons">
-                                                        <rect key="frame" x="208" y="0.0" width="49" height="100"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iES-gY-yjf">
-                                                                <rect key="frame" x="0.0" y="0.0" width="49" height="45"/>
-                                                                <state key="normal" image="playIcon"/>
-                                                                <connections>
-                                                                    <action selector="playMusic:" destination="TS0-Eh-n2E" eventType="touchUpInside" id="AH7-v6-ewy"/>
-                                                                </connections>
-                                                            </button>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lW-hI-YzZ">
-                                                                <rect key="frame" x="0.0" y="55" width="49" height="45"/>
+                                                                <rect key="frame" x="231" y="0.0" width="50" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="50" id="WAc-oD-4A0"/>
+                                                                </constraints>
                                                                 <connections>
                                                                     <action selector="addMusic:" destination="TS0-Eh-n2E" eventType="touchUpInside" id="pND-n7-vhL"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="hFD-YW-mHh"/>
+                                                            <constraint firstAttribute="height" constant="50" id="hFD-YW-mHh"/>
                                                         </constraints>
                                                         <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                                                     </stackView>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="phw-4b-Bu9" firstAttribute="width" secondItem="zaf-x6-SIe" secondAttribute="width" multiplier="0.75" id="AlJ-RJ-RIl"/>
-                                                </constraints>
                                                 <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Btp-ce-cPO" userLabel="Buttons">
-                                                <rect key="frame" x="0.0" y="489" width="257" height="40"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Btp-ce-cPO" userLabel="Buttons">
+                                                <rect key="frame" x="0.0" y="489" width="281" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaN-kc-gna" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="ySz-HL-BB5">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
@@ -1281,6 +1231,43 @@ Foto</string>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                         <state key="normal" title="Cancelar"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
+                                                                <color key="value" red="0.24313725489999999" green="0.89411764709999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                                <color key="value" red="0.24313725489999999" green="0.89411764709999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
+                                                                <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
+                                                                <color key="value" red="0.24313725489999999" green="0.89411764709999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
+                                                                <color key="value" red="0.24313725489999999" green="0.89411764709999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="cancel" destination="TS0-Eh-n2E" eventType="touchUpInside" id="N27-4I-e0a"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="An0-eJ-9JR" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
+                                                        <rect key="frame" x="97" y="0.0" width="87" height="40"/>
+                                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                        <state key="normal" title="Eliminar"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="2"/>
@@ -1311,11 +1298,11 @@ Foto</string>
                                                             <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
                                                         </variation>
                                                         <connections>
-                                                            <action selector="cancel" destination="TS0-Eh-n2E" eventType="touchUpInside" id="N27-4I-e0a"/>
+                                                            <action selector="removeEvent" destination="TS0-Eh-n2E" eventType="touchUpInside" id="sWZ-6C-cuR"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmB-AM-Lwx" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                        <rect key="frame" x="138.5" y="0.0" width="118.5" height="40"/>
+                                                        <rect key="frame" x="194" y="0.0" width="87" height="40"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                         <state key="normal" title="Guardar"/>
                                                         <userDefinedRuntimeAttributes>
@@ -1391,13 +1378,13 @@ Foto</string>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="umG-CL-xUd" secondAttribute="trailing" constant="16" id="HAU-LW-ARR">
+                            <constraint firstAttribute="trailingMargin" secondItem="umG-CL-xUd" secondAttribute="trailing" constant="4" id="HAU-LW-ARR">
                                 <variation key="heightClass=regular-widthClass=regular" constant="32"/>
                             </constraint>
                             <constraint firstItem="umG-CL-xUd" firstAttribute="top" secondItem="Ty5-Jx-rFa" secondAttribute="bottom" id="JWF-Bm-Z8U">
                                 <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                             </constraint>
-                            <constraint firstItem="umG-CL-xUd" firstAttribute="leading" secondItem="FWM-kH-7ME" secondAttribute="leadingMargin" constant="16" id="qe2-ng-eCp">
+                            <constraint firstItem="umG-CL-xUd" firstAttribute="leading" secondItem="FWM-kH-7ME" secondAttribute="leadingMargin" constant="4" id="qe2-ng-eCp">
                                 <variation key="heightClass=regular-widthClass=regular" constant="32"/>
                             </constraint>
                             <constraint firstItem="jWX-db-Hqu" firstAttribute="top" secondItem="umG-CL-xUd" secondAttribute="bottom" constant="20" id="wyh-F8-zWd">
@@ -1410,17 +1397,15 @@ Foto</string>
                     </view>
                     <connections>
                         <outlet property="addButton" destination="0lW-hI-YzZ" id="wtq-P8-7ns"/>
-                        <outlet property="artistLabel" destination="oRX-pv-Mjb" id="5ZJ-Ra-dkQ"/>
                         <outlet property="commentsTextView" destination="BNf-LZ-tdl" id="P4U-5O-TSu"/>
                         <outlet property="dobTextField" destination="GSN-JD-uP6" id="pVu-uv-PVg"/>
                         <outlet property="lastNameTextField" destination="x9E-lo-oo6" id="3pT-xO-0aU"/>
                         <outlet property="nameTextField" destination="ODn-fl-dXh" id="8ne-06-FpX"/>
                         <outlet property="photoButton" destination="Itv-WE-WTm" id="2X3-dK-gRK"/>
-                        <outlet property="playButton" destination="iES-gY-yjf" id="5uB-HH-HRq"/>
                         <outlet property="relationTextField" destination="8V8-tQ-8Yd" id="Z7U-Kc-9NG"/>
                         <outlet property="scrollView" destination="umG-CL-xUd" id="Diu-rL-jdf"/>
                         <outlet property="songLabel" destination="XBc-cL-Nic" id="VT0-qD-4E9"/>
-                        <segue destination="CPv-tu-gJN" kind="unwind" identifier="unwindToEventsAfterAddNewEvent" unwindAction="unwindToEventsAfterAddNewEventWithSegue:" id="AcY-UX-rlM"/>
+                        <segue destination="CPv-tu-gJN" kind="unwind" identifier="unwindToEventsAfterRemove" unwindAction="unwindToEventsAfterRemovedWithSegue:" id="AcY-UX-rlM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Cd-Eh-pc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1438,7 +1423,7 @@ Foto</string>
         <image name="playIcon" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="y9z-Xs-vYv"/>
+        <segue reference="8bw-SV-Zva"/>
         <segue reference="ppm-Jv-8sv"/>
     </inferredMetricsTieBreakers>
 </document>

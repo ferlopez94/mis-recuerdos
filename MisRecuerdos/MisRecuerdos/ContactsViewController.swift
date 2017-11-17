@@ -12,6 +12,7 @@ protocol ReloadData {
     var shouldReload: Bool {get set}
     
     func reloadData(shouldReload: Bool)
+    func removeContact(atIndex index: Int)
 }
 
 class ContactsViewController: UIViewController, UISearchBarDelegate, ReloadData {
@@ -39,6 +40,8 @@ class ContactsViewController: UIViewController, UISearchBarDelegate, ReloadData 
     var timer = Timer()
     var imageIndex = 0
     var shouldReload = true
+    var shouldRemove = true
+    var shouldRemoveIndex = 0
     
     
     // MARK: - View Controller life cycle
@@ -126,6 +129,13 @@ class ContactsViewController: UIViewController, UISearchBarDelegate, ReloadData 
         self.shouldReload = shouldReload
     }
     
+    func removeContact(atIndex index: Int) {
+        print("removeContact")
+        guard let _ = self.user else { return }
+        shouldRemove = true
+        shouldRemoveIndex = index
+    }
+    
     
     // MARK: - Navigation
     
@@ -142,6 +152,21 @@ class ContactsViewController: UIViewController, UISearchBarDelegate, ReloadData 
         print(self.user!.contacts)
         familyContacts = self.user!.contacts.enumerated().filter {$0.element.category == .family }
         knownContacts = self.user!.contacts.enumerated().filter {$0.element.category == .known }
+    }
+    
+    @IBAction func unwindToContactsAfterRemoved(segue: UIStoryboardSegue) {
+        guard shouldRemove, let user = self.user else { return }
+        
+        shouldRemove = false
+        user.removeContact(atIndex: shouldRemoveIndex)
+        
+        let index = UserDefaults.standard.integer(forKey: K.Accounts.actualUserIndexKey)
+        
+        if User.saveToFile(user, replaceAtIndex: index) {
+            UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: user), forKey: K.Accounts.actualUserKey)
+            familyContacts = user.contacts.enumerated().filter {$0.element.category == .family }
+            knownContacts = user.contacts.enumerated().filter {$0.element.category == .known }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

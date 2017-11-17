@@ -77,6 +77,7 @@ class EventsGalleryViewController: UIViewController, EventsGalleryDelegate, Upda
             let ve = segue.destination as! ShowEventViewController
             ve.event = events[eventToShowIndex]
             ve.delegate = self
+            ve.delegateReload = delegate
         }
     }
     

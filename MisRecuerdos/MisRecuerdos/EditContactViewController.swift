@@ -14,6 +14,8 @@ class EditContactViewController: AddContactViewController {
     
     var contact: (offset: Int, element: Contact)!
     var delegate: UpdateContact?
+    var delegateReload: ReloadData?
+    let unwindToContactsAfterRemoveSegue = "unwindToContactsAfterRemove"
     
 
     // MARK: - View Controller life cycle
@@ -109,6 +111,20 @@ class EditContactViewController: AddContactViewController {
         }
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func removeContact() {
+        let message = "¿En realidad quieres eliminar este contacto?"
+        let alertController = UIAlertController(title: "Confirmar", message: message, preferredStyle: .alert)
+        
+        alertController.addAction(UIAlertAction(title: "Sí", style: .destructive) { (alert) in
+            print("removeContact")
+            self.delegateReload?.removeContact(atIndex: self.contact.offset)
+            self.performSegue(withIdentifier: self.unwindToContactsAfterRemoveSegue, sender: nil)
+        })
+        alertController.addAction(UIAlertAction(title: "No", style: .default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
     }
 
 }

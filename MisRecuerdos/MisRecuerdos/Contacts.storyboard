@@ -922,13 +922,13 @@ Foto</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIG-b2-LKa">
-                                <rect key="frame" x="32" y="60" width="256" height="468"/>
+                                <rect key="frame" x="20" y="60" width="280" height="468"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jcK-Im-INB" userLabel="Content">
-                                        <rect key="frame" x="0.0" y="0.0" width="256.5" height="468.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280.5" height="468.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Editar persona" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2k-PE-vLu">
-                                                <rect key="frame" x="0.0" y="0.0" width="256.5" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280.5" height="34.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -937,7 +937,7 @@ Foto</string>
                                                 </variation>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xgI-Hr-oXg" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                <rect key="frame" x="83.5" y="54.5" width="90" height="90"/>
+                                                <rect key="frame" x="95.5" y="54.5" width="90" height="90"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xgI-Hr-oXg" secondAttribute="height" multiplier="1:1" id="PuD-h9-7Sg"/>
                                                     <constraint firstAttribute="width" constant="90" id="kg8-Xh-qMO">
@@ -986,7 +986,7 @@ Foto</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa la siguiente información:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="62D-7j-d0S">
-                                                <rect key="frame" x="0.0" y="164.5" width="256.5" height="22.5"/>
+                                                <rect key="frame" x="0.0" y="164.5" width="280.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -995,7 +995,7 @@ Foto</string>
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ASi-GO-dBn">
-                                                <rect key="frame" x="0.0" y="207" width="256.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="207" width="280.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -1004,7 +1004,7 @@ Foto</string>
                                                 </variation>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Relación con la persona" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A6I-uz-r3l">
-                                                <rect key="frame" x="0.0" y="257" width="256.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="257" width="280.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -1013,7 +1013,7 @@ Foto</string>
                                                 </variation>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha de cumpleaños" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FZq-8q-L6x">
-                                                <rect key="frame" x="0.0" y="307" width="256.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="307" width="280.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1025,7 +1025,7 @@ Foto</string>
                                                 </connections>
                                             </textField>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="Comentarios acerca de ti..." translatesAutoresizingMaskIntoConstraints="NO" id="0xD-GU-xNK">
-                                                <rect key="frame" x="0.0" y="357" width="256.5" height="51.5"/>
+                                                <rect key="frame" x="0.0" y="357" width="280.5" height="51.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1033,11 +1033,11 @@ Foto</string>
                                                     <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
                                                 </variation>
                                             </textView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fAu-RG-Yga" userLabel="Buttons">
-                                                <rect key="frame" x="0.0" y="428.5" width="256.5" height="40"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fAu-RG-Yga" userLabel="Buttons">
+                                                <rect key="frame" x="0.0" y="428.5" width="280.5" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9I2-1z-iWQ" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="9D0-0r-Ahc">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
@@ -1045,6 +1045,48 @@ Foto</string>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                         <state key="normal" title="Cancelar"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
+                                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
+                                                                <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
+                                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
+                                                                <color key="value" red="0.99607843139999996" green="0.75294117650000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="cancel" destination="gDU-eF-k1j" eventType="touchUpInside" id="TzZ-g9-8lS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIg-I0-0LD" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
+                                                        <rect key="frame" x="97" y="0.0" width="86.5" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="AAz-oL-2uu">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                                        <state key="normal" title="Eliminar"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="2"/>
@@ -1075,11 +1117,11 @@ Foto</string>
                                                             <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
                                                         </variation>
                                                         <connections>
-                                                            <action selector="cancel" destination="gDU-eF-k1j" eventType="touchUpInside" id="TzZ-g9-8lS"/>
+                                                            <action selector="removeContact" destination="gDU-eF-k1j" eventType="touchUpInside" id="Kr6-0R-u0V"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nz-JO-ae2" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                        <rect key="frame" x="138.5" y="0.0" width="118" height="40"/>
+                                                        <rect key="frame" x="193.5" y="0.0" width="87" height="40"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                         <state key="normal" title="Guardar"/>
                                                         <userDefinedRuntimeAttributes>
@@ -1156,13 +1198,13 @@ Foto</string>
                             <constraint firstItem="NIG-b2-LKa" firstAttribute="top" secondItem="5aa-r2-VZM" secondAttribute="bottom" constant="40" id="0kF-Cr-TnP">
                                 <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                             </constraint>
-                            <constraint firstItem="NIG-b2-LKa" firstAttribute="leading" secondItem="acq-Nk-6I2" secondAttribute="leadingMargin" constant="16" id="73o-ct-VKB">
+                            <constraint firstItem="NIG-b2-LKa" firstAttribute="leading" secondItem="acq-Nk-6I2" secondAttribute="leadingMargin" constant="4" id="73o-ct-VKB">
                                 <variation key="heightClass=regular-widthClass=regular" constant="32"/>
                             </constraint>
                             <constraint firstItem="lFf-Pd-Yl8" firstAttribute="top" secondItem="NIG-b2-LKa" secondAttribute="bottom" constant="40" id="V2j-FE-DpR">
                                 <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                             </constraint>
-                            <constraint firstAttribute="trailingMargin" secondItem="NIG-b2-LKa" secondAttribute="trailing" constant="16" id="ptd-VE-j2o">
+                            <constraint firstAttribute="trailingMargin" secondItem="NIG-b2-LKa" secondAttribute="trailing" constant="4" id="ptd-VE-j2o">
                                 <variation key="heightClass=regular-widthClass=regular" constant="32"/>
                             </constraint>
                         </constraints>
@@ -1177,7 +1219,7 @@ Foto</string>
                         <outlet property="nameTextField" destination="ASi-GO-dBn" id="2ma-bM-hYH"/>
                         <outlet property="photoButton" destination="xgI-Hr-oXg" id="qQq-kv-AvW"/>
                         <outlet property="scrollView" destination="NIG-b2-LKa" id="m8E-t1-bul"/>
-                        <segue destination="lMu-Gz-vKK" kind="unwind" identifier="unwindToContactsAfterAddNewContact" unwindAction="unwindToContactsAfterAddNewContactWithSegue:" id="Lm2-yi-KU6"/>
+                        <segue destination="lMu-Gz-vKK" kind="unwind" identifier="unwindToContactsAfterRemove" unwindAction="unwindToContactsAfterRemovedWithSegue:" id="Lm2-yi-KU6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kk4-KY-CJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1192,7 +1234,7 @@ Foto</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="LJR-RQ-bq2"/>
         <segue reference="6i4-4Z-oW6"/>
-        <segue reference="V3u-0O-I1G"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,6 +12,7 @@ protocol ReloadDataE {
     var shouldReload: Bool {get set}
     
     func reloadData(shouldReload: Bool)
+    func removeEvent(atIndex index: Int)
 }
 
 class EventsViewController: UIViewController, UISearchBarDelegate, ReloadDataE {
@@ -39,6 +40,8 @@ class EventsViewController: UIViewController, UISearchBarDelegate, ReloadDataE {
     var timer = Timer()
     var imageIndex = 0
     var shouldReload = true
+    var shouldRemove = false
+    var shouldRemoveIndex = 0
     
     
     // MARK: - View Controller life cycle
@@ -126,6 +129,13 @@ class EventsViewController: UIViewController, UISearchBarDelegate, ReloadDataE {
         self.shouldReload = shouldReload
     }
     
+    func removeEvent(atIndex index: Int) {
+        print("removeEvent")
+        guard let _ = self.user else { return }
+        shouldRemove = true
+        shouldRemoveIndex = index
+    }
+    
     
     // MARK: - Navigation
     
@@ -142,6 +152,21 @@ class EventsViewController: UIViewController, UISearchBarDelegate, ReloadDataE {
         print(self.user!.events)
         personalEvents = self.user!.events.enumerated().filter {$0.element.category == .personal }
         otherEvents = self.user!.events.enumerated().filter {$0.element.category == .other }
+    }
+    
+    @IBAction func unwindToEventsAfterRemoved(segue: UIStoryboardSegue) {
+        guard shouldRemove, let user = self.user else { return }
+        
+        shouldRemove = false
+        user.removeEvent(atIndex: shouldRemoveIndex)
+        
+        let index = UserDefaults.standard.integer(forKey: K.Accounts.actualUserIndexKey)
+        
+        if User.saveToFile(user, replaceAtIndex: index) {
+            UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: user), forKey: K.Accounts.actualUserKey)
+            personalEvents = user.events.enumerated().filter {$0.element.category == .personal }
+            otherEvents = user.events.enumerated().filter {$0.element.category == .other }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

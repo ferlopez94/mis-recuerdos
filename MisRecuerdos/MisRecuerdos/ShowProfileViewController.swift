@@ -18,23 +18,24 @@ class ShowProfileViewController: UIViewController {
     @IBOutlet weak var lastNameLabel: UILabel!
     @IBOutlet weak var dobLabel: UILabel!
     @IBOutlet weak var commentsLabel: UILabel!
+    @IBOutlet weak var allowEditionSwitch: UISwitch!
 
     
     // MARK: - Instance variables
     
     var photos = [INSPhotoViewable]()
+    var user: User?
+    var delegateRootUser: RootUser?
+    let segueToEditProfile = "segueToEditProfile"
     
     
     // MARK: - View Controller life cycle
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
-        guard let data = UserDefaults.standard.data(forKey: K.Accounts.actualUserKey),
-            let user = NSKeyedUnarchiver.unarchiveObject(with: data) as? User else {
-                return
-        }
         
+        guard let user = self.user else { return }
+        print(user.allowEdition)
         let tap = UITapGestureRecognizer(target: self, action: #selector(showPhoto))
         photoImage.isUserInteractionEnabled = true
         photoImage.addGestureRecognizer(tap)
@@ -54,6 +55,7 @@ class ShowProfileViewController: UIViewController {
         
         let photo = INSPhoto(image: user.photo, thumbnailImage: user.photo)
         photos.append(photo)
+        allowEditionSwitch.isOn = user.allowEdition
     }
     
     func showPhoto() {
@@ -65,5 +67,33 @@ class ShowProfileViewController: UIViewController {
         
         present(galleryPreview, animated: true, completion: nil)
     }
+    
+    @IBAction func segueToEdit(_ sender: Any) {
+        guard let user = self.user else { return }
 
+        guard user.allowEdition else {
+            let title = "Modo de edición desactivado"
+            let message = "Para activar el modo de edición habilita el campo \"Editar datos\"."
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(alertController, animated: true, completion: nil)
+            return
+        }
+        
+        performSegue(withIdentifier: segueToEditProfile, sender: sender)
+    }
+    
+    
+    @IBAction func allowEdition(_ sender: UISwitch) {
+        guard let user = self.user else { return }
+        user.allowEdition = sender.isOn
+        UserDefaults.standard.set(user.allowEdition, forKey: K.Settings.allowEditionKey)
+        delegateRootUser?.modifyUser(user)
+        
+        let index = UserDefaults.standard.integer(forKey: K.Accounts.actualUserIndexKey)
+        if User.saveToFile(user, replaceAtIndex: index) {
+            print("user saved!")
+        }
+    }
+    
 }

@@ -18,7 +18,6 @@ class AddEventViewController: SignupViewController, UIPickerViewDataSource, UIPi
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var songLabel: UILabel!
-    @IBOutlet weak var artistLabel: UILabel!
     
     
     // MARK: - Instance variables
@@ -240,12 +239,10 @@ class AddEventViewController: SignupViewController, UIPickerViewDataSource, UIPi
         if representativeItem?.assetURL != nil {
             songMedia = representativeItem
             let title = representativeItem?.title
-            let artist = representativeItem?.artist
             
             // Get song URL
             songURL = (representativeItem?.assetURL)!
             songLabel.text = title
-            artistLabel.text = artist
             self.dismiss(animated: true)
         }
     }
