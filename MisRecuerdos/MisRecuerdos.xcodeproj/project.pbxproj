@@ -23,13 +23,10 @@
 		225842B11FBD6B50003B9F64 /* GameQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225842B01FBD6B50003B9F64 /* GameQuestionsViewController.swift */; };
 		225842B31FBD742E003B9F64 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225842B21FBD742E003B9F64 /* Question.swift */; };
 		2275CD5D1FB83DC000B3BD5B /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2275CD5C1FB83DC000B3BD5B /* EditEventViewController.swift */; };
-<<<<<<< HEAD
 		22CA2D771FBE6E3A0034102A /* Apple Pay Success Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22CA2D761FBE6E3A0034102A /* Apple Pay Success Sound Effect.mp3 */; };
 		22CA2D791FBE6E440034102A /* Correct Answer 2 Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22CA2D781FBE6E440034102A /* Correct Answer 2 Sound Effect.mp3 */; };
 		22CA2D7D1FBE6E9D0034102A /* Correct Answer 3 Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22CA2D7C1FBE6E9D0034102A /* Correct Answer 3 Sound Effect.mp3 */; };
 		22CA2D7F1FBEC6E10034102A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA2D7E1FBEC6E10034102A /* ResultsViewController.swift */; };
-=======
->>>>>>> ac766ad700a5396b55c5c14a9a9ea2b6933b3a12
 		22E281C81FB3A664008376C1 /* EventOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E281C61FB3A664008376C1 /* EventOverlayView.swift */; };
 		22E281C91FB3A664008376C1 /* EventOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E281C71FB3A664008376C1 /* EventOverlayView.xib */; };
 		618136D8793AAE6BFB13F204 /* Pods_MisRecuerdos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B2DB62BAECCC0E5D33724B /* Pods_MisRecuerdos.framework */; };
@@ -90,13 +87,10 @@
 		225842B01FBD6B50003B9F64 /* GameQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameQuestionsViewController.swift; sourceTree = "<group>"; };
 		225842B21FBD742E003B9F64 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		2275CD5C1FB83DC000B3BD5B /* EditEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		22CA2D761FBE6E3A0034102A /* Apple Pay Success Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Apple Pay Success Sound Effect.mp3"; path = "../../../../../Downloads/Apple Pay Success Sound Effect.mp3"; sourceTree = "<group>"; };
 		22CA2D781FBE6E440034102A /* Correct Answer 2 Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Correct Answer 2 Sound Effect.mp3"; path = "../../../../../Downloads/Correct Answer 2 Sound Effect.mp3"; sourceTree = "<group>"; };
 		22CA2D7C1FBE6E9D0034102A /* Correct Answer 3 Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Correct Answer 3 Sound Effect.mp3"; path = "../../../../../Downloads/Correct Answer 3 Sound Effect.mp3"; sourceTree = "<group>"; };
 		22CA2D7E1FBEC6E10034102A /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsViewController.swift; path = ../ResultsViewController.swift; sourceTree = "<group>"; };
-=======
->>>>>>> ac766ad700a5396b55c5c14a9a9ea2b6933b3a12
 		22E281C61FB3A664008376C1 /* EventOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventOverlayView.swift; sourceTree = "<group>"; };
 		22E281C71FB3A664008376C1 /* EventOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventOverlayView.xib; sourceTree = "<group>"; };
 		AD34193D1FBED00A003EA195 /* Apple Pay Success Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Apple Pay Success Sound Effect.mp3"; sourceTree = "<group>"; };
