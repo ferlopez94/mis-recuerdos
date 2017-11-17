@@ -629,6 +629,7 @@
                         <outletCollection property="Buttons" destination="ym0-AT-i74" collectionClass="NSMutableArray" id="ZDE-2b-i1Z"/>
                         <outletCollection property="Buttons" destination="ivK-uP-cyw" collectionClass="NSMutableArray" id="wxC-AB-x9H"/>
                         <segue destination="9rU-GI-k10" kind="unwind" identifier="unwindToMenuGameWithSegue" unwindAction="unwindToMenuGameWithSegue:" id="pyO-II-jow"/>
+                        <segue destination="2mg-JV-o9y" kind="show" identifier="showResults" id="hQo-qg-tLY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="df6-bV-Ahz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -636,8 +637,131 @@
             </objects>
             <point key="canvasLocation" x="2957" y="111"/>
         </scene>
+        <!--Results-->
+        <scene sceneID="j1h-CE-Ci4">
+            <objects>
+                <viewController title="Results" id="2mg-JV-o9y" customClass="ResultsViewController" customModule="MisRecuerdos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="078-Br-7r8"/>
+                        <viewControllerLayoutGuide type="bottom" id="IMJ-D0-htl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bAc-Fo-0Iq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="AJ0-gY-MDi" userLabel="Content">
+                                <rect key="frame" x="32" y="70" width="256" height="428"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="¡Buen trabajo!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHN-md-jHw">
+                                        <rect key="frame" x="56" y="0.0" width="144" height="93.5"/>
+                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="38"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="42"/>
+                                        </variation>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ijt-Bl-P3S">
+                                        <rect key="frame" x="28" y="142.5" width="200" height="120"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="U1s-Jh-Eij">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="oIW-ke-xgs"/>
+                                                    <constraint firstAttribute="height" constant="120" id="rdy-IC-8nH"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Puntaje obtenido: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ERx-mW-Png">
+                                        <rect key="frame" x="31" y="312" width="194.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYQ-dD-cFC" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="388" width="156" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="7E4-3w-ecl">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
+                                        <state key="normal" title="Volver al menú"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
+                                                <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="FDd-Hx-Vrn" kind="unwind" unwindAction="unwindToMenuGameWithSegue:" id="sKE-cj-IiN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="PYQ-dD-cFC" secondAttribute="trailing" constant="50" id="Fof-cS-jCY"/>
+                                    <constraint firstItem="PYQ-dD-cFC" firstAttribute="leading" secondItem="AJ0-gY-MDi" secondAttribute="leading" constant="50" id="emZ-Yz-v5j"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IMJ-D0-htl" firstAttribute="top" secondItem="AJ0-gY-MDi" secondAttribute="bottom" constant="70" id="4GN-0S-79Z">
+                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="AJ0-gY-MDi" secondAttribute="trailing" constant="16" id="ALQ-F1-bOT">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="AJ0-gY-MDi" firstAttribute="top" secondItem="078-Br-7r8" secondAttribute="bottom" constant="50" id="e8H-Ls-Fbd">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="AJ0-gY-MDi" firstAttribute="leading" secondItem="bAc-Fo-0Iq" secondAttribute="leadingMargin" constant="16" id="sEG-Eh-Pne">
+                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Menú" id="0tZ-AE-8Mm"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="ERx-mW-Png" id="Tip-bo-IE7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dE8-q6-gfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="FDd-Hx-Vrn" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3743" y="111"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Logo" width="150" height="132"/>
         <image name="beginGame" width="200" height="200"/>
     </resources>
 </document>

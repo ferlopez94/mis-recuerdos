@@ -30,8 +30,6 @@ class GameQuestionsViewController: UIViewController {
     
     let unwindToMenuGameWithSegue = "unwindToMenuGameWithSegue"
     
-    //var anterior: MenuViewController!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let data = UserDefaults.standard.data(forKey: K.Accounts.actualUserKey),
@@ -74,6 +72,9 @@ class GameQuestionsViewController: UIViewController {
             
             if questionType == "Contacto" {
                 lbQuestion.text = "¿Quién es esta persona?"
+            }
+            else {
+                lbQuestion.text = "¿Cuál fue este momento?"
             }
             
             imvPhoto.image = Questions[countQ].photo
@@ -140,10 +141,8 @@ class GameQuestionsViewController: UIViewController {
         }
         else {
             firstTry = false
-            // Cambiar color del boton a rojo
-            sender.backgroundColor = UIColor.red
             lbAnswer.textColor = UIColor.red
-            //sender.isEnabled = false
+            sender.isEnabled = false
             lbAnswer.text = "Respuesta incorrecta"
         }
     }
@@ -152,13 +151,8 @@ class GameQuestionsViewController: UIViewController {
         lbAnswer.text = ""
         btNext.isHidden = true
         
-        print("Pregunta :" + String(countQ))
         if countQ >= Questions.count {
-            // Guardar resultado de Quiz
-            //anterior.quizzesRealizados.append(resultadosQuiz(numeroAciertos: puntosTotales, numeroPreguntas: Preguntas.count, fechaRealizacion: Date(), presicionQuiz: Double(puntosTotales)/Double(Preguntas.count), quizTerminado: true))
-            print("Resultados Guardados")
-            // Pasar a pantalla de resultados
-            //performSegue(withIdentifier: "mostrarResultados", sender: self)
+            performSegue(withIdentifier: "showResults", sender: self)
         }
         PickQuestion()
     }
@@ -174,14 +168,12 @@ class GameQuestionsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showResults" {
+            let vc = segue.destination as! ResultsViewController
+            vc.score = totalPoints
+        }
     }
-    */
 
 }

@@ -33,6 +33,7 @@ class GameConfigurationViewController: UIViewController {
     var numSoundSS = 3
     var valor = 0
     var counter = 4
+    var totalElements = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,17 @@ class GameConfigurationViewController: UIViewController {
         }
         contactsList = user.contacts
         eventsList = user.events
+        
+        if contactsList.count >= 4 && eventsList.count >= 4 {
+            totalElements = contactsList.count + eventsList.count
+        }
+        else if contactsList.count >= 4 {
+            totalElements = contactsList.count
+        }
+        else if eventsList.count >= 4 {
+            totalElements = eventsList.count
+        }
+        
         self.title = ""
     }
 
@@ -68,17 +80,25 @@ class GameConfigurationViewController: UIViewController {
 
     func getQuestions() {
         var contactsName = [String]()
+        var eventsName = [String]()
         var name: String!
         var random: Int!
         var questionType: String!
         var n = 0
+        
         while n < numContacts {
             name = (contactsList[n]).value(forKey: "name") as! String
             contactsName.append(name)
             n += 1
         }
+        n = 0
+        while n < numEvents {
+            name = (eventsList[n]).value(forKey: "name") as! String
+            eventsName.append(name)
+            n += 1
+        }
         while numQuestions > 0 {
-            if numContacts > 0 && numQuestions > 0 {
+            if contactsName.count >= 4 && numContacts > 0 && numQuestions > 0 {
                 questionType = "Contacto"
                 random = Int(arc4random() % UInt32(numContacts))
                 let contact = contactsList[random]
@@ -87,19 +107,28 @@ class GameConfigurationViewController: UIViewController {
                 numQuestions -= 1
                 numContacts -= 1
             }
+            if eventsName.count >= 4 && numEvents > 0 && numQuestions > 0 {
+                questionType = "Evento"
+                random = Int(arc4random() % UInt32(numEvents))
+                let event = eventsList[random]
+                eventsList.remove(at: random)
+                getAnswersE(contact: event, contactsName: eventsName, questionType: questionType)
+                numQuestions -= 1
+                numEvents -= 1
+            }
         }
     }
     
     func getAnswers(contact: Contact, contactsName: [String], questionType: String) {
         var contactsName = contactsName
-        var descripQuestion = ""
+        let descripQuestion = ""
         var correctAnswer: String!
-        if questionType == "Contacto" {
-            descripQuestion = contact.value(forKey: "comments") as! String
+        //if questionType == "Contacto" {
+            //descripQuestion = contact.value(forKey: "comments") as! String
             correctAnswer = contact.value(forKey: "name") as! String
-        } else {
+        //} else {
             correctAnswer = (contact.value(forKey: "name") as! String)
-        }
+        //}
         let photo = contact.value(forKey: "photo") as! UIImage
  
         var answersList = ["","","",""]
@@ -129,7 +158,49 @@ class GameConfigurationViewController: UIViewController {
         questionsList.append(question)
     }
     
+    func getAnswersE(contact: Event, contactsName: [String], questionType: String) {
+        print("Llamando a eventos")
+        var contactsName = contactsName
+        let descripQuestion = ""
+        var correctAnswer: String!
+        //if questionType == "Evento" {
+            //descripQuestion = contact.value(forKey: "comments") as! String
+            //correctAnswer = contact.value(forKey: "name") as! String
+        //} else {
+            correctAnswer = (contact.value(forKey: "name") as! String)
+        //}
+        let photo = contact.value(forKey: "photo") as! UIImage
+        
+        var answersList = ["","","",""]
+        let placeCorrect = Int(arc4random() % 4)
+        answersList[placeCorrect] = correctAnswer
+        
+        var placeIncorrect = 0
+        var randomAnswer: Int!
+        while placeIncorrect < 4 {
+            if placeCorrect != placeIncorrect {
+                randomAnswer = Int(arc4random() % UInt32(contactsName.count))
+                if(contactsName[randomAnswer] == correctAnswer) {
+                    contactsName.remove(at: randomAnswer)
+                }
+                else {
+                    answersList[placeIncorrect] = contactsName[randomAnswer]
+                    contactsName.remove(at: randomAnswer)
+                    placeIncorrect += 1
+                }
+            }
+            else {
+                placeIncorrect += 1
+            }
+        }
+        
+        let question = Question(descrip: descripQuestion, answersList: answersList, answer: placeCorrect, photo: photo, questionType: questionType)
+        questionsList.append(question)
+    }
+    
+    
     //MARK: - Questions buttons actions
+    
     
     @IBAction func decrementQuestions(_ sender: UIButton) {
         if counter == 4 {
@@ -147,7 +218,7 @@ class GameConfigurationViewController: UIViewController {
     }
     
     @IBAction func incrementQuestions(_ sender: UIButton) {
-        if counter < contactsList.count || counter < eventsList.count {
+        if counter < totalElements {
             counter += 1
             numQuestionsLabel.text = "\(counter)"
             numQuestions = counter
