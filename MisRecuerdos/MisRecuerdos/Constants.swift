@@ -15,4 +15,8 @@ struct K {
         static let actualUserIndexKey = "actualUserIndex"
     }
     
+    struct Settings {
+        static let allowEditionKey = "allowEdition" 
+    }
+    
 }

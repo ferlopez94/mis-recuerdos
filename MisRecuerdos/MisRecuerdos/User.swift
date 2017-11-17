@@ -25,6 +25,7 @@ final class User: NSObject, NSCoding {
     let photoData: Data
     var contacts: [Contact]
     var events: [Event]
+    var allowEdition: Bool
     override var description: String {
         return "\(name) \(lastName) \(dateOfBirth)"
     }
@@ -32,7 +33,7 @@ final class User: NSObject, NSCoding {
     
     // MARK: - Initializers
     
-    init(name: String, lastName: String, dateOfBirth: String, comments: String, photo: UIImage, contacts: [Contact] = [Contact](), events: [Event] = [Event]()) {
+    init(name: String, lastName: String, dateOfBirth: String, comments: String, photo: UIImage, contacts: [Contact] = [Contact](), events: [Event] = [Event](), allowEdition: Bool = false) {
         self.name = name
         self.lastName = lastName
         self.dateOfBirth = dateOfBirth
@@ -41,6 +42,7 @@ final class User: NSObject, NSCoding {
         self.photoData = UIImageJPEGRepresentation(photo, 0.2)!
         self.contacts = contacts
         self.events = events
+        self.allowEdition = allowEdition
     }
     
     
@@ -54,9 +56,11 @@ final class User: NSObject, NSCoding {
         static let photoData = "photoData"
         static let contacts = "contacts"
         static let events = "events"
+        static let allowEdition = "allowEdition"
     }
     
     convenience init?(coder aDecoder: NSCoder) {
+        let allowEdition = aDecoder.decodeBool(forKey: PropertyKey.allowEdition)
         guard let name = aDecoder.decodeObject(forKey: PropertyKey.name) as? String,
             let lastName = aDecoder.decodeObject(forKey: PropertyKey.lastName) as? String,
             let dateOfBirth = aDecoder.decodeObject(forKey: PropertyKey.dateOfBirth) as? String,
@@ -66,7 +70,7 @@ final class User: NSObject, NSCoding {
             let contacts = aDecoder.decodeObject(forKey: PropertyKey.contacts) as? [Contact],
             let events = aDecoder.decodeObject(forKey: PropertyKey.events) as? [Event] else { return nil }
         
-        self.init(name: name, lastName: lastName, dateOfBirth: dateOfBirth, comments: comments, photo: photo, contacts: contacts, events: events)
+        self.init(name: name, lastName: lastName, dateOfBirth: dateOfBirth, comments: comments, photo: photo, contacts: contacts, events: events, allowEdition: allowEdition)
     }
     
     func encode(with aCoder: NSCoder) {
@@ -77,6 +81,7 @@ final class User: NSObject, NSCoding {
         aCoder.encode(photoData, forKey: PropertyKey.photoData)
         aCoder.encode(contacts, forKey: PropertyKey.contacts)
         aCoder.encode(events, forKey: PropertyKey.events)
+        aCoder.encode(allowEdition, forKey: PropertyKey.allowEdition)
     }
     
     

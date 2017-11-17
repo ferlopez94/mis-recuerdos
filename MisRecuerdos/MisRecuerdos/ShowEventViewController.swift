@@ -42,6 +42,7 @@ class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerContr
     var reproducing = false
     var change = false
     var songMedia: MPMediaItem! = nil
+    var allowEdition = false
     
     
     // MARK: - View Controller life cycle
@@ -66,6 +67,7 @@ class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerContr
         
         let photo = INSPhoto(image: event.element.photo, thumbnailImage: event.element.photo)
         photos.append(photo)
+        allowEdition = UserDefaults.standard.bool(forKey: K.Settings.allowEditionKey)
     }
     
     func showPhoto() {
@@ -91,6 +93,16 @@ class ShowEventViewController: UIViewController, UpdateEvent, MPMediaPickerContr
     // MARK: - Navigation
     
     @IBAction func segueToEdit(_ sender: Any) {
+        guard allowEdition else {
+            let title = "Modo de edición desactivado"
+            let message = "Para activar el modo de edición ve a tu perfil."
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(alertController, animated: true, completion: nil)
+            return
+        }
+        
+        
         if let player = audioPlayer {
             if reproducing {
                 playButton.setImage(#imageLiteral(resourceName: "playIcon"), for: .normal)

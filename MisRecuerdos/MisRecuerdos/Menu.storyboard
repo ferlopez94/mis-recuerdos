@@ -56,7 +56,7 @@ Principal</string>
                                                         </constraints>
                                                         <state key="normal" image="My profile"/>
                                                         <connections>
-                                                            <segue destination="raf-jW-bFt" kind="show" id="G8T-MB-7dM"/>
+                                                            <segue destination="raf-jW-bFt" kind="show" identifier="segueToShowProfile" id="G8T-MB-7dM"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rE0-mN-kFN">
@@ -200,7 +200,7 @@ Principal</string>
                 <viewControllerPlaceholder storyboardName="ShowProfile" id="raf-jW-bFt" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAf-T7-wl2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2159" y="111"/>
+            <point key="canvasLocation" x="2099" y="59"/>
         </scene>
         <!--Events-->
         <scene sceneID="W50-xf-YKM">
@@ -208,7 +208,7 @@ Principal</string>
                 <viewControllerPlaceholder storyboardName="Events" id="6eT-pp-4lm" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AXq-kN-OEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2185" y="324"/>
+            <point key="canvasLocation" x="2086" y="111"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="qZD-bl-c9Q">
@@ -216,7 +216,7 @@ Principal</string>
                 <viewControllerPlaceholder storyboardName="Contacts" id="Lcm-Ow-zqf" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wdu-bb-ZZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2363" y="538"/>
+            <point key="canvasLocation" x="2099" y="163"/>
         </scene>
     </scenes>
     <resources>
