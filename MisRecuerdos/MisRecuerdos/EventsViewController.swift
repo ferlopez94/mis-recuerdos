@@ -105,6 +105,10 @@ class EventsViewController: UIViewController, UISearchBarDelegate, ReloadDataE {
                 return true
             }
             
+            if event.element.relative.lowercased().range(of: text.lowercased()) != nil {
+                return true
+            }
+            
             let category = event.element.category == .personal ? "Personal" : "Otro"
             
             if category.lowercased().range(of: text.lowercased()) != nil {
