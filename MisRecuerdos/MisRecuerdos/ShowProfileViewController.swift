@@ -9,7 +9,7 @@
 import INSPhotoGallery
 import UIKit
 
-class ShowProfileViewController: UIViewController {
+class ShowProfileViewController: UIViewController, RootUser {
     
     // MARK: - IBOutlets
     
@@ -94,6 +94,20 @@ class ShowProfileViewController: UIViewController {
         if User.saveToFile(user, replaceAtIndex: index) {
             print("user saved!")
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! EditProfileViewController
+        vc.user = self.user
+        vc.delegateRootUser = self
+    }
+    
+    
+    // MARK: - RootUser methods
+    
+    func modifyUser(_ user: User) {
+        self.user = user
+        self.delegateRootUser?.modifyUser(user)
     }
     
 }

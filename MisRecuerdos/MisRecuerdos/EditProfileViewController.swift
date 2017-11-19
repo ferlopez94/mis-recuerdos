@@ -13,17 +13,20 @@ class EditProfileViewController: SignupViewController {
     // MARK: - Instance variables
     
     var user: User!
+    var delegateRootUser: RootUser?
 
     
     // MARK: - View Controller life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let user = self.user else { return }
 
-        guard let data = UserDefaults.standard.data(forKey: K.Accounts.actualUserKey),
-            let user = NSKeyedUnarchiver.unarchiveObject(with: data) as? User else {
-                return
-        }
+//        guard let data = UserDefaults.standard.data(forKey: K.Accounts.actualUserKey),
+//            let user = NSKeyedUnarchiver.unarchiveObject(with: data) as? User else {
+//                return
+//        }
         
         self.user = user
         photoButton.layer.masksToBounds = true
@@ -80,10 +83,11 @@ class EditProfileViewController: SignupViewController {
             comments == user.comments else {
                 print("user data changed")
                 let index = UserDefaults.standard.integer(forKey: K.Accounts.actualUserIndexKey)
-                let newUser = User(name: name, lastName: lastName, dateOfBirth: dateOfBirth, comments: comments, photo: newPhotoImage)
+                let newUser = User(name: name, lastName: lastName, dateOfBirth: dateOfBirth, comments: comments, photo: newPhotoImage, contacts: user.contacts, events: user.events, allowEdition: user.allowEdition)
                 
                 if User.saveToFile(newUser, replaceAtIndex: index >= 0 ? index : 0) {
                     UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: newUser), forKey: K.Accounts.actualUserKey)
+                    delegateRootUser?.modifyUser(newUser)
                     dismiss(animated: true, completion: nil)
                 } else {
                     message = "No se pueden realizar cambios en este momento."
@@ -102,4 +106,25 @@ class EditProfileViewController: SignupViewController {
         dismiss(animated: true, completion: nil)
     }
 
+    @IBAction override func textFieldEditingDidBegin(_ sender: UITextField) {
+        let dataFormatter = DateFormatter()
+        dataFormatter.dateFormat = "yyyy/MM/dd"
+        
+        let minimumDate = dataFormatter.date(from: "1900/01/01")!
+        let maximumDate = dataFormatter.date(from: "2015/01/01")!
+        
+        
+        dataFormatter.dateStyle = .medium
+        dataFormatter.timeStyle = .none
+        let actualDate = dataFormatter.date(from: user.dateOfBirth)!
+        
+        let datePickerView = UIDatePicker()
+        datePickerView.datePickerMode = .date
+        datePickerView.minimumDate = minimumDate
+        datePickerView.date = actualDate
+        datePickerView.maximumDate = maximumDate
+        sender.inputView = datePickerView
+        datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
+    }
+    
 }
