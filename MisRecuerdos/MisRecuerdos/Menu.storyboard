@@ -15,6 +15,9 @@
         <array key="Century Gothic Bold.ttf">
             <string>CenturyGothic-Bold</string>
         </array>
+        <array key="Century Gothic.ttf">
+            <string>CenturyGothic</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Menú-->
@@ -155,6 +158,12 @@ Principal</string>
                                 </constraints>
                                 <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zI-RJ-UNn">
+                                <rect key="frame" x="248" y="114" width="22" height="22"/>
+                                <connections>
+                                    <segue destination="3Vy-B4-xb2" kind="show" id="YZJ-W6-FVm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -164,8 +173,14 @@ Principal</string>
                             <constraint firstItem="fWG-lp-TQD" firstAttribute="top" secondItem="cmM-DD-umX" secondAttribute="bottom" constant="40" id="Cdw-iE-Vfa">
                                 <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                             </constraint>
+                            <constraint firstAttribute="trailing" secondItem="0zI-RJ-UNn" secondAttribute="trailing" constant="50" id="O4O-eY-dmo">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstItem="cmM-DD-umX" firstAttribute="top" secondItem="f23-Le-ole" secondAttribute="bottom" constant="30" id="QTd-De-fbu">
                                 <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                            </constraint>
+                            <constraint firstItem="0zI-RJ-UNn" firstAttribute="top" secondItem="f23-Le-ole" secondAttribute="bottom" constant="50" id="QaH-dU-Vdj">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                             </constraint>
                             <constraint firstItem="cmM-DD-umX" firstAttribute="leading" secondItem="jee-Qa-0Ay" secondAttribute="leadingMargin" constant="16" id="Ulg-9u-fGA">
                                 <variation key="heightClass=regular-widthClass=regular" constant="32"/>
@@ -196,6 +211,63 @@ Principal</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KG0-Bx-bEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="275.625" y="110.91549295774648"/>
+        </scene>
+        <!--Información-->
+        <scene sceneID="0Tx-OX-Udq">
+            <objects>
+                <viewController id="3Vy-B4-xb2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nyp-RU-lrE"/>
+                        <viewControllerLayoutGuide type="bottom" id="kvP-qe-X5R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e45-XY-d7Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LL8-AV-RIS" userLabel="Content">
+                                <rect key="frame" x="26" y="94" width="268" height="444"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jvI-ho-9Sa">
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="444"/>
+                                        <string key="text">“Mis Recuerdos” ha sido desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre Agosto Diciembre de 2017, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.
+
+Desarrolladores:
+Andrea Chacón Balderas
+Fernando López Martínez
+Laura Jaideny Pérez Gómez 
+
+Mis Recuerdos se distribuye como está de manera gratuita y se prohíbe su distribución y uso con fines de lucro.</string>
+                                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LL8-AV-RIS" firstAttribute="top" secondItem="Nyp-RU-lrE" secondAttribute="bottom" constant="30" id="DFP-qh-J7D">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="LL8-AV-RIS" secondAttribute="trailing" constant="10" id="WAq-jL-Ovw">
+                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                            </constraint>
+                            <constraint firstItem="kvP-qe-X5R" firstAttribute="top" secondItem="LL8-AV-RIS" secondAttribute="bottom" constant="30" id="XPf-i2-N6x">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="LL8-AV-RIS" firstAttribute="leading" secondItem="e45-XY-d7Q" secondAttribute="leadingMargin" constant="10" id="qaM-k7-chd">
+                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Información" id="Vxj-Ie-yeY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9WT-8l-vcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2238" y="-513"/>
         </scene>
         <!--Game-->
         <scene sceneID="08B-ah-fKk">
