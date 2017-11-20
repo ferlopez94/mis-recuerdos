@@ -43,8 +43,8 @@ class GameQuestionsViewController: UIViewController {
         navigationItem.leftBarButtonItem = backButton
         let rightButton = UIBarButtonItem(title: "Terminar", style: UIBarButtonItemStyle.plain, target: self, action: #selector(goBackMenuGame))
         navigationItem.rightBarButtonItem = rightButton
-        // Do any additional setup after loading the view.
     }
+    
     //Method that changes the color of the buttons
     func changeColor(color: String) {
         if color == "azul" {
