@@ -32,20 +32,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Aq3-JJ-vUE" userLabel="Content">
-                                <rect key="frame" x="32" y="94" width="256" height="444"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Aq3-JJ-vUE" userLabel="Content">
+                                <rect key="frame" x="32" y="84" width="256" height="464"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="crB-gD-Xs8">
-                                        <rect key="frame" x="77" y="0.0" width="102" height="102.5"/>
+                                        <rect key="frame" x="77" y="0.0" width="102" height="101.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="crB-gD-Xs8" secondAttribute="height" multiplier="1:1" id="f21-tc-c2V"/>
                                         </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2tr-rv-mBi" userLabel="Name Stack View">
-                                        <rect key="frame" x="0.0" y="131" width="256" height="21"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2tr-rv-mBi" userLabel="Name Stack View">
+                                        <rect key="frame" x="0.0" y="128" width="256" height="22.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yNm-0n-1xM">
-                                                <rect key="frame" x="0.0" y="0.0" width="123" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TJB-cR-MXu">
-                                                <rect key="frame" x="133" y="0.0" width="123" height="21"/>
+                                                <rect key="frame" x="133" y="0.0" width="123" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -64,11 +64,11 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IFv-aR-f2B" userLabel="LastName Stack View">
-                                        <rect key="frame" x="0.0" y="181" width="256" height="21"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IFv-aR-f2B" userLabel="LastName Stack View">
+                                        <rect key="frame" x="0.0" y="177" width="256" height="22.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellidos:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8lM-5L-Mau">
-                                                <rect key="frame" x="0.0" y="0.0" width="123" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="123" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -77,7 +77,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doe Down" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tdW-Xd-CGQ">
-                                                <rect key="frame" x="133" y="0.0" width="123" height="21"/>
+                                                <rect key="frame" x="133" y="0.0" width="123" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -87,11 +87,11 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EPk-B6-3KZ" userLabel="LastName Stack View">
-                                        <rect key="frame" x="0.0" y="230.5" width="256" height="52"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EPk-B6-3KZ" userLabel="LastName Stack View">
+                                        <rect key="frame" x="0.0" y="226" width="256" height="55"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de nacimiento:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fiR-Jn-yiq">
-                                                <rect key="frame" x="0.0" y="0.0" width="256" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -100,7 +100,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09 de agosto de 1995" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NeV-pg-MuK">
-                                                <rect key="frame" x="0.0" y="31" width="256" height="21"/>
+                                                <rect key="frame" x="0.0" y="32.5" width="256" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -109,12 +109,13 @@
                                                 </variation>
                                             </label>
                                         </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SoB-Ep-11w" userLabel="LastName Stack View">
-                                        <rect key="frame" x="0.0" y="311.5" width="256" height="73"/>
+                                        <rect key="frame" x="0.0" y="307.5" width="256" height="99"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comentarios:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O1B-ZJ-IL3">
-                                                <rect key="frame" x="0.0" y="0.0" width="256" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -123,7 +124,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Me gusta tocar la guitarra y mi banda favorita es The Police" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jOU-yb-3Jd">
-                                                <rect key="frame" x="0.0" y="31" width="256" height="42"/>
+                                                <rect key="frame" x="0.0" y="32.5" width="256" height="66.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -133,11 +134,11 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vl7-NK-skj" userLabel="Edition Stack View">
-                                        <rect key="frame" x="0.0" y="413" width="256" height="31"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vl7-NK-skj" userLabel="Edition Stack View">
+                                        <rect key="frame" x="0.0" y="433" width="256" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Editar datos:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LTS-WC-ClM">
-                                                <rect key="frame" x="0.0" y="0.0" width="197" height="31"/>
+                                                <rect key="frame" x="0.0" y="4.5" width="156" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -146,7 +147,7 @@
                                                 </variation>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XBL-jU-XQ4">
-                                                <rect key="frame" x="207" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="176" y="0.0" width="82" height="31"/>
                                                 <connections>
                                                     <action selector="allowEdition:" destination="KCw-v8-oAW" eventType="valueChanged" id="rHX-6F-cOn"/>
                                                 </connections>
@@ -166,18 +167,28 @@
                                     <constraint firstItem="IFv-aR-f2B" firstAttribute="leading" secondItem="Aq3-JJ-vUE" secondAttribute="leadingMargin" id="cH3-Ea-aKH"/>
                                     <constraint firstItem="vl7-NK-skj" firstAttribute="leading" secondItem="Aq3-JJ-vUE" secondAttribute="leading" id="hNH-EM-ZXE"/>
                                     <constraint firstAttribute="trailing" secondItem="2tr-rv-mBi" secondAttribute="trailing" id="pdG-NN-nA1"/>
-                                    <constraint firstItem="crB-gD-Xs8" firstAttribute="width" secondItem="Aq3-JJ-vUE" secondAttribute="width" multiplier="0.4" id="rUS-ZH-UpZ"/>
+                                    <constraint firstItem="crB-gD-Xs8" firstAttribute="width" secondItem="Aq3-JJ-vUE" secondAttribute="width" multiplier="0.4" id="rUS-ZH-UpZ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                                    </constraint>
                                 </constraints>
-                                <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
+                                <variation key="heightClass=regular-widthClass=regular" spacing="30"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Aq3-JJ-vUE" firstAttribute="leading" secondItem="h9V-D0-poF" secondAttribute="leadingMargin" constant="16" id="4OC-CR-shH"/>
-                            <constraint firstItem="Aq3-JJ-vUE" firstAttribute="top" secondItem="1No-8v-NdG" secondAttribute="bottom" constant="30" id="FUj-dI-Is6"/>
-                            <constraint firstItem="zxd-cw-XL1" firstAttribute="top" secondItem="Aq3-JJ-vUE" secondAttribute="bottom" constant="30" id="Mmv-Qt-rXP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Aq3-JJ-vUE" secondAttribute="trailing" constant="16" id="rNG-nE-Rx8"/>
+                            <constraint firstItem="Aq3-JJ-vUE" firstAttribute="leading" secondItem="h9V-D0-poF" secondAttribute="leadingMargin" constant="16" id="4OC-CR-shH">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="Aq3-JJ-vUE" firstAttribute="top" secondItem="1No-8v-NdG" secondAttribute="bottom" constant="20" id="FUj-dI-Is6">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="zxd-cw-XL1" firstAttribute="top" secondItem="Aq3-JJ-vUE" secondAttribute="bottom" constant="20" id="Mmv-Qt-rXP">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="Aq3-JJ-vUE" secondAttribute="trailing" constant="16" id="rNG-nE-Rx8">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                            </constraint>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mi perfil" id="bwE-fC-LgS">
@@ -215,13 +226,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHb-HH-HkG">
-                                <rect key="frame" x="32" y="60" width="256" height="468"/>
+                                <rect key="frame" x="32" y="40" width="256" height="508"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hkr-xv-pGS" userLabel="Content">
-                                        <rect key="frame" x="0.0" y="0.0" width="256.5" height="468.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hkr-xv-pGS" userLabel="Content">
+                                        <rect key="frame" x="0.0" y="0.0" width="256.5" height="508.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Editar mi perfil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1Y-dG-Plb">
-                                                <rect key="frame" x="0.0" y="0.0" width="256.5" height="33"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="256.5" height="34.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -230,11 +241,11 @@
                                                 </variation>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qR1-hB-g9n" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                <rect key="frame" x="83.5" y="53" width="90" height="90"/>
+                                                <rect key="frame" x="83.5" y="49.5" width="90" height="90"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="qR1-hB-g9n" secondAttribute="height" multiplier="1:1" id="1gU-L3-c0N"/>
                                                     <constraint firstAttribute="width" constant="90" id="8qR-bO-DcH">
-                                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="170"/>
                                                     </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="16"/>
@@ -279,7 +290,7 @@ Foto</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edita la siguiente información:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="luN-3P-Nym">
-                                                <rect key="frame" x="0.0" y="163" width="256.5" height="21"/>
+                                                <rect key="frame" x="0.0" y="154.5" width="256.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -288,7 +299,7 @@ Foto</string>
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wvS-Sn-kUs">
-                                                <rect key="frame" x="0.0" y="204" width="256.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="192" width="256.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -297,7 +308,7 @@ Foto</string>
                                                 </variation>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellidos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cA5-JP-7t8">
-                                                <rect key="frame" x="0.0" y="254" width="256.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="237" width="256.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
@@ -306,7 +317,7 @@ Foto</string>
                                                 </variation>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha de nacimiento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mot-VI-Iue">
-                                                <rect key="frame" x="0.0" y="304" width="256.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="282" width="256.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -318,7 +329,7 @@ Foto</string>
                                                 </connections>
                                             </textField>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="Comentarios acerca de ti..." translatesAutoresizingMaskIntoConstraints="NO" id="AXb-zN-g3J">
-                                                <rect key="frame" x="0.0" y="354" width="256.5" height="54.5"/>
+                                                <rect key="frame" x="0.0" y="327" width="256.5" height="126.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -327,7 +338,7 @@ Foto</string>
                                                 </variation>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XBu-oL-nFk" userLabel="Buttons">
-                                                <rect key="frame" x="0.0" y="428.5" width="256.5" height="40"/>
+                                                <rect key="frame" x="0.0" y="468.5" width="256.5" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNG-Yz-rhV" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="118.5" height="40"/>
@@ -447,15 +458,15 @@ Foto</string>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="lHb-HH-HkG" firstAttribute="leading" secondItem="fOp-1f-NaJ" secondAttribute="leadingMargin" constant="16" id="GLG-x0-3ea">
-                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                             </constraint>
-                            <constraint firstItem="lHb-HH-HkG" firstAttribute="top" secondItem="HFS-i2-Jtx" secondAttribute="bottom" constant="40" id="Tsz-dE-cqD">
+                            <constraint firstItem="lHb-HH-HkG" firstAttribute="top" secondItem="HFS-i2-Jtx" secondAttribute="bottom" constant="20" id="Tsz-dE-cqD">
                                 <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                             </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="lHb-HH-HkG" secondAttribute="trailing" constant="16" id="X4b-h3-ZR4">
-                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                             </constraint>
-                            <constraint firstItem="Pxm-SG-DO5" firstAttribute="top" secondItem="lHb-HH-HkG" secondAttribute="bottom" constant="40" id="ghG-xo-9ZO">
+                            <constraint firstItem="Pxm-SG-DO5" firstAttribute="top" secondItem="lHb-HH-HkG" secondAttribute="bottom" constant="20" id="ghG-xo-9ZO">
                                 <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                             </constraint>
                         </constraints>

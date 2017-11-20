@@ -52,7 +52,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="GQ3-XR-Iin" secondAttribute="height" multiplier="15:13" id="CxE-Yr-dGa"/>
                                                     <constraint firstAttribute="width" constant="80" id="SEd-sY-0Oi">
-                                                        <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="220"/>
                                                     </constraint>
                                                 </constraints>
                                             </imageView>
@@ -95,7 +95,7 @@
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                     <variation key="heightClass=regular-widthClass=regular">
-                                                                                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="22"/>
+                                                                                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="25"/>
                                                                                     </variation>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Doe Down" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Q1-8D-b5S">
@@ -104,7 +104,7 @@
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                     <variation key="heightClass=regular-widthClass=regular">
-                                                                                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="22"/>
+                                                                                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="25"/>
                                                                                     </variation>
                                                                                 </label>
                                                                             </subviews>
@@ -194,13 +194,13 @@
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Qqz-9W-6Pn" firstAttribute="leading" secondItem="n8P-CH-G4K" secondAttribute="leadingMargin" constant="16" id="2mh-Vv-D2J">
-                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                             </constraint>
                             <constraint firstAttribute="bottomMargin" secondItem="Qqz-9W-6Pn" secondAttribute="bottom" constant="20" id="AuQ-Ua-yrI">
                                 <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                             </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="Qqz-9W-6Pn" secondAttribute="trailing" constant="16" id="Zkk-hd-a6j">
-                                <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                             </constraint>
                             <constraint firstItem="Qqz-9W-6Pn" firstAttribute="top" secondItem="dk0-k1-Rhe" secondAttribute="bottom" constant="20" id="tIN-nC-C7G">
                                 <variation key="heightClass=regular-widthClass=regular" constant="70"/>
