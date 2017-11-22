@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bDn-3c-lRj">
-    <device id="retina3_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bDn-3c-lRj">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -29,14 +29,14 @@
                         <viewControllerLayoutGuide type="bottom" id="XDj-LB-EEK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mIn-Sm-NQ7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7vD-4r-e2f" userLabel="Content">
-                                <rect key="frame" x="56" y="50" width="208" height="400"/>
+                                <rect key="frame" x="56" y="50" width="263" height="587"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Juego" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsB-8O-gEO">
-                                        <rect key="frame" x="61.5" y="0.0" width="85" height="34.5"/>
+                                        <rect key="frame" x="89" y="0.0" width="85" height="34.5"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -45,13 +45,13 @@
                                         </variation>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="O6A-Td-bC5" userLabel="Buttons">
-                                        <rect key="frame" x="0.0" y="93.5" width="208" height="208"/>
+                                        <rect key="frame" x="0.0" y="159.5" width="263" height="263"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jFl-lI-wOg">
-                                                <rect key="frame" x="0.0" y="0.0" width="208" height="208"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="263" height="263"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QNU-Rq-RgT" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="208" height="208"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="263" height="263"/>
                                                         <state key="normal">
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content="Comenzar juego nuevo">
@@ -109,7 +109,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8d-nX-RyJ" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                        <rect key="frame" x="19" y="360" width="170" height="40"/>
+                                        <rect key="frame" x="46.5" y="547" width="170" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="170" id="0Ap-O2-MgR">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="250"/>
@@ -198,14 +198,14 @@
                         <viewControllerLayoutGuide type="bottom" id="xiq-gA-ria"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="boQ-hM-WRG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wl9-Wy-0p7" userLabel="Content">
-                                <rect key="frame" x="32" y="50" width="256" height="380"/>
+                                <rect key="frame" x="32" y="50" width="311" height="567"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" text="Configurar juego" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="In0-SV-vR1">
-                                        <rect key="frame" x="0.0" y="0.0" width="256" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="1lc-VA-a7R"/>
                                         </constraints>
@@ -217,7 +217,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="752" text="Selecciona la cantidad de preguntas:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Je-1T-cwT">
-                                        <rect key="frame" x="0.0" y="80" width="256" height="50"/>
+                                        <rect key="frame" x="0.0" y="122" width="311" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="DOT-Qd-a2h"/>
                                         </constraints>
@@ -229,10 +229,10 @@
                                         </variation>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="utq-Fc-LGX">
-                                        <rect key="frame" x="40" y="150" width="176" height="25"/>
+                                        <rect key="frame" x="40" y="234" width="231" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivt-OJ-GGe">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="44"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                                 <state key="normal" title="-"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
@@ -243,7 +243,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btx-q4-vaC">
-                                                <rect key="frame" x="82.5" y="0.0" width="11.5" height="25"/>
+                                                <rect key="frame" x="110" y="0.0" width="11.5" height="44"/>
                                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -252,7 +252,7 @@
                                                 </variation>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkH-CS-ycv">
-                                                <rect key="frame" x="146" y="0.0" width="30" height="25"/>
+                                                <rect key="frame" x="201" y="0.0" width="30" height="44"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                                 <state key="normal" title="+"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
@@ -266,7 +266,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="60"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WZ2-3M-ncR">
-                                        <rect key="frame" x="20.5" y="195" width="215" height="125"/>
+                                        <rect key="frame" x="48" y="340" width="215" height="125"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Selecciona el sonido de celebración:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GJ9-RP-i99">
                                                 <rect key="frame" x="0.0" y="0.0" width="215" height="50"/>
@@ -299,7 +299,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Aah-Sc-ton" userLabel="Buttons">
-                                        <rect key="frame" x="8" y="340" width="240" height="40"/>
+                                        <rect key="frame" x="35.5" y="527" width="240" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ub9-CM-rAS" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
@@ -439,38 +439,43 @@
                         <viewControllerLayoutGuide type="bottom" id="sZa-ZE-5Qf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nMz-Zc-dCA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="i5s-Wm-Tm0" userLabel="Content">
-                                <rect key="frame" x="32" y="50" width="256" height="400"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="i5s-Wm-Tm0" userLabel="Content">
+                                <rect key="frame" x="32" y="40" width="311" height="607"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Pregunta 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPx-kh-bC9">
-                                        <rect key="frame" x="80.5" y="0.0" width="95.5" height="22.5"/>
-                                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="27"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="¿Cuál opción corresponde a la siguiente imagen?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OR3-L6-MZP">
-                                        <rect key="frame" x="7" y="32.5" width="242.5" height="69"/>
-                                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="40"/>
-                                        </variation>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JWj-zB-s44">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="86.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Pregunta 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPx-kh-bC9">
+                                                <rect key="frame" x="118.5" y="0.0" width="74.5" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="21"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="¿Cuál opción corresponde a la siguiente imagen?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OR3-L6-MZP">
+                                                <rect key="frame" x="0.0" y="17.5" width="311" height="69"/>
+                                                <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="40"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KCk-sa-KdF">
-                                        <rect key="frame" x="51" y="112" width="154" height="100"/>
+                                        <rect key="frame" x="31" y="124" width="249" height="212.5"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="svG-Ci-KET" userLabel="Buttons">
-                                        <rect key="frame" x="0.0" y="222" width="256" height="95"/>
+                                        <rect key="frame" x="0.0" y="374" width="311" height="95"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NYF-R5-DnA">
-                                                <rect key="frame" x="0.0" y="0.0" width="256" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="311" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bp8-Vl-kUZ" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
@@ -518,7 +523,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmw-C3-BIQ" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                        <rect key="frame" x="136" y="0.0" width="120" height="40"/>
+                                                        <rect key="frame" x="191" y="0.0" width="120" height="40"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                         <state key="normal" title="2"/>
                                                         <userDefinedRuntimeAttributes>
@@ -561,7 +566,7 @@
                                                 <variation key="heightClass=regular-widthClass=regular" spacing="60"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wha-XX-9p6">
-                                                <rect key="frame" x="0.0" y="55" width="256" height="40"/>
+                                                <rect key="frame" x="0.0" y="55" width="311" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ym0-AT-i74" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
@@ -601,7 +606,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivK-uP-cyw" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                        <rect key="frame" x="136" y="0.0" width="120" height="40"/>
+                                                        <rect key="frame" x="191" y="0.0" width="120" height="40"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                         <state key="normal" title="4"/>
                                                         <userDefinedRuntimeAttributes>
@@ -648,7 +653,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Respuesta correcta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nlg-rh-Oys">
-                                        <rect key="frame" x="43.5" y="327.5" width="169.5" height="22.5"/>
+                                        <rect key="frame" x="71" y="507" width="169.5" height="22.5"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -657,7 +662,7 @@
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiG-TE-M0M" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                        <rect key="frame" x="64" y="360" width="128" height="40"/>
+                                        <rect key="frame" x="78" y="567" width="155.5" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="RzL-4r-dDO">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
@@ -704,8 +709,10 @@
                                     <constraint firstAttribute="trailing" secondItem="svG-Ci-KET" secondAttribute="trailing" id="94C-zP-QBr">
                                         <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                                     </constraint>
-                                    <constraint firstItem="KCk-sa-KdF" firstAttribute="width" secondItem="i5s-Wm-Tm0" secondAttribute="width" multiplier="0.6" id="KIp-BY-8KQ"/>
-                                    <constraint firstItem="KCk-sa-KdF" firstAttribute="height" secondItem="i5s-Wm-Tm0" secondAttribute="height" multiplier="0.25" id="LN2-CS-fWg"/>
+                                    <constraint firstItem="KCk-sa-KdF" firstAttribute="width" secondItem="i5s-Wm-Tm0" secondAttribute="width" multiplier="0.8" id="KIp-BY-8KQ"/>
+                                    <constraint firstItem="KCk-sa-KdF" firstAttribute="height" secondItem="i5s-Wm-Tm0" secondAttribute="height" multiplier="0.35" id="LN2-CS-fWg"/>
+                                    <constraint firstAttribute="trailing" secondItem="JWj-zB-s44" secondAttribute="trailing" id="hOg-xc-dfg"/>
+                                    <constraint firstItem="JWj-zB-s44" firstAttribute="leading" secondItem="i5s-Wm-Tm0" secondAttribute="leading" id="nF6-69-av4"/>
                                     <constraint firstItem="svG-Ci-KET" firstAttribute="leading" secondItem="i5s-Wm-Tm0" secondAttribute="leading" id="tcH-WG-mRy">
                                         <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                                     </constraint>
@@ -715,10 +722,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="i5s-Wm-Tm0" firstAttribute="top" secondItem="zJ4-fr-eWT" secondAttribute="bottom" constant="30" id="289-XJ-EQ0">
+                            <constraint firstItem="i5s-Wm-Tm0" firstAttribute="top" secondItem="zJ4-fr-eWT" secondAttribute="bottom" constant="20" id="289-XJ-EQ0">
                                 <variation key="heightClass=regular-widthClass=regular" constant="70"/>
                             </constraint>
-                            <constraint firstItem="sZa-ZE-5Qf" firstAttribute="top" secondItem="i5s-Wm-Tm0" secondAttribute="bottom" constant="30" id="CcS-pt-PZI">
+                            <constraint firstItem="sZa-ZE-5Qf" firstAttribute="top" secondItem="i5s-Wm-Tm0" secondAttribute="bottom" constant="20" id="CcS-pt-PZI">
                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                             </constraint>
                             <constraint firstItem="i5s-Wm-Tm0" firstAttribute="leading" secondItem="nMz-Zc-dCA" secondAttribute="leadingMargin" constant="16" id="Vtn-IO-5lB">
@@ -758,14 +765,14 @@
                         <viewControllerLayoutGuide type="bottom" id="IMJ-D0-htl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bAc-Fo-0Iq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AJ0-gY-MDi" userLabel="Content">
-                                <rect key="frame" x="32" y="50" width="256" height="380"/>
+                                <rect key="frame" x="32" y="50" width="311" height="567"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="¡Buen trabajo!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GHN-md-jHw">
-                                        <rect key="frame" x="56" y="0.0" width="144" height="93.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="38"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -774,7 +781,7 @@
                                         </variation>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="U1s-Jh-Eij">
-                                        <rect key="frame" x="28" y="126.5" width="200" height="120"/>
+                                        <rect key="frame" x="55.5" y="126.5" width="200" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="oIW-ke-xgs">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="400"/>
@@ -785,7 +792,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Puntaje obtenido: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ERx-mW-Png">
-                                        <rect key="frame" x="31" y="280" width="194.5" height="27"/>
+                                        <rect key="frame" x="58.5" y="373.5" width="194.5" height="27"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -794,7 +801,7 @@
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYQ-dD-cFC" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                        <rect key="frame" x="50" y="340" width="156" height="40"/>
+                                        <rect key="frame" x="50" y="527" width="211" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="7E4-3w-ecl">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>

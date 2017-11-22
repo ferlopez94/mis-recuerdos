@@ -304,7 +304,7 @@ Mis Recuerdos se distribuye como está de manera gratuita y se prohíbe su distr
     </scenes>
     <resources>
         <image name="Events" width="326" height="316"/>
-        <image name="Game" width="326" height="316"/>
+        <image name="Game" width="163" height="158"/>
         <image name="My profile" width="326" height="316"/>
         <image name="People" width="326" height="316"/>
     </resources>
