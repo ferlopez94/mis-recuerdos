@@ -26,6 +26,8 @@ final class User: NSObject, NSCoding {
     var contacts: [Contact]
     var events: [Event]
     var allowEdition: Bool
+    var numQuestions: Int
+    var sound: Int
     override var description: String {
         return "\(name) \(lastName) \(dateOfBirth)"
     }
@@ -33,7 +35,7 @@ final class User: NSObject, NSCoding {
     
     // MARK: - Initializers
     
-    init(name: String, lastName: String, dateOfBirth: String, comments: String, photo: UIImage, contacts: [Contact] = [Contact](), events: [Event] = [Event](), allowEdition: Bool = false) {
+    init(name: String, lastName: String, dateOfBirth: String, comments: String, photo: UIImage, contacts: [Contact] = [Contact](), events: [Event] = [Event](), allowEdition: Bool = false, numQuestions: Int = 4, sound: Int = 1) {
         self.name = name
         self.lastName = lastName
         self.dateOfBirth = dateOfBirth
@@ -43,6 +45,8 @@ final class User: NSObject, NSCoding {
         self.contacts = contacts
         self.events = events
         self.allowEdition = allowEdition
+        self.numQuestions = numQuestions
+        self.sound = sound
     }
     
     
@@ -57,10 +61,14 @@ final class User: NSObject, NSCoding {
         static let contacts = "contacts"
         static let events = "events"
         static let allowEdition = "allowEdition"
+        static let numQuestions = "numQuestions"
+        static let sound = "sound"
     }
     
     convenience init?(coder aDecoder: NSCoder) {
         let allowEdition = aDecoder.decodeBool(forKey: PropertyKey.allowEdition)
+        let numQuestions = aDecoder.decodeInteger(forKey: PropertyKey.numQuestions)
+        let sound = aDecoder.decodeInteger(forKey: PropertyKey.sound)
         guard let name = aDecoder.decodeObject(forKey: PropertyKey.name) as? String,
             let lastName = aDecoder.decodeObject(forKey: PropertyKey.lastName) as? String,
             let dateOfBirth = aDecoder.decodeObject(forKey: PropertyKey.dateOfBirth) as? String,
@@ -68,9 +76,10 @@ final class User: NSObject, NSCoding {
             let photoData = aDecoder.decodeObject(forKey: PropertyKey.photoData) as? Data,
             let photo = UIImage(data: photoData),
             let contacts = aDecoder.decodeObject(forKey: PropertyKey.contacts) as? [Contact],
-            let events = aDecoder.decodeObject(forKey: PropertyKey.events) as? [Event] else { return nil }
+            let events = aDecoder.decodeObject(forKey: PropertyKey.events) as? [Event] else { return nil
+        }
         
-        self.init(name: name, lastName: lastName, dateOfBirth: dateOfBirth, comments: comments, photo: photo, contacts: contacts, events: events, allowEdition: allowEdition)
+        self.init(name: name, lastName: lastName, dateOfBirth: dateOfBirth, comments: comments, photo: photo, contacts: contacts, events: events, allowEdition: allowEdition, numQuestions: numQuestions, sound: sound)
     }
     
     func encode(with aCoder: NSCoder) {
@@ -82,6 +91,8 @@ final class User: NSObject, NSCoding {
         aCoder.encode(contacts, forKey: PropertyKey.contacts)
         aCoder.encode(events, forKey: PropertyKey.events)
         aCoder.encode(allowEdition, forKey: PropertyKey.allowEdition)
+        aCoder.encode(numQuestions, forKey: PropertyKey.numQuestions)
+        aCoder.encode(sound, forKey: PropertyKey.numQuestions)
     }
     
     

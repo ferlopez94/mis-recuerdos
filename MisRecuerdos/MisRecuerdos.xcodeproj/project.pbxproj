@@ -23,11 +23,11 @@
 		225842B11FBD6B50003B9F64 /* GameQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225842B01FBD6B50003B9F64 /* GameQuestionsViewController.swift */; };
 		225842B31FBD742E003B9F64 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225842B21FBD742E003B9F64 /* Question.swift */; };
 		2275CD5D1FB83DC000B3BD5B /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2275CD5C1FB83DC000B3BD5B /* EditEventViewController.swift */; };
+		22B70C841FC40DF6001187DB /* Victory-Sound-Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22B70C831FC40DF6001187DB /* Victory-Sound-Effect.mp3 */; };
 		22E281C81FB3A664008376C1 /* EventOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E281C61FB3A664008376C1 /* EventOverlayView.swift */; };
 		22E281C91FB3A664008376C1 /* EventOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E281C71FB3A664008376C1 /* EventOverlayView.xib */; };
 		618136D8793AAE6BFB13F204 /* Pods_MisRecuerdos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B2DB62BAECCC0E5D33724B /* Pods_MisRecuerdos.framework */; };
 		AD3419401FBED00A003EA195 /* Apple Pay Success Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD34193D1FBED00A003EA195 /* Apple Pay Success Sound Effect.mp3 */; };
-		AD3419411FBED00A003EA195 /* Correct Answer 2 Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD34193E1FBED00A003EA195 /* Correct Answer 2 Sound Effect.mp3 */; };
 		AD3419421FBED00A003EA195 /* Correct Answer 3 Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD34193F1FBED00A003EA195 /* Correct Answer 3 Sound Effect.mp3 */; };
 		AD4ADD4E1F9D00880071C6F1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4ADD4D1F9D00880071C6F1 /* Login.storyboard */; };
 		AD4ADD501F9D04EB0071C6F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4ADD4F1F9D04EB0071C6F1 /* LoginViewController.swift */; };
@@ -84,10 +84,10 @@
 		225842B01FBD6B50003B9F64 /* GameQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameQuestionsViewController.swift; sourceTree = "<group>"; };
 		225842B21FBD742E003B9F64 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		2275CD5C1FB83DC000B3BD5B /* EditEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
+		22B70C831FC40DF6001187DB /* Victory-Sound-Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Victory-Sound-Effect.mp3"; path = "../../../../../Downloads/Victory-Sound-Effect.mp3"; sourceTree = "<group>"; };
 		22E281C61FB3A664008376C1 /* EventOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventOverlayView.swift; sourceTree = "<group>"; };
 		22E281C71FB3A664008376C1 /* EventOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventOverlayView.xib; sourceTree = "<group>"; };
 		AD34193D1FBED00A003EA195 /* Apple Pay Success Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Apple Pay Success Sound Effect.mp3"; sourceTree = "<group>"; };
-		AD34193E1FBED00A003EA195 /* Correct Answer 2 Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Correct Answer 2 Sound Effect.mp3"; sourceTree = "<group>"; };
 		AD34193F1FBED00A003EA195 /* Correct Answer 3 Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Correct Answer 3 Sound Effect.mp3"; sourceTree = "<group>"; };
 		AD4ADD4D1F9D00880071C6F1 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		AD4ADD4F1F9D04EB0071C6F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -178,8 +178,8 @@
 				225842AC1FBD6052003B9F64 /* GameViewController.swift */,
 				ADC709E31FC16AFB0074E666 /* ResultsViewController.swift */,
 				225842AA1FBCAE19003B9F64 /* Media.xcassets */,
+				22B70C831FC40DF6001187DB /* Victory-Sound-Effect.mp3 */,
 				AD34193D1FBED00A003EA195 /* Apple Pay Success Sound Effect.mp3 */,
-				AD34193E1FBED00A003EA195 /* Correct Answer 2 Sound Effect.mp3 */,
 				AD34193F1FBED00A003EA195 /* Correct Answer 3 Sound Effect.mp3 */,
 			);
 			name = Game;
@@ -397,8 +397,8 @@
 				225842AB1FBCAE19003B9F64 /* Media.xcassets in Resources */,
 				AD97501C1F9C782C00E81BB6 /* Century Gothic.ttf in Resources */,
 				AD9750171F9C5C2300E81BB6 /* Signup.storyboard in Resources */,
-				AD3419411FBED00A003EA195 /* Correct Answer 2 Sound Effect.mp3 in Resources */,
 				AD3419421FBED00A003EA195 /* Correct Answer 3 Sound Effect.mp3 in Resources */,
+				22B70C841FC40DF6001187DB /* Victory-Sound-Effect.mp3 in Resources */,
 				AD3419401FBED00A003EA195 /* Apple Pay Success Sound Effect.mp3 in Resources */,
 				AD97501E1F9C783800E81BB6 /* Century Gothic Bold.ttf in Resources */,
 				AD9750091F9AFC2B00E81BB6 /* Main.storyboard in Resources */,
