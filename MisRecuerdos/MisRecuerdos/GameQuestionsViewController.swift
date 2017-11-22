@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 
+
 class GameQuestionsViewController: UIViewController {
     @IBOutlet var Buttons: [RoundedButton]!
     @IBOutlet weak var imvPhoto: UIImageView!
@@ -18,6 +19,7 @@ class GameQuestionsViewController: UIViewController {
 
     @IBOutlet weak var lbQuestion: UILabel!
     @IBOutlet weak var btNext: RoundedButton!
+
     
     var Questions: [Question]!
     var countQ = Int()
@@ -32,10 +34,7 @@ class GameQuestionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let data = UserDefaults.standard.data(forKey: K.Accounts.actualUserKey),
-            let user = NSKeyedUnarchiver.unarchiveObject(with: data) as? User else {
-                return
-        }
+               
         PickQuestion()
         print(sound)
         self.title = ""
@@ -59,11 +58,12 @@ class GameQuestionsViewController: UIViewController {
        
         if countQ < Questions.count {
             firstTry = true
-            btNext.isHidden = true
+            btNext.alpha = 0
+            btNext.isEnabled = false
             changeColor(color: "azul")
             resetButtons(activar: true)
             
-            lnNumQ.text = "PREGUNTA NO. " + String(countQ + 1)
+            lnNumQ.text = "PREGUNTA " + String(countQ + 1)
             print("Numero de pregunta \(countQ)")
             answerV = Questions[countQ].answer
             
@@ -121,7 +121,7 @@ class GameQuestionsViewController: UIViewController {
             lbAnswer.textColor = UIColor.green
             lbAnswer.text = "Respuesta Correcta"
             do{
-                let audioPath = Bundle.main.path(forResource: "Correct Answer 3 Sound Effect", ofType: "mp3")
+                let audioPath = Bundle.main.path(forResource: "Victory-Sound-Effect", ofType: "mp3")
                 try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath : audioPath!)as URL)
                 }
             catch{
@@ -135,7 +135,8 @@ class GameQuestionsViewController: UIViewController {
                 totalPoints += 1
             }
             // Mostrar boton para avanzar
-            btNext.isHidden = false        // Mostrar boton siguiente
+            btNext.alpha = 1
+            btNext.isEnabled = true
             resetButtons(activar: false)      // Desactivar Botones
             
         }
@@ -149,7 +150,8 @@ class GameQuestionsViewController: UIViewController {
 
     @IBAction func nextQuestion(_ sender: UIButton) {
         lbAnswer.text = ""
-        btNext.isHidden = true
+        btNext.alpha = 0
+        btNext.isEnabled = false
         
         if countQ >= Questions.count {
             performSegue(withIdentifier: "showResults", sender: self)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8cE-Jc-7Pk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8cE-Jc-7Pk">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1236,7 +1236,7 @@ Foto</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LJR-RQ-bq2"/>
+        <segue reference="V3u-0O-I1G"/>
         <segue reference="6i4-4Z-oW6"/>
     </inferredMetricsTieBreakers>
 </document>
