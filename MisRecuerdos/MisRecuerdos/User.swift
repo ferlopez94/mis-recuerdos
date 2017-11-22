@@ -92,7 +92,7 @@ final class User: NSObject, NSCoding {
         aCoder.encode(events, forKey: PropertyKey.events)
         aCoder.encode(allowEdition, forKey: PropertyKey.allowEdition)
         aCoder.encode(numQuestions, forKey: PropertyKey.numQuestions)
-        aCoder.encode(sound, forKey: PropertyKey.numQuestions)
+        aCoder.encode(sound, forKey: PropertyKey.sound)
     }
     
     
@@ -154,6 +154,47 @@ final class User: NSObject, NSCoding {
     func removeContact(atIndex index: Int) {
         contacts.remove(at: index)
     }
+    
+    func getFamilyContacts() -> [(offset: Int, element: Contact)] {
+        return self.contacts.enumerated().filter {
+            $0.element.category == .family
+            || $0.element.category == .family
+            || $0.element.category == .Abuelo
+            || $0.element.category == .Abuela
+            || $0.element.category == .Padre
+            || $0.element.category == .Madre
+            || $0.element.category == .Hermano
+            || $0.element.category == .Hermana
+            || $0.element.category == .Esposo
+            || $0.element.category == .Esposa
+            || $0.element.category == .Hijo
+            || $0.element.category == .Hija
+            || $0.element.category == .Tío
+            || $0.element.category == .Tía
+            || $0.element.category == .Nieto
+            || $0.element.category == .Nieta
+        }
+    }
+    
+    func getKnownContacts() -> [(offset: Int, element: Contact)] {
+        return self.contacts.enumerated().filter {
+            $0.element.category == .known
+            || $0.element.category == .Amigo
+            || $0.element.category == .Amiga
+            || $0.element.category == .Vecino
+            || $0.element.category == .Vecina
+            || $0.element.category == .Doctor
+            || $0.element.category == .Doctora
+            || $0.element.category == .Enfermero
+            || $0.element.category == .Enfermera
+            || $0.element.category == .Actor
+            || $0.element.category == .Actriz
+            || $0.element.category == .Cantante
+            || $0.element.category == .Maestro
+            || $0.element.category == .Maestra
+        }
+    }
+
     
     
     // MARK: - Events

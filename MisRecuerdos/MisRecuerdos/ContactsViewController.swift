@@ -50,6 +50,8 @@ class ContactsViewController: UIViewController, UISearchBarDelegate, ReloadData 
         super.viewWillAppear(animated)
         
         searchBar.delegate = self
+        familyPhoto.image = nil
+        knownPhoto.image = nil
         
         guard shouldReload else { return }
         shouldReload = false
@@ -63,8 +65,8 @@ class ContactsViewController: UIViewController, UISearchBarDelegate, ReloadData 
         print(self.user!)
         print(self.user!.contacts)
         
-        familyContacts = self.user!.contacts.enumerated().filter {$0.element.category == .family }
-        knownContacts = self.user!.contacts.enumerated().filter {$0.element.category == .known }
+        familyContacts = self.user!.getFamilyContacts()
+        knownContacts = self.user!.getKnownContacts()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -105,7 +107,7 @@ class ContactsViewController: UIViewController, UISearchBarDelegate, ReloadData 
                 return true
             }
             
-            let category = contact.element.category == .family ? "Familiar" : "Conocido"
+            let category = contact.element.category.rawValue
             
             if category.lowercased().range(of: text.lowercased()) != nil {
                 return true
@@ -150,8 +152,8 @@ class ContactsViewController: UIViewController, UISearchBarDelegate, ReloadData 
         self.user = user
         print(self.user!)
         print(self.user!.contacts)
-        familyContacts = self.user!.contacts.enumerated().filter {$0.element.category == .family }
-        knownContacts = self.user!.contacts.enumerated().filter {$0.element.category == .known }
+        familyContacts = self.user!.getFamilyContacts()
+        knownContacts = self.user!.getKnownContacts()
     }
     
     @IBAction func unwindToContactsAfterRemoved(segue: UIStoryboardSegue) {
@@ -164,8 +166,8 @@ class ContactsViewController: UIViewController, UISearchBarDelegate, ReloadData 
         
         if User.saveToFile(user, replaceAtIndex: index) {
             UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: user), forKey: K.Accounts.actualUserKey)
-            familyContacts = user.contacts.enumerated().filter {$0.element.category == .family }
-            knownContacts = user.contacts.enumerated().filter {$0.element.category == .known }
+            familyContacts = user.getFamilyContacts()
+            knownContacts = user.getKnownContacts()
         }
     }
     

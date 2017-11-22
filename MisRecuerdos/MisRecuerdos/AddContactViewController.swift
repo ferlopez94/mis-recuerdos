@@ -22,7 +22,7 @@ class AddContactViewController: SignupViewController, UIPickerViewDataSource, UI
         }
     }
     
-    let relationshipOptions = ["Familiar", "Conocido"]
+    let relationshipOptions = ContactCategory.allValues
     let relationshipPickerView = UIPickerView()
     
     let months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
@@ -100,7 +100,9 @@ class AddContactViewController: SignupViewController, UIPickerViewDataSource, UI
                 return
         }
         
-        let category = lastName == "Familiar" ? ContactCategory.family : ContactCategory.known
+        //let category = lastName == "Familiar" ? ContactCategory.family : ContactCategory.known
+        let category = ContactCategory(rawValue: lastName) ?? ContactCategory.family
+        
         let comments = commentsTextView.text == commentsPlaceholder ? "" : commentsTextView.text!
         
         print(name)

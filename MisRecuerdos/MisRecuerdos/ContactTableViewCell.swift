@@ -39,7 +39,7 @@ class ContactTableViewCell: UITableViewCell {
         photoImage.layer.cornerRadius = photoImage.frame.height / 2
         photoImage.image = contact.photo
         titleLabel.text = contact.name
-        subtitleLabel.text = contact.category == .family ? "Familiar" : "Conocido"
+        subtitleLabel.text = contact.category.rawValue
     }
 
 }

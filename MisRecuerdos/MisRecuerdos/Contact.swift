@@ -9,7 +9,44 @@
 import UIKit
 
 enum ContactCategory: String {
-    case family, known
+    // Familiar:
+    // Abuelo, Abuela, Padre, Madre, Hermano, Hermana, Esposo, Esposa, Hijo, Hija, Tío, Tía, Nieto, Nieta
+
+    case family = "Familiar"
+    case Abuelo = "Abuelo"
+    case Abuela = "Abuela"
+    case Padre = "Padre"
+    case Madre = "Madre"
+    case Hermano = "Hermano"
+    case Hermana = "Hermana"
+    case Esposo = "Esposo"
+    case Esposa = "Esposa"
+    case Hijo = "Hijo"
+    case Hija = "Hija"
+    case Tío = "Tío"
+    case Tía = "Tía"
+    case Nieto = "Nieto"
+    case Nieta = "Nieta"
+    
+    // Conocido:
+    // Amigo, Amiga, Vecino, Vecina, Doctor, Doctora, Enfermero, Enfermera, Actor, Actriz, Cantante, Maestro, Maestra
+    
+    case known = "Conocido"
+    case Amigo = "Amigo"
+    case Amiga = "Amiga"
+    case Vecino = "Vecino"
+    case Vecina = "Vecina"
+    case Doctor = "Doctor"
+    case Doctora = "Doctora"
+    case Enfermero = "Enfermero"
+    case Enfermera = "Enfermera"
+    case Actor = "Actor"
+    case Actriz = "Actriz"
+    case Cantante = "Cantante"
+    case Maestro = "Maestro"
+    case Maestra = "Maestra"
+    
+    static let allValues = ["Familiar", "Abuelo", "Abuela", "Padre", "Madre", "Hermano", "Hermana", "Esposo", "Esposa", "Hijo", "Hija", "Tío", "Tía", "Nieto", "Nieta", "Conocido", "Amigo", "Amiga", "Vecino", "Vecina", "Doctor", "Doctora", "Enfermero", "Enfermera", "Actor", "Actriz", "Cantante", "Maestro", "Maestra"]
 }
 
 final class Contact: NSObject, NSCoding {

@@ -47,7 +47,7 @@ class ShowContactViewController: UIViewController, UpdateContact {
         photoImage.image = contact.element.photo
         
         nameLabel.text = contact.element.name
-        categoryLabel.text = contact.element.category == .family ? "Familiar" : "Conocido"
+        categoryLabel.text = contact.element.category.rawValue
         birthdayLabel.text = contact.element.birthday
         commentsLabel.text = contact.element.comments == "" ? "No tienes comentarios acerca de esta persona." : contact.element.comments
         

@@ -29,7 +29,7 @@ class EditContactViewController: AddContactViewController {
         photoButton.layer.cornerRadius = photoButton.frame.height / 2
         
         nameTextField.text = contact.name
-        lastNameTextField.text = contact.category == .family ? "Familiar" : "Conocido"
+        lastNameTextField.text = contact.category.rawValue
         dobTextField.text = contact.birthday
         commentsTextView.text = contact.comments == "" ? commentsPlaceholder : contact.comments
         commentsTextView.textColor = UIColor.lightGray
@@ -73,12 +73,13 @@ class EditContactViewController: AddContactViewController {
         }
         
         let newPhotoImage = photoImage != nil ? photoImage! : contact.photo
-        let category = lastName == "Familiar" ? ContactCategory.family : ContactCategory.known
+        //let category = lastName == "Familiar" ? ContactCategory.family : ContactCategory.known
+        let category = ContactCategory(rawValue: lastName) ?? ContactCategory.family
         let comments = commentsTextView.text == commentsPlaceholder ? "" : commentsTextView.text!
         
         guard photoImage == nil,
             name == contact.name,
-            lastName == (contact.category == .family ? "Familiar" : "Conocido"),
+            lastName == contact.category.rawValue,
             dateOfBirth == contact.birthday,
             comments == contact.comments else {
                 print("contact data changed")
