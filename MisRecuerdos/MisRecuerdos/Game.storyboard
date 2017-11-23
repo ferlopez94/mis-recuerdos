@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bDn-3c-lRj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bDn-3c-lRj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -469,16 +469,16 @@
                                         </subviews>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KCk-sa-KdF">
-                                        <rect key="frame" x="31" y="124" width="249" height="212.5"/>
+                                        <rect key="frame" x="31" y="106.5" width="249" height="212.5"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="svG-Ci-KET" userLabel="Buttons">
-                                        <rect key="frame" x="0.0" y="374.5" width="311" height="95"/>
+                                        <rect key="frame" x="0.0" y="339" width="311" height="95"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NYF-R5-DnA">
-                                                <rect key="frame" x="0.0" y="0.5" width="311" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="311" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bp8-Vl-kUZ" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.5" width="120" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="120" id="P2g-GH-Pdf">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="150"/>
@@ -523,7 +523,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmw-C3-BIQ" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                        <rect key="frame" x="191" y="0.5" width="120" height="40"/>
+                                                        <rect key="frame" x="191" y="0.0" width="120" height="40"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                         <state key="normal" title="2"/>
                                                         <userDefinedRuntimeAttributes>
@@ -566,10 +566,10 @@
                                                 <variation key="heightClass=regular-widthClass=regular" spacing="60"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wha-XX-9p6">
-                                                <rect key="frame" x="0.0" y="55.5" width="311" height="40"/>
+                                                <rect key="frame" x="0.0" y="55" width="311" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ym0-AT-i74" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.5" width="120" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                         <state key="normal" title="3"/>
                                                         <userDefinedRuntimeAttributes>
@@ -606,7 +606,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivK-uP-cyw" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                                        <rect key="frame" x="191" y="0.5" width="120" height="40"/>
+                                                        <rect key="frame" x="191" y="0.0" width="120" height="40"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                                         <state key="normal" title="4"/>
                                                         <userDefinedRuntimeAttributes>
@@ -653,7 +653,10 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Respuesta correcta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nlg-rh-Oys">
-                                        <rect key="frame" x="71" y="507" width="169.5" height="22.5"/>
+                                        <rect key="frame" x="71" y="454.5" width="169.5" height="22.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22.5" id="eLJ-oL-44G"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -661,6 +664,12 @@
                                             <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="27"/>
                                         </variation>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="bS3-2F-mL0">
+                                        <rect key="frame" x="65.5" y="497" width="180" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hKN-eS-Jcm"/>
+                                        </constraints>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiG-TE-M0M" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
                                         <rect key="frame" x="78" y="567" width="155.5" height="40"/>
                                         <constraints>
@@ -672,19 +681,19 @@
                                         <state key="normal" title="Siguiente"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="titleColorNormal">
-                                                <color key="value" red="0.25882352939999997" green="0.72549019609999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormal">
-                                                <color key="value" red="0.25882352939999997" green="0.72549019609999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
                                                 <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColorForHighlighted">
-                                                <color key="value" red="0.25882352939999997" green="0.72549019609999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForHighlighted">
-                                                <color key="value" red="0.25882352939999997" green="0.72549019609999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="titleColorHighlighted">
                                                 <color key="value" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -738,7 +747,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Menú" id="1Eu-lb-wzb"/>
                     <connections>
+                        <outlet property="bt1" destination="Bp8-Vl-kUZ" id="uEq-K8-PMe"/>
+                        <outlet property="bt2" destination="Nmw-C3-BIQ" id="vz5-Zc-UXk"/>
+                        <outlet property="bt3" destination="ym0-AT-i74" id="Gs7-S0-0CK"/>
+                        <outlet property="bt4" destination="ivK-uP-cyw" id="6x5-eW-qEj"/>
                         <outlet property="btNext" destination="tiG-TE-M0M" id="6o3-5f-BPc"/>
+                        <outlet property="imgCorrect" destination="bS3-2F-mL0" id="6PY-HH-W8c"/>
                         <outlet property="imvPhoto" destination="KCk-sa-KdF" id="u0O-TB-A5O"/>
                         <outlet property="lbAnswer" destination="nlg-rh-Oys" id="yLT-iH-06V"/>
                         <outlet property="lbQuestion" destination="OR3-L6-MZP" id="EkS-gf-7UO"/>
@@ -754,7 +768,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="df6-bV-Ahz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="9rU-GI-k10" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2957" y="111"/>
+            <point key="canvasLocation" x="2956" y="110.19490254872565"/>
         </scene>
         <!--Results-->
         <scene sceneID="j1h-CE-Ci4">
@@ -883,5 +897,6 @@
     </scenes>
     <resources>
         <image name="Logo" width="150" height="132"/>
+        <image name="correct" width="180" height="180"/>
     </resources>
 </document>

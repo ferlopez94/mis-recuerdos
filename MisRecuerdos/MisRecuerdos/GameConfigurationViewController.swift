@@ -30,9 +30,9 @@ class GameConfigurationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(tElements)
-        numQuestionsLabel.text = "\(nQuestions)"
-        decrementButton.isEnabled = false
-        counter = 4
+        numQuestionsLabel.text = String(describing: user!.numQuestions)
+        decrementButton.isEnabled = true
+        counter = user!.numQuestions
         self.title = ""
     }
     

@@ -19,7 +19,11 @@ class GameQuestionsViewController: UIViewController {
 
     @IBOutlet weak var lbQuestion: UILabel!
     @IBOutlet weak var btNext: RoundedButton!
-
+    @IBOutlet weak var imgCorrect: UIImageView!
+    @IBOutlet weak var bt1: RoundedButton!
+    @IBOutlet weak var bt2: RoundedButton!
+    @IBOutlet weak var bt3: RoundedButton!
+    @IBOutlet weak var bt4: RoundedButton!
     
     var Questions: [Question]!
     var countQ = Int()
@@ -34,7 +38,9 @@ class GameQuestionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-               
+        
+        lbAnswer.text = ""
+        imgCorrect.alpha = 0
         PickQuestion()
         print(sound)
         self.title = ""
@@ -42,6 +48,10 @@ class GameQuestionsViewController: UIViewController {
         navigationItem.leftBarButtonItem = backButton
         let rightButton = UIBarButtonItem(title: "Terminar", style: UIBarButtonItemStyle.plain, target: self, action: #selector(goBackMenuGame))
         navigationItem.rightBarButtonItem = rightButton
+        self.bt1.titleLabel?.adjustsFontSizeToFitWidth = true
+        self.bt2.titleLabel?.adjustsFontSizeToFitWidth = true
+        self.bt3.titleLabel?.adjustsFontSizeToFitWidth = true
+        self.bt4.titleLabel?.adjustsFontSizeToFitWidth = true
     }
     
     //Method that changes the color of the buttons
@@ -73,6 +83,9 @@ class GameQuestionsViewController: UIViewController {
             if questionType == "Contacto" {
                 lbQuestion.text = "¿Quién es esta persona?"
             }
+            else if questionType == "Categoria" {
+                lbQuestion.text = "¿Qué relación tienes con esta persona?"
+            }
             else {
                 lbQuestion.text = "¿Cuál fue este momento?"
             }
@@ -81,8 +94,6 @@ class GameQuestionsViewController: UIViewController {
             
             for i in 0..<Buttons.count {
                 Buttons[i].setTitle(Questions[countQ].answersList[i], for: .normal)
-                print(" Muestrate")
-                
             }
             countQ += 1
         }
@@ -93,8 +104,8 @@ class GameQuestionsViewController: UIViewController {
         
         if sender.tag == answerV {
             if sound == 1 {
-            lbAnswer.textColor = UIColor.green
-            lbAnswer.text = "Respuesta Correcta"
+                lbAnswer.alpha = 0
+                imgCorrect.alpha = 1
             
             do{
                 let audioPath = Bundle.main.path(forResource: "Correct Answer 3 Sound Effect", ofType: "mp3")
@@ -106,8 +117,8 @@ class GameQuestionsViewController: UIViewController {
             player.play()
             }
             if sound == 2 {
-                lbAnswer.textColor = UIColor.green
-                lbAnswer.text = "Respuesta Correcta"
+                lbAnswer.alpha = 0
+                imgCorrect.alpha = 1
                 do{
                     let audioPath = Bundle.main.path(forResource: "Apple Pay Success Sound Effect", ofType: "mp3")
                     try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath : audioPath!)as URL)
@@ -119,7 +130,8 @@ class GameQuestionsViewController: UIViewController {
             }
         if sound == 3 {
             lbAnswer.textColor = UIColor.green
-            lbAnswer.text = "Respuesta Correcta"
+            lbAnswer.alpha = 0
+            imgCorrect.alpha = 1
             do{
                 let audioPath = Bundle.main.path(forResource: "Victory-Sound-Effect", ofType: "mp3")
                 try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath : audioPath!)as URL)
@@ -144,12 +156,15 @@ class GameQuestionsViewController: UIViewController {
             firstTry = false
             lbAnswer.textColor = UIColor.red
             sender.isEnabled = false
+            lbAnswer.alpha = 1
             lbAnswer.text = "Respuesta incorrecta"
+            imgCorrect.alpha = 0
         }
     }
 
     @IBAction func nextQuestion(_ sender: UIButton) {
         lbAnswer.text = ""
+        imgCorrect.alpha = 0
         btNext.alpha = 0
         btNext.isEnabled = false
         

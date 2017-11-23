@@ -75,13 +75,24 @@ class GameViewController: UIViewController, UpdateSettings {
         }
         else if segue.identifier == "segueToQuestions" {
             questionsList.removeAll()
-            print(numQuestions)
-            print(sound)
             contactsList = (user?.contacts)!
             eventsList = (user?.events)!
             numContacts = contactsList.count
             numEvents = eventsList.count
+            
             if numContacts >= 4 || numEvents >= 4 {
+                if (user?.numQuestions)! >= numContacts || (user?.numQuestions)! >= numEvents {
+                    numQuestions = (user?.numQuestions)!
+                }
+                else {
+                    numQuestions = 4
+                }
+                if (user?.sound != 0) {
+                    sound = (user?.sound)!
+                }
+                getQuestions()
+            }
+            /*if numContacts >= 4 || numEvents >= 4 {
                 if (user?.numQuestions != 0) {
                     numQuestions = (user?.numQuestions)!
                 }
@@ -89,9 +100,7 @@ class GameViewController: UIViewController, UpdateSettings {
                     sound = (user?.sound)!
                 }
                 getQuestions()
-                print("Elements \(totalElements)")
-                print("Questions \(numQuestions)")
-            }
+            }*/
             else {
                 valor = numQuestions
                 if numContacts < 4 {
@@ -114,10 +123,15 @@ class GameViewController: UIViewController, UpdateSettings {
         var random: Int!
         var questionType: String!
         var n = 0
+        var categor: ContactCategory
+        var contactsCategory = [String]()
         
         while n < numContacts {
             name = (contactsList[n]).value(forKey: "name") as! String
+            //categor = (contactsList[n]).value(forKey: "category") as! ContactCategory
+            categor =  contactsList[n].category
             contactsName.append(name)
+            contactsCategory.append(categor.rawValue)
             n += 1
         }
         n = 0
@@ -131,8 +145,17 @@ class GameViewController: UIViewController, UpdateSettings {
                 questionType = "Contacto"
                 random = Int(arc4random() % UInt32(numContacts))
                 let contact = contactsList[random]
-                contactsList.remove(at: random)
                 getAnswers(contact: contact, contactsName: contactsName, questionType: questionType)
+                numQuestions -= 1
+                
+                if numQuestions > 0 {
+                    questionType = "Categoria"
+                    random = Int(arc4random() % UInt32(numContacts))
+                    let categor = contactsList[random]
+                    getAnswersC(contact: categor, contactsName: contactsCategory, questionType: questionType)
+                }
+                
+                contactsList.remove(at: random)
                 numQuestions -= 1
                 numContacts -= 1
             }
@@ -152,12 +175,41 @@ class GameViewController: UIViewController, UpdateSettings {
         var contactsName = contactsName
         let descripQuestion = ""
         var correctAnswer: String!
-        //if questionType == "Contacto" {
-        //descripQuestion = contact.value(forKey: "comments") as! String
         correctAnswer = contact.value(forKey: "name") as! String
-        //} else {
-        correctAnswer = (contact.value(forKey: "name") as! String)
-        //}
+        let photo = contact.value(forKey: "photo") as! UIImage
+        
+        var answersList = ["","","",""]
+        let placeCorrect = Int(arc4random() % 4)
+        answersList[placeCorrect] = correctAnswer
+        
+        var placeIncorrect = 0
+        var randomAnswer: Int!
+        while placeIncorrect < 4 {
+            if placeCorrect != placeIncorrect {
+                randomAnswer = Int(arc4random() % UInt32(contactsName.count))
+                if(contactsName[randomAnswer] == correctAnswer) {
+                    contactsName.remove(at: randomAnswer)
+                }
+                else {
+                    answersList[placeIncorrect] = contactsName[randomAnswer]
+                    contactsName.remove(at: randomAnswer)
+                    placeIncorrect += 1
+                }
+            }
+            else {
+                placeIncorrect += 1
+            }
+        }
+        
+        let question = Question(descrip: descripQuestion, answersList: answersList, answer: placeCorrect, photo: photo, questionType: questionType)
+        questionsList.append(question)
+    }
+    
+    func getAnswersC(contact: Contact, contactsName: [String], questionType: String) {
+        var contactsName = contactsName
+        let descripQuestion = ""
+        var correctAnswer: String!
+        correctAnswer = contact.category.rawValue
         let photo = contact.value(forKey: "photo") as! UIImage
         
         var answersList = ["","","",""]
