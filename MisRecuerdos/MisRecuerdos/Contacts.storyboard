@@ -326,7 +326,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EMK-0p-PSH">
                                             <rect key="frame" x="15" y="15" width="290" height="94.5"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Acz-Hn-XFE">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Acz-Hn-XFE">
                                                     <rect key="frame" x="0.0" y="0.0" width="94.5" height="94.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Acz-Hn-XFE" secondAttribute="height" multiplier="1:1" id="h1C-oK-LMd"/>
@@ -422,7 +422,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qfd-Y9-xkO">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qfd-Y9-xkO">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                 </imageView>
                                             </subviews>
@@ -756,7 +756,7 @@ Foto</string>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="WGK-90-fva" userLabel="Content">
                                 <rect key="frame" x="32" y="84" width="256" height="464"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ND-yc-oIY">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ND-yc-oIY">
                                         <rect key="frame" x="70.5" y="0.0" width="115" height="115.5"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -1236,7 +1236,7 @@ Foto</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="V3u-0O-I1G"/>
+        <segue reference="LJR-RQ-bq2"/>
         <segue reference="6i4-4Z-oW6"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -68,7 +68,7 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let user = users[indexPath.row]
-        let message = "¿Quieres iniciar sesión con la cuenta de: \(user.name) \(user.lastName)?"
+        let message = "¿Tu cuenta es la de: \(user.name) \(user.lastName)?"
         let alertController = UIAlertController(title: "Confirmar", message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Sí", style: .default) { (alert) in
             UserDefaults.standard.set(NSKeyedArchiver.archivedData(withRootObject: user), forKey: K.Accounts.actualUserKey)
