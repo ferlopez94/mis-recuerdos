@@ -118,7 +118,7 @@ class GameConfigurationViewController: UIViewController {
         else if sender.selectedSegmentIndex == 1 {
             numSound = 2
             do{
-                let audioPath = Bundle.main.path(forResource: "Apple Pay Success Sound Effect", ofType: "mp3")
+                let audioPath = Bundle.main.path(forResource: "Apple Pay Success Sound Effect", ofType: "wav")
                 try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath : audioPath!)as URL)
             }
             catch{
