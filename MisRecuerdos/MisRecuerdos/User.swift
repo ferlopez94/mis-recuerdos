@@ -190,8 +190,6 @@ final class User: NSObject, NSCoding {
             || $0.element.category == .Actor
             || $0.element.category == .Actriz
             || $0.element.category == .Cantante
-            || $0.element.category == .Maestro
-            || $0.element.category == .Maestra
         }
     }
 

@@ -29,7 +29,7 @@ enum ContactCategory: String {
     case Nieta = "Nieta"
     
     // Conocido:
-    // Amigo, Amiga, Vecino, Vecina, Doctor, Doctora, Enfermero, Enfermera, Actor, Actriz, Cantante, Maestro, Maestra
+    // Amigo, Amiga, Vecino, Vecina, Doctor, Doctora, Enfermero, Enfermera, Actor, Actriz, Cantante
     
     case known = "Conocido"
     case Amigo = "Amigo"
@@ -43,10 +43,8 @@ enum ContactCategory: String {
     case Actor = "Actor"
     case Actriz = "Actriz"
     case Cantante = "Cantante"
-    case Maestro = "Maestro"
-    case Maestra = "Maestra"
     
-    static let allValues = ["Familiar", "Abuelo", "Abuela", "Padre", "Madre", "Hermano", "Hermana", "Esposo", "Esposa", "Hijo", "Hija", "Tío", "Tía", "Nieto", "Nieta", "Conocido", "Amigo", "Amiga", "Vecino", "Vecina", "Doctor", "Doctora", "Enfermero", "Enfermera", "Actor", "Actriz", "Cantante", "Maestro", "Maestra"]
+    static let allValues = ["Familiar", "Abuelo", "Abuela", "Padre", "Madre", "Hermano", "Hermana", "Esposo", "Esposa", "Hijo", "Hija", "Tío", "Tía", "Nieto", "Nieta", "Conocido", "Amigo", "Amiga", "Vecino", "Vecina", "Doctor", "Doctora", "Enfermero", "Enfermera", "Actor", "Actriz", "Cantante"]
 }
 
 final class Contact: NSObject, NSCoding {
