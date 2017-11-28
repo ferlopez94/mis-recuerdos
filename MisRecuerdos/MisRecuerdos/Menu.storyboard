@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7dG-Hc-u0b">
-    <device id="retina4_0" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -29,14 +29,14 @@
                         <viewControllerLayoutGuide type="bottom" id="fWG-lp-TQD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jee-Qa-0Ay">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cmM-DD-umX" userLabel="Content">
-                                <rect key="frame" x="32" y="94" width="256" height="434"/>
+                                <rect key="frame" x="52" y="134" width="664" height="810"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gC-fg-5Zv">
-                                        <rect key="frame" x="70" y="0.0" width="116.5" height="69"/>
+                                        <rect key="frame" x="244.5" y="0.0" width="175" height="103"/>
                                         <string key="text">Menú
 Principal</string>
                                         <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="28"/>
@@ -47,13 +47,13 @@ Principal</string>
                                         </variation>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dhm-Ct-6Wd" userLabel="Buttons">
-                                        <rect key="frame" x="0.0" y="103.5" width="256" height="256"/>
+                                        <rect key="frame" x="50" y="154.5" width="564" height="544"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jAC-VR-49w">
-                                                <rect key="frame" x="0.0" y="0.0" width="256" height="118"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="564" height="252"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xht-5u-RIC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="252" height="252"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Xht-5u-RIC" secondAttribute="height" multiplier="1:1" id="VS8-1o-4wX"/>
                                                         </constraints>
@@ -63,7 +63,7 @@ Principal</string>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rE0-mN-kFN">
-                                                        <rect key="frame" x="138" y="0.0" width="118" height="118"/>
+                                                        <rect key="frame" x="312" y="0.0" width="252" height="252"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="rE0-mN-kFN" secondAttribute="height" multiplier="1:1" id="n5I-93-CVU"/>
                                                         </constraints>
@@ -76,10 +76,10 @@ Principal</string>
                                                 <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BRB-v2-Zk9">
-                                                <rect key="frame" x="0.0" y="138" width="256" height="118"/>
+                                                <rect key="frame" x="0.0" y="292" width="564" height="252"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNf-hu-R21">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="252" height="252"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="JNf-hu-R21" secondAttribute="height" multiplier="1:1" id="MNQ-z4-nq7"/>
                                                         </constraints>
@@ -89,7 +89,7 @@ Principal</string>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxz-oG-09i">
-                                                        <rect key="frame" x="138" y="0.0" width="118" height="118"/>
+                                                        <rect key="frame" x="312" y="0.0" width="252" height="252"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="dxz-oG-09i" secondAttribute="height" multiplier="1:1" id="gCO-ZF-Qag"/>
                                                         </constraints>
@@ -105,7 +105,7 @@ Principal</string>
                                         <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZL-vw-eAa" customClass="RoundedButton" customModule="MisRecuerdos" customModuleProvider="target">
-                                        <rect key="frame" x="64" y="394" width="128" height="40"/>
+                                        <rect key="frame" x="166" y="750" width="332" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="IZg-nw-rot">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
@@ -159,7 +159,7 @@ Principal</string>
                                 <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zI-RJ-UNn">
-                                <rect key="frame" x="248" y="114" width="22" height="22"/>
+                                <rect key="frame" x="596" y="164" width="22" height="22"/>
                                 <connections>
                                     <segue destination="3Vy-B4-xb2" kind="show" id="YZJ-W6-FVm"/>
                                 </connections>
@@ -199,7 +199,7 @@ Principal</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7dG-Hc-u0b" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7jH-oL-hoS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="7jH-oL-hoS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -221,14 +221,14 @@ Principal</string>
                         <viewControllerLayoutGuide type="bottom" id="kvP-qe-X5R"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="e45-XY-d7Q">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LL8-AV-RIS" userLabel="Content">
-                                <rect key="frame" x="26" y="94" width="268" height="444"/>
+                                <rect key="frame" x="90" y="164" width="588" height="760"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jvI-ho-9Sa">
-                                        <rect key="frame" x="0.0" y="0.0" width="268" height="444"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="588" height="760"/>
                                         <string key="text">“Mis Recuerdos” ha sido desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre Agosto Diciembre de 2017, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.
 
 Desarrolladores:
@@ -304,7 +304,7 @@ Mis Recuerdos se distribuye como está de manera gratuita y se prohíbe su distr
     </scenes>
     <resources>
         <image name="Events" width="326" height="316"/>
-        <image name="Game" width="163" height="158"/>
+        <image name="Game" width="326" height="319"/>
         <image name="My profile" width="326" height="316"/>
         <image name="People" width="326" height="316"/>
     </resources>
