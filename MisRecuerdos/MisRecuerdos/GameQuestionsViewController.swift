@@ -120,7 +120,7 @@ class GameQuestionsViewController: UIViewController {
                 lbAnswer.alpha = 0
                 imgCorrect.alpha = 1
                 do{
-                    let audioPath = Bundle.main.path(forResource: "Apple Pay Success Sound Effect", ofType: "mp3")
+                    let audioPath = Bundle.main.path(forResource: "Apple Pay Success Sound Effect", ofType: "wav")
                     try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath : audioPath!)as URL)
                 }
                 catch{
