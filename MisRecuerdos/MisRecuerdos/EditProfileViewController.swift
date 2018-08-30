@@ -116,12 +116,12 @@ class EditProfileViewController: SignupViewController {
         
         dataFormatter.dateStyle = .medium
         dataFormatter.timeStyle = .none
-        let actualDate = dataFormatter.date(from: user.dateOfBirth)!
+        let actualDate = user.dateOfBirth == "" ? dataFormatter.date(from: "Jan 01, 2000")! : dataFormatter.date(from: user.dateOfBirth)!
         
         let datePickerView = UIDatePicker()
         datePickerView.datePickerMode = .date
         datePickerView.minimumDate = minimumDate
-        datePickerView.date = actualDate
+        datePickerView.date = user.dateOfBirth == "" ? minimumDate : actualDate
         datePickerView.maximumDate = maximumDate
         sender.inputView = datePickerView
         datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)

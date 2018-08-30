@@ -61,12 +61,8 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         let title = "Error"
         var alertController: UIAlertController
         
-        guard photoImage != nil else {
-            message = "Debes de seleccionar una foto de perfil."
-            alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-            present(alertController, animated: true, completion: nil)
-            return
+        if photoImage == nil {
+            photoImage = #imageLiteral(resourceName: "userProfile")
         }
             
         guard nameTextField.text != "",
@@ -87,13 +83,10 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
             return
         }
         
-        guard dobTextField.text != "",
-            let dateOfBirth = dobTextField.text else {
-                message = "Debes de introducir tu fecha de nacimiento."
-                alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                present(alertController, animated: true, completion: nil)
-                return
+        var dateOfBirth = ""
+        
+        if dobTextField.text != "" {
+            dateOfBirth = dobTextField.text!
         }
 
         let comments = commentsTextView.text == commentsPlaceholder ? "" : commentsTextView.text!

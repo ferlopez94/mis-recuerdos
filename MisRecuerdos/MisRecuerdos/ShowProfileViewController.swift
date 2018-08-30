@@ -48,9 +48,9 @@ class ShowProfileViewController: UIViewController, RootUser {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
-        let date = formatter.date(from: user.dateOfBirth)!
+        let date = user.dateOfBirth == "" ? formatter.date(from: "Jan 01, 2000")! : formatter.date(from: user.dateOfBirth)!
         formatter.dateStyle = .long
-        dobLabel.text = formatter.string(from: date)
+        dobLabel.text = user.dateOfBirth == "" ? "No ingresado" : formatter.string(from: date)
         commentsLabel.text = user.comments == "" ? "No tienes comentarios acerca de ti." : user.comments
         
         let photo = INSPhoto(image: user.photo, thumbnailImage: user.photo)
