@@ -46,10 +46,10 @@ class ShowProfileViewController: UIViewController, RootUser {
         lastNameLabel.text = user.lastName
         
         let formatter = DateFormatter()
-        formatter.locale = NSLocale.current
+        formatter.locale = NSLocale(localeIdentifier: "es_MX") as Locale
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
-        let date = user.dateOfBirth == "" ? formatter.date(from: "Jan 01, 2000")! : formatter.date(from: user.dateOfBirth)!
+        let date = user.dateOfBirth == "" ? Date() : formatter.date(from: user.dateOfBirth)!
         formatter.dateStyle = .long
         dobLabel.text = user.dateOfBirth == "" ? "No ingresado" : formatter.string(from: date)
         commentsLabel.text = user.comments == "" ? "No tienes comentarios acerca de ti." : user.comments

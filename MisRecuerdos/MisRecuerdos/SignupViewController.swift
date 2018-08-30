@@ -113,7 +113,7 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         let maximumDate = dataFormatter.date(from: "2015/01/01")!
         
         let datePickerView = UIDatePicker()
-        datePickerView.locale = NSLocale.current
+        datePickerView.locale = NSLocale(localeIdentifier: "es_MX") as Locale
         datePickerView.datePickerMode = .date
         datePickerView.minimumDate = minimumDate
         datePickerView.date = minimumDate
@@ -125,6 +125,7 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     
     func datePickerValueChanged(sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
+        dateFormatter.locale = NSLocale(localeIdentifier: "es_MX") as Locale
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .none
         dobTextField.text = dateFormatter.string(from: sender.date)

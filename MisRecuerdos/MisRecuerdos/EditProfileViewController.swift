@@ -119,6 +119,7 @@ class EditProfileViewController: SignupViewController {
         let actualDate = user.dateOfBirth == "" ? dataFormatter.date(from: "Jan 01, 2000")! : dataFormatter.date(from: user.dateOfBirth)!
         
         let datePickerView = UIDatePicker()
+        datePickerView.locale = NSLocale(localeIdentifier: "es_MX") as Locale
         datePickerView.datePickerMode = .date
         datePickerView.minimumDate = minimumDate
         datePickerView.date = user.dateOfBirth == "" ? minimumDate : actualDate
