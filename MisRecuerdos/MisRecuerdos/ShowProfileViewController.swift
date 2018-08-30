@@ -46,6 +46,7 @@ class ShowProfileViewController: UIViewController, RootUser {
         lastNameLabel.text = user.lastName
         
         let formatter = DateFormatter()
+        formatter.locale = NSLocale.current
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
         let date = user.dateOfBirth == "" ? formatter.date(from: "Jan 01, 2000")! : formatter.date(from: user.dateOfBirth)!

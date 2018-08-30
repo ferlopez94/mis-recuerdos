@@ -31,6 +31,7 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     // MARK: - View Controller life cycle
     
     override func viewDidLoad() {
+        print(NSLocale.current)
         super.viewDidLoad()
         
         photoButton.layer.masksToBounds = true
@@ -112,12 +113,14 @@ class SignupViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         let maximumDate = dataFormatter.date(from: "2015/01/01")!
         
         let datePickerView = UIDatePicker()
+        datePickerView.locale = NSLocale.current
         datePickerView.datePickerMode = .date
         datePickerView.minimumDate = minimumDate
         datePickerView.date = minimumDate
         datePickerView.maximumDate = maximumDate
         sender.inputView = datePickerView
         datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
+        print(datePickerView.locale)
     }
     
     func datePickerValueChanged(sender: UIDatePicker) {
